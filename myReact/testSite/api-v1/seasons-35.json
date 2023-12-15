@@ -1,0 +1,1931 @@
+{
+    "name": "2022",
+    "leagues": [
+        {
+            "name": "World Cups and World Championships",
+            "url": "/api/v1/season_leagues/404"
+        },
+        {
+            "name": "IFSC Youth",
+            "url": "/api/v1/season_leagues/405"
+        },
+        {
+            "name": "IFSC Asia Adults",
+            "url": "/api/v1/season_leagues/407"
+        },
+        {
+            "name": "IFSC Asia Youth",
+            "url": "/api/v1/season_leagues/408"
+        },
+        {
+            "name": "IFSC Europe Adults",
+            "url": "/api/v1/season_leagues/409"
+        },
+        {
+            "name": "IFSC Europe Youth",
+            "url": "/api/v1/season_leagues/410"
+        },
+        {
+            "name": "Games",
+            "url": "/api/v1/season_leagues/411"
+        },
+        {
+            "name": "IFSC Pan America Adults",
+            "url": "/api/v1/season_leagues/412"
+        },
+        {
+            "name": "IFSC Africa",
+            "url": "/api/v1/season_leagues/413"
+        },
+        {
+            "name": "IFSC Paraclimbing",
+            "url": "/api/v1/season_leagues/414"
+        },
+        {
+            "name": "IFSC Oceania",
+            "url": "/api/v1/season_leagues/415"
+        },
+        {
+            "name": "Other events",
+            "url": "/api/v1/season_leagues/416"
+        },
+        {
+            "name": "Masters and Promotional Events",
+            "url": "/api/v1/season_leagues/417"
+        }
+    ],
+    "events": [
+        {
+            "event": "IFSC - Test Event (B&L) - Barcelona (ESP) 2022",
+            "league_season_id": 416,
+            "location": "Barcelona",
+            "event_id": 1282,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1282",
+            "registration_url": "/api/v1/events/1282/registrations",
+            "infosheet_url": null,
+            "additional_info_url": null,
+            "starts_at": "2022-03-03 23:00:00 UTC",
+            "ends_at": "2022-03-05 22:59:00 UTC",
+            "local_start_date": "2022-03-04",
+            "local_end_date": "2022-03-05",
+            "timezone": {
+                "value": "Europe/Madrid"
+            },
+            "disciplines": []
+        },
+        {
+            "event": "IFSC - Climbing World Cup (B) - Meiringen (SUI) 2022",
+            "league_season_id": 404,
+            "location": "Meiringen",
+            "event_id": 1233,
+            "cup_name": "IFSC Climbing World Cup 2022",
+            "cup_id": 72,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1233",
+            "registration_url": "/api/v1/events/1233/registrations",
+            "infosheet_url": "/events/1233/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-04-07 22:00:00 UTC",
+            "ends_at": "2022-04-10 21:59:00 UTC",
+            "local_start_date": "2022-04-08",
+            "local_end_date": "2022-04-10",
+            "timezone": {
+                "value": "Europe/Zurich"
+            },
+            "disciplines": [
+                {
+                    "id": 1448,
+                    "kind": "boulder",
+                    "event_id": 1233,
+                    "created_at": "2021-10-06T11:44:33.000Z",
+                    "updated_at": "2021-10-06T11:44:33.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Continental Youth Cup (B) - Chambéry (FRA) 2022",
+            "league_season_id": 410,
+            "location": "Chambéry",
+            "event_id": 1258,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [
+                86
+            ],
+            "url": "/api/v1/events/1258",
+            "registration_url": "/api/v1/events/1258/registrations",
+            "infosheet_url": "/events/1258/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-04-08 22:00:00 UTC",
+            "ends_at": "2022-04-10 21:59:00 UTC",
+            "local_start_date": "2022-04-09",
+            "local_end_date": "2022-04-10",
+            "timezone": {
+                "value": "Europe/Paris"
+            },
+            "disciplines": [
+                {
+                    "id": 1488,
+                    "kind": "boulder",
+                    "event_id": 1258,
+                    "created_at": "2021-11-26T08:28:40.000Z",
+                    "updated_at": "2021-11-26T08:28:40.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Continental Youth Cup (B) - Soure (POR) 2022",
+            "league_season_id": 410,
+            "location": "Soure",
+            "event_id": 1259,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [
+                86
+            ],
+            "url": "/api/v1/events/1259",
+            "registration_url": "/api/v1/events/1259/registrations",
+            "infosheet_url": "/events/1259/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-04-22 23:00:00 UTC",
+            "ends_at": "2022-04-24 22:59:00 UTC",
+            "local_start_date": "2022-04-23",
+            "local_end_date": "2022-04-24",
+            "timezone": {
+                "value": "Europe/Lisbon"
+            },
+            "disciplines": [
+                {
+                    "id": 1489,
+                    "kind": "boulder",
+                    "event_id": 1259,
+                    "created_at": "2021-11-26T08:32:16.000Z",
+                    "updated_at": "2021-11-26T08:32:16.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Continental Cup (B) - Prague (CZE) 2022",
+            "league_season_id": 409,
+            "location": "Prague",
+            "event_id": 1260,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [
+                88
+            ],
+            "url": "/api/v1/events/1260",
+            "registration_url": "/api/v1/events/1260/registrations",
+            "infosheet_url": "/events/1260/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-04-28 22:00:00 UTC",
+            "ends_at": "2022-05-01 21:59:00 UTC",
+            "local_start_date": "2022-04-29",
+            "local_end_date": "2022-05-01",
+            "timezone": {
+                "value": "Europe/Prague"
+            },
+            "disciplines": [
+                {
+                    "id": 1490,
+                    "kind": "boulder",
+                    "event_id": 1260,
+                    "created_at": "2021-11-26T08:35:21.000Z",
+                    "updated_at": "2021-11-26T08:35:21.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC - Climbing World Cup (B,S) - Seoul (KOR) 2022",
+            "league_season_id": 404,
+            "location": "Seoul",
+            "event_id": 1235,
+            "cup_name": "IFSC Climbing World Cup 2022",
+            "cup_id": 72,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1235",
+            "registration_url": "/api/v1/events/1235/registrations",
+            "infosheet_url": "/events/1235/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-05-05 15:00:00 UTC",
+            "ends_at": "2022-05-08 14:59:00 UTC",
+            "local_start_date": "2022-05-06",
+            "local_end_date": "2022-05-08",
+            "timezone": {
+                "value": "Asia/Seoul"
+            },
+            "disciplines": [
+                {
+                    "id": 1450,
+                    "kind": "boulder",
+                    "event_id": 1235,
+                    "created_at": "2021-10-06T11:47:26.000Z",
+                    "updated_at": "2021-10-06T11:47:26.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1451,
+                    "kind": "speed",
+                    "event_id": 1235,
+                    "created_at": "2021-10-06T11:47:29.000Z",
+                    "updated_at": "2021-10-06T11:47:29.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Continental Cup (B) - Brixen (ITA) 2022",
+            "league_season_id": 409,
+            "location": "Brixen",
+            "event_id": 1261,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [
+                88
+            ],
+            "url": "/api/v1/events/1261",
+            "registration_url": "/api/v1/events/1261/registrations",
+            "infosheet_url": "/events/1261/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-05-06 22:00:00 UTC",
+            "ends_at": "2022-05-08 21:59:00 UTC",
+            "local_start_date": "2022-05-07",
+            "local_end_date": "2022-05-08",
+            "timezone": {
+                "value": "Europe/Rome"
+            },
+            "disciplines": [
+                {
+                    "id": 1491,
+                    "kind": "boulder",
+                    "event_id": 1261,
+                    "created_at": "2021-11-26T08:38:02.000Z",
+                    "updated_at": "2022-05-06T15:17:16.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Continental Cup (B) - Klagenfurt (AUT) 2022",
+            "league_season_id": 409,
+            "location": "Klagenfurt",
+            "event_id": 1263,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [
+                88
+            ],
+            "url": "/api/v1/events/1263",
+            "registration_url": "/api/v1/events/1263/registrations",
+            "infosheet_url": "/events/1263/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-05-19 22:00:00 UTC",
+            "ends_at": "2022-05-21 21:59:00 UTC",
+            "local_start_date": "2022-05-20",
+            "local_end_date": "2022-05-21",
+            "timezone": {
+                "value": "Europe/Vienna"
+            },
+            "disciplines": [
+                {
+                    "id": 1494,
+                    "kind": "boulder",
+                    "event_id": 1263,
+                    "created_at": "2021-11-26T08:40:59.000Z",
+                    "updated_at": "2021-11-26T08:40:59.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC - Climbing World Cup (B,S) - Salt Lake City (USA) 2022",
+            "league_season_id": 404,
+            "location": "Salt Lake City",
+            "event_id": 1236,
+            "cup_name": "IFSC Climbing World Cup 2022",
+            "cup_id": 72,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1236",
+            "registration_url": "/api/v1/events/1236/registrations",
+            "infosheet_url": "/events/1236/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-05-20 06:00:00 UTC",
+            "ends_at": "2022-05-23 05:59:00 UTC",
+            "local_start_date": "2022-05-20",
+            "local_end_date": "2022-05-22",
+            "timezone": {
+                "value": "America/Denver"
+            },
+            "disciplines": [
+                {
+                    "id": 1452,
+                    "kind": "boulder",
+                    "event_id": 1236,
+                    "created_at": "2021-10-06T11:49:08.000Z",
+                    "updated_at": "2021-10-06T11:49:08.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1523,
+                    "kind": "speed",
+                    "event_id": 1236,
+                    "created_at": "2022-04-06T08:54:11.000Z",
+                    "updated_at": "2022-04-06T08:54:11.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC - Paraclimbing World Cup (L) - Salt Lake City (USA) 2022",
+            "league_season_id": 414,
+            "location": "Salt Lake City",
+            "event_id": 1278,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1278",
+            "registration_url": "/api/v1/events/1278/registrations",
+            "infosheet_url": "/events/1278/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-05-24 06:00:00 UTC",
+            "ends_at": "2022-05-26 05:59:00 UTC",
+            "local_start_date": "2022-05-24",
+            "local_end_date": "2022-05-25",
+            "timezone": {
+                "value": "America/Denver"
+            },
+            "disciplines": [
+                {
+                    "id": 1516,
+                    "kind": "lead",
+                    "event_id": 1278,
+                    "created_at": "2022-01-28T10:11:57.000Z",
+                    "updated_at": "2022-01-28T10:11:57.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Continental Youth Cup (L,S) - Imst (AUT) 2022",
+            "league_season_id": 410,
+            "location": "Imst",
+            "event_id": 1262,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [
+                85,
+                87
+            ],
+            "url": "/api/v1/events/1262",
+            "registration_url": "/api/v1/events/1262/registrations",
+            "infosheet_url": "/events/1262/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-05-26 22:00:00 UTC",
+            "ends_at": "2022-05-29 21:59:00 UTC",
+            "local_start_date": "2022-05-27",
+            "local_end_date": "2022-05-29",
+            "timezone": {
+                "value": "Europe/Vienna"
+            },
+            "disciplines": [
+                {
+                    "id": 1492,
+                    "kind": "lead",
+                    "event_id": 1262,
+                    "created_at": "2021-11-26T08:39:25.000Z",
+                    "updated_at": "2021-11-26T08:39:25.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1493,
+                    "kind": "speed",
+                    "event_id": 1262,
+                    "created_at": "2021-11-26T08:39:27.000Z",
+                    "updated_at": "2021-11-26T08:39:27.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC - Climbing World Cup (B,S) - Salt Lake City (USA) 2022",
+            "league_season_id": 404,
+            "location": "Salt Lake City",
+            "event_id": 1237,
+            "cup_name": "IFSC Climbing World Cup 2022",
+            "cup_id": 72,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1237",
+            "registration_url": "/api/v1/events/1237/registrations",
+            "infosheet_url": "/events/1237/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-05-27 06:00:00 UTC",
+            "ends_at": "2022-05-30 05:59:00 UTC",
+            "local_start_date": "2022-05-27",
+            "local_end_date": "2022-05-29",
+            "timezone": {
+                "value": "America/Denver"
+            },
+            "disciplines": [
+                {
+                    "id": 1453,
+                    "kind": "boulder",
+                    "event_id": 1237,
+                    "created_at": "2021-10-06T11:50:24.000Z",
+                    "updated_at": "2021-10-06T11:50:24.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1454,
+                    "kind": "speed",
+                    "event_id": 1237,
+                    "created_at": "2021-10-06T11:50:28.000Z",
+                    "updated_at": "2021-10-06T11:50:28.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Continental Cup (L,S) - Tyumen (RUS) 2022 - CANCELLED",
+            "league_season_id": 409,
+            "location": "Tyumen",
+            "event_id": 1264,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1264",
+            "registration_url": "/api/v1/events/1264/registrations",
+            "infosheet_url": null,
+            "additional_info_url": null,
+            "starts_at": "2022-06-03 19:00:00 UTC",
+            "ends_at": "2022-06-05 18:59:00 UTC",
+            "local_start_date": "2022-06-04",
+            "local_end_date": "2022-06-05",
+            "timezone": {
+                "value": "Asia/Yekaterinburg"
+            },
+            "disciplines": [
+                {
+                    "id": 1495,
+                    "kind": "lead",
+                    "event_id": 1264,
+                    "created_at": "2021-11-26T08:51:16.000Z",
+                    "updated_at": "2021-11-26T08:51:16.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1496,
+                    "kind": "speed",
+                    "event_id": 1264,
+                    "created_at": "2021-11-26T08:51:18.000Z",
+                    "updated_at": "2021-11-26T08:51:18.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Continental Cup (L,S) - Arco (ITA) 2022",
+            "league_season_id": 409,
+            "location": "Arco",
+            "event_id": 1283,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [
+                78,
+                89
+            ],
+            "url": "/api/v1/events/1283",
+            "registration_url": "/api/v1/events/1283/registrations",
+            "infosheet_url": "/events/1283/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-06-03 22:00:00 UTC",
+            "ends_at": "2022-06-05 21:59:00 UTC",
+            "local_start_date": "2022-06-04",
+            "local_end_date": "2022-06-05",
+            "timezone": {
+                "value": "Europe/Rome"
+            },
+            "disciplines": [
+                {
+                    "id": 1519,
+                    "kind": "lead",
+                    "event_id": 1283,
+                    "created_at": "2022-03-22T07:41:18.000Z",
+                    "updated_at": "2022-03-22T07:41:18.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1520,
+                    "kind": "speed",
+                    "event_id": 1283,
+                    "created_at": "2022-03-22T07:41:20.000Z",
+                    "updated_at": "2022-03-22T07:41:20.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC - Climbing World Cup (B) - Brixen (ITA) 2022",
+            "league_season_id": 404,
+            "location": "Brixen",
+            "event_id": 1284,
+            "cup_name": "IFSC Climbing World Cup 2022",
+            "cup_id": 72,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1284",
+            "registration_url": "/api/v1/events/1284/registrations",
+            "infosheet_url": "/events/1284/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-06-09 22:00:00 UTC",
+            "ends_at": "2022-06-12 21:59:00 UTC",
+            "local_start_date": "2022-06-10",
+            "local_end_date": "2022-06-12",
+            "timezone": {
+                "value": "Europe/Rome"
+            },
+            "disciplines": [
+                {
+                    "id": 1521,
+                    "kind": "boulder",
+                    "event_id": 1284,
+                    "created_at": "2022-03-24T10:51:29.000Z",
+                    "updated_at": "2022-04-08T08:24:05.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "FISU University Championships (B,S,L) - Innsbruck (AUT) 2022",
+            "league_season_id": 416,
+            "location": "Innsbruck",
+            "event_id": 1249,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1249",
+            "registration_url": "/api/v1/events/1249/registrations",
+            "infosheet_url": null,
+            "additional_info_url": null,
+            "starts_at": "2022-06-12 22:00:00 UTC",
+            "ends_at": "2022-06-17 21:59:00 UTC",
+            "local_start_date": "2022-06-13",
+            "local_end_date": "2022-06-17",
+            "timezone": {
+                "value": "Europe/Vienna"
+            },
+            "disciplines": [
+                {
+                    "id": 1477,
+                    "kind": "boulder",
+                    "event_id": 1249,
+                    "created_at": "2021-10-06T14:06:12.000Z",
+                    "updated_at": "2021-10-06T14:06:12.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1478,
+                    "kind": "lead",
+                    "event_id": 1249,
+                    "created_at": "2021-10-06T14:06:14.000Z",
+                    "updated_at": "2021-10-06T14:06:14.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1479,
+                    "kind": "speed",
+                    "event_id": 1249,
+                    "created_at": "2021-10-06T14:06:16.000Z",
+                    "updated_at": "2021-10-06T14:06:16.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Continental Cup (S) - Innsbruck (AUT) 2022",
+            "league_season_id": 409,
+            "location": "Innsbruck",
+            "event_id": 1265,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [
+                89
+            ],
+            "url": "/api/v1/events/1265",
+            "registration_url": "/api/v1/events/1265/registrations",
+            "infosheet_url": "/events/1265/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-06-20 22:00:00 UTC",
+            "ends_at": "2022-06-21 21:59:00 UTC",
+            "local_start_date": "2022-06-21",
+            "local_end_date": "2022-06-21",
+            "timezone": {
+                "value": "Europe/Vienna"
+            },
+            "disciplines": [
+                {
+                    "id": 1497,
+                    "kind": "speed",
+                    "event_id": 1265,
+                    "created_at": "2021-11-26T08:52:54.000Z",
+                    "updated_at": "2021-11-26T08:52:54.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC - Paraclimbing World Cup (L) - Innsbruck (AUT) 2022",
+            "league_season_id": 414,
+            "location": "Innsbruck",
+            "event_id": 1277,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1277",
+            "registration_url": "/api/v1/events/1277/registrations",
+            "infosheet_url": "/events/1277/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-06-20 22:00:00 UTC",
+            "ends_at": "2022-06-22 21:59:00 UTC",
+            "local_start_date": "2022-06-21",
+            "local_end_date": "2022-06-22",
+            "timezone": {
+                "value": "Europe/Rome"
+            },
+            "disciplines": [
+                {
+                    "id": 1517,
+                    "kind": "lead",
+                    "event_id": 1277,
+                    "created_at": "2022-01-28T10:12:31.000Z",
+                    "updated_at": "2022-01-28T10:12:31.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC - Climbing World Cup (B,L) - Innsbruck (AUT) 2022",
+            "league_season_id": 404,
+            "location": "Innsbruck",
+            "event_id": 1238,
+            "cup_name": "IFSC Climbing World Cup 2022",
+            "cup_id": 72,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1238",
+            "registration_url": "/api/v1/events/1238/registrations",
+            "infosheet_url": "/events/1238/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-06-21 22:00:00 UTC",
+            "ends_at": "2022-06-26 21:59:00 UTC",
+            "local_start_date": "2022-06-22",
+            "local_end_date": "2022-06-26",
+            "timezone": {
+                "value": "Europe/Vienna"
+            },
+            "disciplines": [
+                {
+                    "id": 1455,
+                    "kind": "boulder",
+                    "event_id": 1238,
+                    "created_at": "2021-10-06T11:52:38.000Z",
+                    "updated_at": "2021-10-06T11:52:38.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1456,
+                    "kind": "lead",
+                    "event_id": 1238,
+                    "created_at": "2021-10-06T11:52:40.000Z",
+                    "updated_at": "2021-10-06T11:52:40.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Continental Youth Cup (L) - Ostermundigen (SUI) 2022",
+            "league_season_id": 410,
+            "location": "Ostermundigen",
+            "event_id": 1266,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [
+                85
+            ],
+            "url": "/api/v1/events/1266",
+            "registration_url": "/api/v1/events/1266/registrations",
+            "infosheet_url": "/events/1266/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-06-24 22:00:00 UTC",
+            "ends_at": "2022-06-26 21:59:00 UTC",
+            "local_start_date": "2022-06-25",
+            "local_end_date": "2022-06-26",
+            "timezone": {
+                "value": "Europe/Zurich"
+            },
+            "disciplines": [
+                {
+                    "id": 1498,
+                    "kind": "lead",
+                    "event_id": 1266,
+                    "created_at": "2021-11-26T08:54:28.000Z",
+                    "updated_at": "2021-11-26T08:54:28.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC - Climbing World Cup (L,S) - Villars (SUI) 2022",
+            "league_season_id": 404,
+            "location": "Villars-sur-Ollon",
+            "event_id": 1239,
+            "cup_name": "IFSC Climbing World Cup 2022",
+            "cup_id": 72,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1239",
+            "registration_url": "/api/v1/events/1239/registrations",
+            "infosheet_url": "/events/1239/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-06-29 22:00:00 UTC",
+            "ends_at": "2022-07-02 21:59:00 UTC",
+            "local_start_date": "2022-06-30",
+            "local_end_date": "2022-07-02",
+            "timezone": {
+                "value": "Europe/Zurich"
+            },
+            "disciplines": [
+                {
+                    "id": 1457,
+                    "kind": "lead",
+                    "event_id": 1239,
+                    "created_at": "2021-10-06T13:35:09.000Z",
+                    "updated_at": "2021-10-06T13:35:09.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1458,
+                    "kind": "speed",
+                    "event_id": 1239,
+                    "created_at": "2021-10-06T13:35:11.000Z",
+                    "updated_at": "2021-10-06T13:35:11.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Continental Youth Cup (L) - Dornbirn (AUT) 2022",
+            "league_season_id": 410,
+            "location": "Dornbirn",
+            "event_id": 1267,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [
+                85
+            ],
+            "url": "/api/v1/events/1267",
+            "registration_url": "/api/v1/events/1267/registrations",
+            "infosheet_url": "/events/1267/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-07-01 22:00:00 UTC",
+            "ends_at": "2022-07-03 21:59:00 UTC",
+            "local_start_date": "2022-07-02",
+            "local_end_date": "2022-07-03",
+            "timezone": {
+                "value": "Europe/Vienna"
+            },
+            "disciplines": [
+                {
+                    "id": 1499,
+                    "kind": "lead",
+                    "event_id": 1267,
+                    "created_at": "2021-11-26T08:55:41.000Z",
+                    "updated_at": "2021-11-26T08:55:41.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC - Paraclimbing Master - Imst (AUT) 2022",
+            "league_season_id": 414,
+            "location": "Imst",
+            "event_id": 1281,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1281",
+            "registration_url": "/api/v1/events/1281/registrations",
+            "infosheet_url": "/events/1281/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-07-01 22:00:00 UTC",
+            "ends_at": "2022-07-03 21:59:00 UTC",
+            "local_start_date": "2022-07-02",
+            "local_end_date": "2022-07-03",
+            "timezone": {
+                "value": "Europe/Vienna"
+            },
+            "disciplines": [
+                {
+                    "id": 1518,
+                    "kind": "lead",
+                    "event_id": 1281,
+                    "created_at": "2022-02-04T16:03:39.000Z",
+                    "updated_at": "2022-02-04T16:03:39.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC - Climbing World Cup (L,S) - Chamonix (FRA) 2022",
+            "league_season_id": 404,
+            "location": "Chamonix",
+            "event_id": 1240,
+            "cup_name": "IFSC Climbing World Cup 2022",
+            "cup_id": 72,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1240",
+            "registration_url": "/api/v1/events/1240/registrations",
+            "infosheet_url": "/events/1240/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-07-07 22:00:00 UTC",
+            "ends_at": "2022-07-10 21:59:00 UTC",
+            "local_start_date": "2022-07-08",
+            "local_end_date": "2022-07-10",
+            "timezone": {
+                "value": "Europe/Paris"
+            },
+            "disciplines": [
+                {
+                    "id": 1459,
+                    "kind": "lead",
+                    "event_id": 1240,
+                    "created_at": "2021-10-06T13:36:14.000Z",
+                    "updated_at": "2021-10-06T13:36:14.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1460,
+                    "kind": "speed",
+                    "event_id": 1240,
+                    "created_at": "2021-10-06T13:36:16.000Z",
+                    "updated_at": "2021-10-06T13:36:16.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Continental Youth Championship (L,S) - Augsburg (GER) 2022",
+            "league_season_id": 410,
+            "location": "Augsburg",
+            "event_id": 1268,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [
+                87
+            ],
+            "url": "/api/v1/events/1268",
+            "registration_url": "/api/v1/events/1268/registrations",
+            "infosheet_url": "/events/1268/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-07-07 22:00:00 UTC",
+            "ends_at": "2022-07-10 21:59:00 UTC",
+            "local_start_date": "2022-07-08",
+            "local_end_date": "2022-07-10",
+            "timezone": {
+                "value": "Europe/Berlin"
+            },
+            "disciplines": [
+                {
+                    "id": 1500,
+                    "kind": "lead",
+                    "event_id": 1268,
+                    "created_at": "2021-11-26T08:58:24.000Z",
+                    "updated_at": "2021-11-26T08:58:24.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1501,
+                    "kind": "speed",
+                    "event_id": 1268,
+                    "created_at": "2021-11-26T08:58:29.000Z",
+                    "updated_at": "2021-11-26T08:58:29.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC - Paraclimbing World Cup (L) - Villars (SUI) 2022",
+            "league_season_id": 414,
+            "location": "Villars",
+            "event_id": 1280,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1280",
+            "registration_url": "/api/v1/events/1280/registrations",
+            "infosheet_url": "/events/1280/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-07-07 22:00:00 UTC",
+            "ends_at": "2022-07-09 21:59:00 UTC",
+            "local_start_date": "2022-07-08",
+            "local_end_date": "2022-07-09",
+            "timezone": {
+                "value": "Europe/Rome"
+            },
+            "disciplines": [
+                {
+                    "id": 1515,
+                    "kind": "lead",
+                    "event_id": 1280,
+                    "created_at": "2022-01-28T10:08:32.000Z",
+                    "updated_at": "2022-01-28T10:08:32.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "World Games (B,S,L) - Birmingham (USA) 2022",
+            "league_season_id": 411,
+            "location": "Birmingham",
+            "event_id": 1245,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1245",
+            "registration_url": "/api/v1/events/1245/registrations",
+            "infosheet_url": "/events/1245/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-07-14 02:00:00 UTC",
+            "ends_at": "2022-07-17 01:59:00 UTC",
+            "local_start_date": "2022-07-14",
+            "local_end_date": "2022-07-16",
+            "timezone": {
+                "value": "Atlantic/South_Georgia"
+            },
+            "disciplines": [
+                {
+                    "id": 1467,
+                    "kind": "lead",
+                    "event_id": 1245,
+                    "created_at": "2021-10-06T13:42:43.000Z",
+                    "updated_at": "2021-10-06T13:42:43.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1468,
+                    "kind": "speed",
+                    "event_id": 1245,
+                    "created_at": "2021-10-06T13:42:45.000Z",
+                    "updated_at": "2021-10-06T13:42:45.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1469,
+                    "kind": "boulder",
+                    "event_id": 1245,
+                    "created_at": "2021-10-06T13:42:46.000Z",
+                    "updated_at": "2021-10-06T13:42:46.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Continental Cup (L,S) - Žilina (SVK) 2022",
+            "league_season_id": 409,
+            "location": "Žilina",
+            "event_id": 1269,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [
+                78,
+                89
+            ],
+            "url": "/api/v1/events/1269",
+            "registration_url": "/api/v1/events/1269/registrations",
+            "infosheet_url": "/events/1269/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-07-15 22:00:00 UTC",
+            "ends_at": "2022-07-17 21:59:00 UTC",
+            "local_start_date": "2022-07-16",
+            "local_end_date": "2022-07-17",
+            "timezone": {
+                "value": "Europe/Bratislava"
+            },
+            "disciplines": [
+                {
+                    "id": 1502,
+                    "kind": "lead",
+                    "event_id": 1269,
+                    "created_at": "2021-11-26T09:02:11.000Z",
+                    "updated_at": "2021-11-26T09:02:11.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1503,
+                    "kind": "speed",
+                    "event_id": 1269,
+                    "created_at": "2021-11-26T09:02:12.000Z",
+                    "updated_at": "2021-11-26T09:02:12.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC - Climbing World Cup (L) - Briançon (FRA) 2022",
+            "league_season_id": 404,
+            "location": "Briançon",
+            "event_id": 1241,
+            "cup_name": "IFSC Climbing World Cup 2022",
+            "cup_id": 72,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1241",
+            "registration_url": "/api/v1/events/1241/registrations",
+            "infosheet_url": "/events/1241/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-07-21 22:00:00 UTC",
+            "ends_at": "2022-07-23 21:59:00 UTC",
+            "local_start_date": "2022-07-22",
+            "local_end_date": "2022-07-23",
+            "timezone": {
+                "value": "Europe/Paris"
+            },
+            "disciplines": [
+                {
+                    "id": 1461,
+                    "kind": "lead",
+                    "event_id": 1241,
+                    "created_at": "2021-10-06T13:37:36.000Z",
+                    "updated_at": "2021-10-06T13:37:36.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Continental Youth Cup (S) - Mezzolombardo (ITA) 2022",
+            "league_season_id": 410,
+            "location": "Mezzolombardo",
+            "event_id": 1270,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [
+                87
+            ],
+            "url": "/api/v1/events/1270",
+            "registration_url": "/api/v1/events/1270/registrations",
+            "infosheet_url": "/events/1270/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-07-28 22:00:00 UTC",
+            "ends_at": "2022-07-29 21:59:00 UTC",
+            "local_start_date": "2022-07-29",
+            "local_end_date": "2022-07-29",
+            "timezone": {
+                "value": "Europe/Rome"
+            },
+            "disciplines": [
+                {
+                    "id": 1504,
+                    "kind": "speed",
+                    "event_id": 1270,
+                    "created_at": "2021-11-26T09:04:03.000Z",
+                    "updated_at": "2021-11-26T09:04:03.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "International Climbing Series - Rock Master - Arco (ITA) 2022",
+            "league_season_id": 417,
+            "location": "Arco",
+            "event_id": 1285,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1285",
+            "registration_url": "/api/v1/events/1285/registrations",
+            "infosheet_url": null,
+            "additional_info_url": null,
+            "starts_at": "2022-07-28 22:00:00 UTC",
+            "ends_at": "2022-07-29 21:59:00 UTC",
+            "local_start_date": "2022-07-29",
+            "local_end_date": "2022-07-29",
+            "timezone": {
+                "value": "Europe/Rome"
+            },
+            "disciplines": []
+        },
+        {
+            "event": "IFSC Europe - Continental Cup (S) - Mezzolombardo (ITA) 2022",
+            "league_season_id": 409,
+            "location": "Mezzolombardo",
+            "event_id": 1271,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [
+                89
+            ],
+            "url": "/api/v1/events/1271",
+            "registration_url": "/api/v1/events/1271/registrations",
+            "infosheet_url": "/events/1271/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-07-29 22:00:00 UTC",
+            "ends_at": "2022-07-30 21:59:00 UTC",
+            "local_start_date": "2022-07-30",
+            "local_end_date": "2022-07-30",
+            "timezone": {
+                "value": "Europe/Rome"
+            },
+            "disciplines": [
+                {
+                    "id": 1505,
+                    "kind": "speed",
+                    "event_id": 1271,
+                    "created_at": "2021-11-26T09:05:13.000Z",
+                    "updated_at": "2021-11-26T09:05:13.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Continental Youth Championship (B) - Graz (AUT) 2022",
+            "league_season_id": 410,
+            "location": "Graz",
+            "event_id": 1272,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [
+                86
+            ],
+            "url": "/api/v1/events/1272",
+            "registration_url": "/api/v1/events/1272/registrations",
+            "infosheet_url": "/events/1272/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-08-02 22:00:00 UTC",
+            "ends_at": "2022-08-06 21:59:00 UTC",
+            "local_start_date": "2022-08-03",
+            "local_end_date": "2022-08-06",
+            "timezone": {
+                "value": "Europe/Vienna"
+            },
+            "disciplines": [
+                {
+                    "id": 1506,
+                    "kind": "boulder",
+                    "event_id": 1272,
+                    "created_at": "2021-11-26T09:06:34.000Z",
+                    "updated_at": "2021-11-26T09:06:34.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Continental Championships (B,S,L) - Munich (GER) 2022",
+            "league_season_id": 409,
+            "location": "Munich",
+            "event_id": 1247,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [
+                78
+            ],
+            "url": "/api/v1/events/1247",
+            "registration_url": "/api/v1/events/1247/registrations",
+            "infosheet_url": "/events/1247/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-08-10 22:00:00 UTC",
+            "ends_at": "2022-08-18 21:59:00 UTC",
+            "local_start_date": "2022-08-11",
+            "local_end_date": "2022-08-18",
+            "timezone": {
+                "value": "Europe/Berlin"
+            },
+            "disciplines": [
+                {
+                    "id": 1473,
+                    "kind": "boulder",
+                    "event_id": 1247,
+                    "created_at": "2021-10-06T13:47:12.000Z",
+                    "updated_at": "2021-10-06T13:47:12.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1474,
+                    "kind": "lead",
+                    "event_id": 1247,
+                    "created_at": "2021-10-06T13:47:14.000Z",
+                    "updated_at": "2021-10-06T13:47:14.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1475,
+                    "kind": "speed",
+                    "event_id": 1247,
+                    "created_at": "2021-10-06T13:47:16.000Z",
+                    "updated_at": "2021-10-06T13:47:16.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1535,
+                    "kind": "boulder&lead",
+                    "event_id": 1247,
+                    "created_at": "2022-08-03T06:29:41.000Z",
+                    "updated_at": "2022-08-03T06:29:41.000Z",
+                    "settings": {
+                        "lead": {
+                            "points": [
+                                100,
+                                95,
+                                90,
+                                85,
+                                80,
+                                75,
+                                70,
+                                65,
+                                60,
+                                55,
+                                50,
+                                45,
+                                40,
+                                35,
+                                30,
+                                25,
+                                23,
+                                21,
+                                19,
+                                17,
+                                15,
+                                13,
+                                11,
+                                9,
+                                7,
+                                5,
+                                4,
+                                3,
+                                2,
+                                1
+                            ],
+                            "plus": 0.1
+                        },
+                        "boulder": {
+                            "low_zone": 3,
+                            "high_zone": 6,
+                            "top": 25,
+                            "fall_deduction": 0.1
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "event": "IFSC - Climbing Youth World Championships (B,S,L) - Dallas (USA) 2022",
+            "league_season_id": 405,
+            "location": "United States",
+            "event_id": 1246,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1246",
+            "registration_url": "/api/v1/events/1246/registrations",
+            "infosheet_url": "/events/1246/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-08-22 05:00:00 UTC",
+            "ends_at": "2022-09-01 04:59:00 UTC",
+            "local_start_date": "2022-08-22",
+            "local_end_date": "2022-08-31",
+            "timezone": {
+                "value": "America/Chicago"
+            },
+            "disciplines": [
+                {
+                    "id": 1470,
+                    "kind": "boulder",
+                    "event_id": 1246,
+                    "created_at": "2021-10-06T13:44:25.000Z",
+                    "updated_at": "2021-10-06T13:44:25.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1471,
+                    "kind": "lead",
+                    "event_id": 1246,
+                    "created_at": "2021-10-06T13:44:27.000Z",
+                    "updated_at": "2021-10-06T13:44:27.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1472,
+                    "kind": "speed",
+                    "event_id": 1246,
+                    "created_at": "2021-10-06T13:44:28.000Z",
+                    "updated_at": "2021-10-06T13:44:28.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC - Climbing World Cup (L) - Koper (SLO) 2022",
+            "league_season_id": 404,
+            "location": "Koper",
+            "event_id": 1242,
+            "cup_name": "IFSC Climbing World Cup 2022",
+            "cup_id": 72,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1242",
+            "registration_url": "/api/v1/events/1242/registrations",
+            "infosheet_url": "/events/1242/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-09-01 22:00:00 UTC",
+            "ends_at": "2022-09-03 21:59:00 UTC",
+            "local_start_date": "2022-09-02",
+            "local_end_date": "2022-09-03",
+            "timezone": {
+                "value": "Europe/Ljubljana"
+            },
+            "disciplines": [
+                {
+                    "id": 1462,
+                    "kind": "lead",
+                    "event_id": 1242,
+                    "created_at": "2021-10-06T13:38:56.000Z",
+                    "updated_at": "2021-10-06T13:38:56.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC - Climbing World Cup (L,S) - Edinburgh (GBR) 2022",
+            "league_season_id": 404,
+            "location": "Edinburgh",
+            "event_id": 1288,
+            "cup_name": "IFSC Climbing World Cup 2022",
+            "cup_id": 72,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1288",
+            "registration_url": "/api/v1/events/1288/registrations",
+            "infosheet_url": "/events/1288/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-09-08 23:00:00 UTC",
+            "ends_at": "2022-09-11 22:59:00 UTC",
+            "local_start_date": "2022-09-09",
+            "local_end_date": "2022-09-11",
+            "timezone": {
+                "value": "Europe/London"
+            },
+            "disciplines": [
+                {
+                    "id": 1530,
+                    "kind": "lead",
+                    "event_id": 1288,
+                    "created_at": "2022-07-05T07:14:02.000Z",
+                    "updated_at": "2022-07-05T07:14:02.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1531,
+                    "kind": "speed",
+                    "event_id": 1288,
+                    "created_at": "2022-07-05T07:14:09.000Z",
+                    "updated_at": "2022-07-05T07:14:09.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "Asian Games - Hangzhou (CHN) 2022 - POSTPONED",
+            "league_season_id": 411,
+            "location": "Hangzhou",
+            "event_id": 1248,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1248",
+            "registration_url": "/api/v1/events/1248/registrations",
+            "infosheet_url": null,
+            "additional_info_url": null,
+            "starts_at": "2022-09-14 15:00:00 UTC",
+            "ends_at": "2022-09-19 14:59:00 UTC",
+            "local_start_date": "2022-09-15",
+            "local_end_date": "2022-09-19",
+            "timezone": {
+                "value": "Asia/Tokyo"
+            },
+            "disciplines": [
+                {
+                    "id": 1476,
+                    "kind": "speed",
+                    "event_id": 1248,
+                    "created_at": "2021-10-06T13:58:19.000Z",
+                    "updated_at": "2021-10-06T13:58:19.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC - Climbing World Cup (L,S) - Jakarta (INA) 2022",
+            "league_season_id": 404,
+            "location": "Jakarta",
+            "event_id": 1243,
+            "cup_name": "IFSC Climbing World Cup 2022",
+            "cup_id": 72,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1243",
+            "registration_url": "/api/v1/events/1243/registrations",
+            "infosheet_url": "/events/1243/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-09-23 17:00:00 UTC",
+            "ends_at": "2022-09-26 16:59:00 UTC",
+            "local_start_date": "2022-09-24",
+            "local_end_date": "2022-09-26",
+            "timezone": {
+                "value": "Asia/Jakarta"
+            },
+            "disciplines": [
+                {
+                    "id": 1463,
+                    "kind": "lead",
+                    "event_id": 1243,
+                    "created_at": "2021-10-06T13:39:52.000Z",
+                    "updated_at": "2021-10-06T13:39:52.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1464,
+                    "kind": "speed",
+                    "event_id": 1243,
+                    "created_at": "2021-10-06T13:39:53.000Z",
+                    "updated_at": "2021-10-06T13:39:53.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "Promo Event - Delfts Bleau International Youth Open - Delft (NED) 2022",
+            "league_season_id": 417,
+            "location": "Delft",
+            "event_id": 1289,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1289",
+            "registration_url": "/api/v1/events/1289/registrations",
+            "infosheet_url": null,
+            "additional_info_url": null,
+            "starts_at": "2022-09-23 22:00:00 UTC",
+            "ends_at": "2022-09-25 21:59:00 UTC",
+            "local_start_date": "2022-09-24",
+            "local_end_date": "2022-09-25",
+            "timezone": {
+                "value": "Europe/Amsterdam"
+            },
+            "disciplines": []
+        },
+        {
+            "event": "IFSC Europe - Continental Cup (S) - Hamburg (GER) 2022",
+            "league_season_id": 409,
+            "location": "Hamburg",
+            "event_id": 1273,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [
+                89
+            ],
+            "url": "/api/v1/events/1273",
+            "registration_url": "/api/v1/events/1273/registrations",
+            "infosheet_url": "/events/1273/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-09-24 22:00:00 UTC",
+            "ends_at": "2022-09-25 21:59:00 UTC",
+            "local_start_date": "2022-09-25",
+            "local_end_date": "2022-09-25",
+            "timezone": {
+                "value": "Europe/Berlin"
+            },
+            "disciplines": [
+                {
+                    "id": 1507,
+                    "kind": "speed",
+                    "event_id": 1273,
+                    "created_at": "2021-11-26T09:07:58.000Z",
+                    "updated_at": "2021-11-26T09:07:58.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Asia - Continental Championships (B, L, S, B&L) - Republic of Korea 2022",
+            "league_season_id": 407,
+            "location": "Seoul",
+            "event_id": 1287,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1287",
+            "registration_url": "/api/v1/events/1287/registrations",
+            "infosheet_url": "/events/1287/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-10-09 15:00:00 UTC",
+            "ends_at": "2022-10-16 14:59:00 UTC",
+            "local_start_date": "2022-10-10",
+            "local_end_date": "2022-10-16",
+            "timezone": {
+                "value": "Asia/Seoul"
+            },
+            "disciplines": [
+                {
+                    "id": 1526,
+                    "kind": "lead",
+                    "event_id": 1287,
+                    "created_at": "2022-05-26T10:13:45.000Z",
+                    "updated_at": "2022-05-26T10:13:45.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1527,
+                    "kind": "speed",
+                    "event_id": 1287,
+                    "created_at": "2022-05-26T10:13:50.000Z",
+                    "updated_at": "2022-05-26T10:13:50.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1528,
+                    "kind": "boulder",
+                    "event_id": 1287,
+                    "created_at": "2022-05-26T10:14:03.000Z",
+                    "updated_at": "2022-05-26T10:14:03.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1576,
+                    "kind": "boulder&lead",
+                    "event_id": 1287,
+                    "created_at": "2022-09-30T12:36:59.000Z",
+                    "updated_at": "2022-09-30T12:36:59.000Z",
+                    "settings": {
+                        "lead": {
+                            "points": [
+                                100,
+                                95,
+                                90,
+                                85,
+                                80,
+                                75,
+                                70,
+                                65,
+                                60,
+                                55,
+                                50,
+                                45,
+                                40,
+                                35,
+                                30,
+                                25,
+                                23,
+                                21,
+                                19,
+                                17,
+                                15,
+                                13,
+                                11,
+                                9,
+                                7,
+                                5,
+                                4,
+                                3,
+                                2,
+                                1
+                            ],
+                            "plus": 0.1
+                        },
+                        "boulder": {
+                            "low_zone": 3,
+                            "high_zone": 6,
+                            "top": 25,
+                            "fall_deduction": 0.1
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Continental Youth Cup (L,S,B) - Kaliningrad (RUS) 2022 - CANCELLED",
+            "league_season_id": 410,
+            "location": "Kaliningrad",
+            "event_id": 1274,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1274",
+            "registration_url": "/api/v1/events/1274/registrations",
+            "infosheet_url": null,
+            "additional_info_url": null,
+            "starts_at": "2022-10-11 21:00:00 UTC",
+            "ends_at": "2022-10-16 20:59:00 UTC",
+            "local_start_date": "2022-10-12",
+            "local_end_date": "2022-10-16",
+            "timezone": {
+                "value": "Europe/Helsinki"
+            },
+            "disciplines": [
+                {
+                    "id": 1508,
+                    "kind": "lead",
+                    "event_id": 1274,
+                    "created_at": "2021-11-26T09:11:19.000Z",
+                    "updated_at": "2021-11-26T09:11:19.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1509,
+                    "kind": "speed",
+                    "event_id": 1274,
+                    "created_at": "2021-11-26T09:11:20.000Z",
+                    "updated_at": "2021-11-26T09:11:20.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1510,
+                    "kind": "boulder",
+                    "event_id": 1274,
+                    "created_at": "2021-11-26T09:11:21.000Z",
+                    "updated_at": "2021-11-26T09:11:21.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC - Climbing World Cup (B&L) - Morioka, Iwate (JPN) 2022",
+            "league_season_id": 404,
+            "location": "Japan",
+            "event_id": 1234,
+            "cup_name": "IFSC Climbing World Cup 2022",
+            "cup_id": 72,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1234",
+            "registration_url": "/api/v1/events/1234/registrations",
+            "infosheet_url": "/events/1234/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-10-19 15:00:00 UTC",
+            "ends_at": "2022-10-22 14:59:00 UTC",
+            "local_start_date": "2022-10-20",
+            "local_end_date": "2022-10-22",
+            "timezone": {
+                "value": "Asia/Tokyo"
+            },
+            "disciplines": [
+                {
+                    "id": 1532,
+                    "kind": "boulder&lead",
+                    "event_id": 1234,
+                    "created_at": "2022-07-07T12:53:32.000Z",
+                    "updated_at": "2022-10-06T14:25:57.000Z",
+                    "settings": {
+                        "lead": {
+                            "points": [
+                                100,
+                                "96",
+                                "92",
+                                "88",
+                                "84",
+                                "80",
+                                "76",
+                                "72",
+                                "68",
+                                "64",
+                                "60",
+                                "57",
+                                "54",
+                                "51",
+                                "48",
+                                "45",
+                                "42",
+                                "39",
+                                "36",
+                                "33",
+                                "30",
+                                "28",
+                                "26",
+                                "24",
+                                "22",
+                                "20",
+                                "18",
+                                "16",
+                                "14",
+                                "12",
+                                "10",
+                                "9",
+                                "8",
+                                "7",
+                                "6",
+                                "5",
+                                "4",
+                                "3",
+                                "2",
+                                "1"
+                            ],
+                            "plus": 0.1
+                        },
+                        "boulder": {
+                            "low_zone": "5",
+                            "high_zone": "10",
+                            "top": 25,
+                            "fall_deduction": 0.1
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Continental Cup (S) - Laval (FRA) 2022",
+            "league_season_id": 409,
+            "location": "Laval",
+            "event_id": 1275,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [
+                89
+            ],
+            "url": "/api/v1/events/1275",
+            "registration_url": "/api/v1/events/1275/registrations",
+            "infosheet_url": "/events/1275/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-10-20 22:00:00 UTC",
+            "ends_at": "2022-10-22 21:59:00 UTC",
+            "local_start_date": "2022-10-21",
+            "local_end_date": "2022-10-22",
+            "timezone": {
+                "value": "Europe/Paris"
+            },
+            "disciplines": [
+                {
+                    "id": 1511,
+                    "kind": "speed",
+                    "event_id": 1275,
+                    "created_at": "2021-11-26T09:12:27.000Z",
+                    "updated_at": "2021-11-26T09:12:27.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "International Climbing Series - The internationals of Mayenne (B&L) - Laval (FRA) 2022",
+            "league_season_id": 417,
+            "location": "Laval",
+            "event_id": 1290,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1290",
+            "registration_url": "/api/v1/events/1290/registrations",
+            "infosheet_url": "/events/1290/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-10-20 22:00:00 UTC",
+            "ends_at": "2022-10-23 21:59:00 UTC",
+            "local_start_date": "2022-10-21",
+            "local_end_date": "2022-10-23",
+            "timezone": {
+                "value": "Europe/Paris"
+            },
+            "disciplines": [
+                {
+                    "id": 1533,
+                    "kind": "boulder&lead",
+                    "event_id": 1290,
+                    "created_at": "2022-07-25T14:59:40.000Z",
+                    "updated_at": "2022-10-17T06:54:58.000Z",
+                    "settings": {
+                        "lead": {
+                            "points": [
+                                100,
+                                "96",
+                                "92",
+                                "88",
+                                "84",
+                                "80",
+                                "76",
+                                "72",
+                                "68",
+                                "64",
+                                "60",
+                                "57",
+                                "54",
+                                "51",
+                                "48",
+                                "45",
+                                "42",
+                                "39",
+                                "36",
+                                "33",
+                                "30",
+                                "28",
+                                "26",
+                                "24",
+                                "22",
+                                "20",
+                                "18",
+                                "16",
+                                "14",
+                                "12",
+                                "10",
+                                "9",
+                                "8",
+                                "7",
+                                "6",
+                                "5",
+                                "4",
+                                "3",
+                                "2",
+                                "1"
+                            ],
+                            "plus": 0.1
+                        },
+                        "boulder": {
+                            "low_zone": "5",
+                            "high_zone": "10",
+                            "top": 25,
+                            "fall_deduction": "1"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "event": "IFSC Asia - Continental Cup (B) - Manila (PHI) 2022",
+            "league_season_id": 407,
+            "location": "Manila",
+            "event_id": 1315,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1315",
+            "registration_url": "/api/v1/events/1315/registrations",
+            "infosheet_url": "/events/1315/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-11-04 16:00:00 UTC",
+            "ends_at": "2022-11-06 15:59:00 UTC",
+            "local_start_date": "2022-11-05",
+            "local_end_date": "2022-11-06",
+            "timezone": {
+                "value": "Asia/Hong_Kong"
+            },
+            "disciplines": [
+                {
+                    "id": 1575,
+                    "kind": "boulder",
+                    "event_id": 1315,
+                    "created_at": "2022-09-28T07:21:27.000Z",
+                    "updated_at": "2022-09-28T07:21:27.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Asia - K Continental Championships - Jamshedpur (IND)",
+            "league_season_id": 408,
+            "location": "Jamshedpur",
+            "event_id": 1316,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1316",
+            "registration_url": "/api/v1/events/1316/registrations",
+            "infosheet_url": "/events/1316/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2022-12-08 16:00:00 UTC",
+            "ends_at": "2022-12-11 15:59:00 UTC",
+            "local_start_date": "2022-12-09",
+            "local_end_date": "2022-12-11",
+            "timezone": {
+                "value": "Asia/Kuala_Lumpur"
+            },
+            "disciplines": [
+                {
+                    "id": 1577,
+                    "kind": "lead",
+                    "event_id": 1316,
+                    "created_at": "2022-10-22T01:52:56.000Z",
+                    "updated_at": "2022-10-22T01:52:56.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1578,
+                    "kind": "speed",
+                    "event_id": 1316,
+                    "created_at": "2022-10-22T01:52:58.000Z",
+                    "updated_at": "2022-10-22T01:52:58.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1579,
+                    "kind": "boulder",
+                    "event_id": 1316,
+                    "created_at": "2022-10-22T01:53:01.000Z",
+                    "updated_at": "2022-10-22T01:53:01.000Z",
+                    "settings": null
+                }
+            ]
+        }
+    ]
+}
