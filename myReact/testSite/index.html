@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsontree@0.1.4/index.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="filter-container">
+        <select id="filter1" onchange="filterTable()">
+            <option value="">Filter 1 - All</option>
+            <option value="Option1">Option1</option>
+            <option value="Option2">Option2</option>
+        </select>
+
+        <select id="filter2" onchange="filterTable()">
+            <option value="">Filter 2 - All</option>
+            <option value="OptionA">OptionA</option>
+            <option value="OptionB">OptionB</option>
+        </select>
+    </div>
+
+    <table id="myTable">
+        <thead>
+           
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    
+</body>
+</html>
