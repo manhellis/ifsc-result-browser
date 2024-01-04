@@ -29,14 +29,14 @@ const Page = () => {
 
 
     return (
-        <div>
+        <> 
             <LeagueDropdown leagues={leagues} onChange={handleLeagueChange}/>
             <div className="flex flex-wrap">
                 {filteredEvents.map((event, index) => (
                     <EventCard key={index} event={event} />
                 ))}
             </div>
-        </div>
+        </>
     );
 };
 

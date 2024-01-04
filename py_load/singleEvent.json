@@ -1,0 +1,3192 @@
+{
+    "id": 1291,
+    "name": "IFSC World Cup Hachioji 2023",
+    "league_id": 1,
+    "league_season_id": 418,
+    "season_id": 35,
+    "starts_at": "2023-04-20 15:00:00 UTC",
+    "ends_at": "2023-04-23 14:59:00 UTC",
+    "local_start_date": "2023-04-21",
+    "local_end_date": "2023-04-23",
+    "timezone": { "value": "Asia/Tokyo" },
+    "location": "Hachioji",
+    "registration_url": "/api/v1/events/1291/registrations",
+    "public_information": {
+        "organiser_name": "Hachioji",
+        "organiser_url": null,
+        "venue_name": null
+    },
+    "infosheet_url": "/events/1291/infosheet",
+    "additional_info_url": null,
+    "d_cats": [
+        {
+            "dcat_id": 3,
+            "event_id": 1291,
+            "dcat_name": "BOULDER Men",
+            "discipline_kind": "boulder",
+            "category_name": "Men",
+            "status": "finished",
+            "status_as_of": "2023-04-23 10:06:08 UTC",
+            "ranking_as_of": "2023-04-23 09:48:31 UTC",
+            "category_rounds": [
+                {
+                    "category_round_id": 7669,
+                    "kind": "boulder",
+                    "name": "Qualification",
+                    "category": "Men",
+                    "schedule": null,
+                    "status": "finished",
+                    "status_as_of": "2023-04-21 12:15:52 UTC",
+                    "result_url": "/api/v1/category_rounds/7669/results",
+                    "starting_groups": [
+                        {
+                            "id": 145,
+                            "name": "Group A",
+                            "ranking": "/api/v1/starting_groups/145/results",
+                            "routes": [
+                                {
+                                    "id": 8490,
+                                    "name": "1",
+                                    "startlist": "/api/v1/routes/8490/startlist"
+                                },
+                                {
+                                    "id": 8491,
+                                    "name": "2",
+                                    "startlist": "/api/v1/routes/8491/startlist"
+                                },
+                                {
+                                    "id": 8492,
+                                    "name": "3",
+                                    "startlist": "/api/v1/routes/8492/startlist"
+                                },
+                                {
+                                    "id": 8493,
+                                    "name": "4",
+                                    "startlist": "/api/v1/routes/8493/startlist"
+                                },
+                                {
+                                    "id": 8494,
+                                    "name": "5",
+                                    "startlist": "/api/v1/routes/8494/startlist"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 146,
+                            "name": "Group B",
+                            "ranking": "/api/v1/starting_groups/146/results",
+                            "routes": [
+                                {
+                                    "id": 8495,
+                                    "name": "1",
+                                    "startlist": "/api/v1/routes/8495/startlist"
+                                },
+                                {
+                                    "id": 8496,
+                                    "name": "2",
+                                    "startlist": "/api/v1/routes/8496/startlist"
+                                },
+                                {
+                                    "id": 8497,
+                                    "name": "3",
+                                    "startlist": "/api/v1/routes/8497/startlist"
+                                },
+                                {
+                                    "id": 8498,
+                                    "name": "4",
+                                    "startlist": "/api/v1/routes/8498/startlist"
+                                },
+                                {
+                                    "id": 8499,
+                                    "name": "5",
+                                    "startlist": "/api/v1/routes/8499/startlist"
+                                }
+                            ]
+                        }
+                    ],
+                    "combined_stages": [],
+                    "format": "IFSC: 2 groups",
+                    "routes": []
+                },
+                {
+                    "category_round_id": 8120,
+                    "kind": "boulder",
+                    "name": "Semi-final",
+                    "category": "Men",
+                    "schedule": null,
+                    "status": "finished",
+                    "status_as_of": "2023-04-23 04:17:38 UTC",
+                    "result_url": "/api/v1/category_rounds/8120/results",
+                    "starting_groups": [],
+                    "combined_stages": [],
+                    "format": "IFSC: 1 group",
+                    "routes": [
+                        {
+                            "id": 9891,
+                            "name": "1",
+                            "startlist": "/api/v1/routes/9891/startlist"
+                        },
+                        {
+                            "id": 9892,
+                            "name": "2",
+                            "startlist": "/api/v1/routes/9892/startlist"
+                        },
+                        {
+                            "id": 9893,
+                            "name": "3",
+                            "startlist": "/api/v1/routes/9893/startlist"
+                        },
+                        {
+                            "id": 9894,
+                            "name": "4",
+                            "startlist": "/api/v1/routes/9894/startlist"
+                        }
+                    ]
+                },
+                {
+                    "category_round_id": 8122,
+                    "kind": "boulder",
+                    "name": "Final",
+                    "category": "Men",
+                    "schedule": null,
+                    "status": "finished",
+                    "status_as_of": "2023-04-23 10:03:03 UTC",
+                    "result_url": "/api/v1/category_rounds/8122/results",
+                    "starting_groups": [],
+                    "combined_stages": [],
+                    "format": "IFSC: Finals",
+                    "routes": [
+                        {
+                            "id": 9899,
+                            "name": "1",
+                            "startlist": "/api/v1/routes/9899/startlist"
+                        },
+                        {
+                            "id": 9900,
+                            "name": "2",
+                            "startlist": "/api/v1/routes/9900/startlist"
+                        },
+                        {
+                            "id": 9901,
+                            "name": "3",
+                            "startlist": "/api/v1/routes/9901/startlist"
+                        },
+                        {
+                            "id": 9902,
+                            "name": "4",
+                            "startlist": "/api/v1/routes/9902/startlist"
+                        }
+                    ]
+                }
+            ],
+            "full_results_url": "/api/v1/events/1291/result/3",
+            "top_3_results": [
+                {
+                    "athlete_id": 11675,
+                    "rank": 1,
+                    "name": "Schalck Mejdi",
+                    "firstname": "Mejdi",
+                    "lastname": "SCHALCK",
+                    "paraclimbing_sport_class": null,
+                    "sport_class_status": null,
+                    "bib": "4",
+                    "country": "FRA",
+                    "flag_url": "https://ifsc.results.info/images/flags/FRA.png",
+                    "federation_id": 10,
+                    "rounds": [
+                        {
+                            "category_round_id": 7669,
+                            "round_name": "Qualification",
+                            "rank": 17,
+                            "score": "4T4z 6 6",
+                            "starting_group": "Group A",
+                            "ascents": [
+                                {
+                                    "route_id": 8490,
+                                    "route_name": "1",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 07:48:02 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8491,
+                                    "route_name": "2",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 07:57:54 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8492,
+                                    "route_name": "3",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 08:08:19 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8493,
+                                    "route_name": "4",
+                                    "top": false,
+                                    "top_tries": 5,
+                                    "zone": false,
+                                    "zone_tries": 5,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 08:22:24 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8494,
+                                    "route_name": "5",
+                                    "top": true,
+                                    "top_tries": 3,
+                                    "zone": true,
+                                    "zone_tries": 3,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 08:29:47 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        },
+                        {
+                            "category_round_id": 8120,
+                            "round_name": "Semi-final",
+                            "rank": 4,
+                            "score": "1T4z 2 9",
+                            "ascents": [
+                                {
+                                    "route_id": 9891,
+                                    "route_name": "1",
+                                    "top": false,
+                                    "top_tries": 4,
+                                    "zone": true,
+                                    "zone_tries": 2,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 02:20:33 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9892,
+                                    "route_name": "2",
+                                    "top": false,
+                                    "top_tries": 7,
+                                    "zone": true,
+                                    "zone_tries": 5,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 02:31:17 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9893,
+                                    "route_name": "3",
+                                    "top": false,
+                                    "top_tries": 3,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 02:41:51 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9894,
+                                    "route_name": "4",
+                                    "top": true,
+                                    "top_tries": 2,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 02:50:29 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        },
+                        {
+                            "category_round_id": 8122,
+                            "round_name": "Final",
+                            "rank": 1,
+                            "score": "2T3z 7 7",
+                            "ascents": [
+                                {
+                                    "route_id": 9899,
+                                    "route_name": "1",
+                                    "top": true,
+                                    "top_tries": 4,
+                                    "zone": true,
+                                    "zone_tries": 2,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 08:24:39 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9900,
+                                    "route_name": "2",
+                                    "top": true,
+                                    "top_tries": 3,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 08:50:06 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9901,
+                                    "route_name": "3",
+                                    "top": false,
+                                    "top_tries": 9,
+                                    "zone": true,
+                                    "zone_tries": 4,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 09:19:31 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9902,
+                                    "route_name": "4",
+                                    "top": false,
+                                    "top_tries": 6,
+                                    "zone": false,
+                                    "zone_tries": 6,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 09:48:30 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "athlete_id": 373,
+                    "rank": 2,
+                    "name": "Van Duysen Hannes",
+                    "firstname": "Hannes",
+                    "lastname": "VAN DUYSEN",
+                    "paraclimbing_sport_class": null,
+                    "sport_class_status": null,
+                    "bib": "77",
+                    "country": "BEL",
+                    "flag_url": "https://ifsc.results.info/images/flags/BEL.png",
+                    "federation_id": 9,
+                    "rounds": [
+                        {
+                            "category_round_id": 7669,
+                            "round_name": "Qualification",
+                            "rank": 11,
+                            "score": "3T5z 9 15",
+                            "starting_group": "Group B",
+                            "ascents": [
+                                {
+                                    "route_id": 8495,
+                                    "route_name": "1",
+                                    "top": true,
+                                    "top_tries": 5,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 09:50:59 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8496,
+                                    "route_name": "2",
+                                    "top": false,
+                                    "top_tries": 7,
+                                    "zone": true,
+                                    "zone_tries": 3,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 10:02:11 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8497,
+                                    "route_name": "3",
+                                    "top": false,
+                                    "top_tries": 16,
+                                    "zone": true,
+                                    "zone_tries": 9,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 10:12:38 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8498,
+                                    "route_name": "4",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 10:19:21 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8499,
+                                    "route_name": "5",
+                                    "top": true,
+                                    "top_tries": 3,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 10:30:38 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        },
+                        {
+                            "category_round_id": 8120,
+                            "round_name": "Semi-final",
+                            "rank": 5,
+                            "score": "1T4z 8 14",
+                            "ascents": [
+                                {
+                                    "route_id": 9891,
+                                    "route_name": "1",
+                                    "top": false,
+                                    "top_tries": 4,
+                                    "zone": true,
+                                    "zone_tries": 3,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 02:51:53 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9892,
+                                    "route_name": "2",
+                                    "top": true,
+                                    "top_tries": 8,
+                                    "zone": true,
+                                    "zone_tries": 8,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 03:02:01 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9893,
+                                    "route_name": "3",
+                                    "top": false,
+                                    "top_tries": 6,
+                                    "zone": true,
+                                    "zone_tries": 2,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 03:13:16 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9894,
+                                    "route_name": "4",
+                                    "top": false,
+                                    "top_tries": 4,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 03:23:45 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        },
+                        {
+                            "category_round_id": 8122,
+                            "round_name": "Final",
+                            "rank": 2,
+                            "score": "1T3z 2 11",
+                            "ascents": [
+                                {
+                                    "route_id": 9899,
+                                    "route_name": "1",
+                                    "top": false,
+                                    "top_tries": 9,
+                                    "zone": true,
+                                    "zone_tries": 9,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 08:20:12 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9900,
+                                    "route_name": "2",
+                                    "top": true,
+                                    "top_tries": 2,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 08:45:51 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9901,
+                                    "route_name": "3",
+                                    "top": false,
+                                    "top_tries": 6,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 09:14:53 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9902,
+                                    "route_name": "4",
+                                    "top": false,
+                                    "top_tries": 5,
+                                    "zone": false,
+                                    "zone_tries": 5,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 09:44:09 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "athlete_id": 547,
+                    "rank": 3,
+                    "name": "Jenft Paul",
+                    "firstname": "Paul",
+                    "lastname": "JENFT",
+                    "paraclimbing_sport_class": null,
+                    "sport_class_status": null,
+                    "bib": "7",
+                    "country": "FRA",
+                    "flag_url": "https://ifsc.results.info/images/flags/FRA.png",
+                    "federation_id": 10,
+                    "rounds": [
+                        {
+                            "category_round_id": 7669,
+                            "round_name": "Qualification",
+                            "rank": 7,
+                            "score": "4T5z 10 9",
+                            "starting_group": "Group A",
+                            "ascents": [
+                                {
+                                    "route_id": 8490,
+                                    "route_name": "1",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 08:02:56 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8491,
+                                    "route_name": "2",
+                                    "top": true,
+                                    "top_tries": 4,
+                                    "zone": true,
+                                    "zone_tries": 4,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 08:14:58 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8492,
+                                    "route_name": "3",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 08:23:44 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8493,
+                                    "route_name": "4",
+                                    "top": false,
+                                    "top_tries": 4,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 08:37:54 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8494,
+                                    "route_name": "5",
+                                    "top": true,
+                                    "top_tries": 4,
+                                    "zone": true,
+                                    "zone_tries": 2,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 08:46:58 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        },
+                        {
+                            "category_round_id": 8120,
+                            "round_name": "Semi-final",
+                            "rank": 1,
+                            "score": "2T4z 11 13",
+                            "ascents": [
+                                {
+                                    "route_id": 9891,
+                                    "route_name": "1",
+                                    "top": false,
+                                    "top_tries": 3,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 03:07:50 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9892,
+                                    "route_name": "2",
+                                    "top": false,
+                                    "top_tries": 9,
+                                    "zone": true,
+                                    "zone_tries": 5,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 03:18:40 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9893,
+                                    "route_name": "3",
+                                    "top": true,
+                                    "top_tries": 5,
+                                    "zone": true,
+                                    "zone_tries": 3,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 03:28:46 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9894,
+                                    "route_name": "4",
+                                    "top": true,
+                                    "top_tries": 6,
+                                    "zone": true,
+                                    "zone_tries": 4,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 03:38:57 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        },
+                        {
+                            "category_round_id": 8122,
+                            "round_name": "Final",
+                            "rank": 3,
+                            "score": "1T3z 3 3",
+                            "ascents": [
+                                {
+                                    "route_id": 9899,
+                                    "route_name": "1",
+                                    "top": false,
+                                    "top_tries": 5,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 08:37:53 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9900,
+                                    "route_name": "2",
+                                    "top": true,
+                                    "top_tries": 3,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 09:02:06 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9901,
+                                    "route_name": "3",
+                                    "top": false,
+                                    "top_tries": 6,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 09:33:52 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9902,
+                                    "route_name": "4",
+                                    "top": false,
+                                    "top_tries": 5,
+                                    "zone": false,
+                                    "zone_tries": 5,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 10:02:00 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "dcat_id": 7,
+            "event_id": 1291,
+            "dcat_name": "BOULDER Women",
+            "discipline_kind": "boulder",
+            "category_name": "Women",
+            "status": "finished",
+            "status_as_of": "2023-04-22 10:00:32 UTC",
+            "ranking_as_of": "2023-04-22 09:44:50 UTC",
+            "category_rounds": [
+                {
+                    "category_round_id": 7670,
+                    "kind": "boulder",
+                    "name": "Qualification",
+                    "category": "Women",
+                    "schedule": null,
+                    "status": "finished",
+                    "status_as_of": "2023-04-21 04:00:59 UTC",
+                    "result_url": "/api/v1/category_rounds/7670/results",
+                    "starting_groups": [
+                        {
+                            "id": 147,
+                            "name": "Group A",
+                            "ranking": "/api/v1/starting_groups/147/results",
+                            "routes": [
+                                {
+                                    "id": 8500,
+                                    "name": "1",
+                                    "startlist": "/api/v1/routes/8500/startlist"
+                                },
+                                {
+                                    "id": 8501,
+                                    "name": "2",
+                                    "startlist": "/api/v1/routes/8501/startlist"
+                                },
+                                {
+                                    "id": 8502,
+                                    "name": "3",
+                                    "startlist": "/api/v1/routes/8502/startlist"
+                                },
+                                {
+                                    "id": 8503,
+                                    "name": "4",
+                                    "startlist": "/api/v1/routes/8503/startlist"
+                                },
+                                {
+                                    "id": 8504,
+                                    "name": "5",
+                                    "startlist": "/api/v1/routes/8504/startlist"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 148,
+                            "name": "Group B",
+                            "ranking": "/api/v1/starting_groups/148/results",
+                            "routes": [
+                                {
+                                    "id": 8505,
+                                    "name": "1",
+                                    "startlist": "/api/v1/routes/8505/startlist"
+                                },
+                                {
+                                    "id": 8506,
+                                    "name": "2",
+                                    "startlist": "/api/v1/routes/8506/startlist"
+                                },
+                                {
+                                    "id": 8507,
+                                    "name": "3",
+                                    "startlist": "/api/v1/routes/8507/startlist"
+                                },
+                                {
+                                    "id": 8508,
+                                    "name": "4",
+                                    "startlist": "/api/v1/routes/8508/startlist"
+                                },
+                                {
+                                    "id": 8509,
+                                    "name": "5",
+                                    "startlist": "/api/v1/routes/8509/startlist"
+                                }
+                            ]
+                        }
+                    ],
+                    "combined_stages": [],
+                    "format": "IFSC: 2 groups",
+                    "routes": []
+                },
+                {
+                    "category_round_id": 8121,
+                    "kind": "boulder",
+                    "name": "Semi-final",
+                    "category": "Women",
+                    "schedule": null,
+                    "status": "finished",
+                    "status_as_of": "2023-04-22 04:22:33 UTC",
+                    "result_url": "/api/v1/category_rounds/8121/results",
+                    "starting_groups": [],
+                    "combined_stages": [],
+                    "format": "IFSC: 1 group",
+                    "routes": [
+                        {
+                            "id": 9895,
+                            "name": "1",
+                            "startlist": "/api/v1/routes/9895/startlist"
+                        },
+                        {
+                            "id": 9896,
+                            "name": "2",
+                            "startlist": "/api/v1/routes/9896/startlist"
+                        },
+                        {
+                            "id": 9897,
+                            "name": "3",
+                            "startlist": "/api/v1/routes/9897/startlist"
+                        },
+                        {
+                            "id": 9898,
+                            "name": "4",
+                            "startlist": "/api/v1/routes/9898/startlist"
+                        }
+                    ]
+                },
+                {
+                    "category_round_id": 8123,
+                    "kind": "boulder",
+                    "name": "Final",
+                    "category": "Women",
+                    "schedule": null,
+                    "status": "finished",
+                    "status_as_of": "2023-04-22 09:55:10 UTC",
+                    "result_url": "/api/v1/category_rounds/8123/results",
+                    "starting_groups": [],
+                    "combined_stages": [],
+                    "format": "IFSC: Finals",
+                    "routes": [
+                        {
+                            "id": 9903,
+                            "name": "1",
+                            "startlist": "/api/v1/routes/9903/startlist"
+                        },
+                        {
+                            "id": 9904,
+                            "name": "2",
+                            "startlist": "/api/v1/routes/9904/startlist"
+                        },
+                        {
+                            "id": 9905,
+                            "name": "3",
+                            "startlist": "/api/v1/routes/9905/startlist"
+                        },
+                        {
+                            "id": 9906,
+                            "name": "4",
+                            "startlist": "/api/v1/routes/9906/startlist"
+                        }
+                    ]
+                }
+            ],
+            "full_results_url": "/api/v1/events/1291/result/7",
+            "top_3_results": [
+                {
+                    "athlete_id": 1811,
+                    "rank": 1,
+                    "name": "Raboutou Brooke",
+                    "firstname": "Brooke",
+                    "lastname": "RABOUTOU",
+                    "paraclimbing_sport_class": null,
+                    "sport_class_status": null,
+                    "bib": "142",
+                    "country": "USA",
+                    "flag_url": "https://ifsc.results.info/images/flags/USA.png",
+                    "federation_id": 20,
+                    "rounds": [
+                        {
+                            "category_round_id": 7670,
+                            "round_name": "Qualification",
+                            "rank": 3,
+                            "score": "5T5z 12 12",
+                            "starting_group": "Group B",
+                            "ascents": [
+                                {
+                                    "route_id": 8505,
+                                    "route_name": "1",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 00:06:41 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8506,
+                                    "route_name": "2",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 00:17:37 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8507,
+                                    "route_name": "3",
+                                    "top": true,
+                                    "top_tries": 8,
+                                    "zone": true,
+                                    "zone_tries": 8,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 00:36:57 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8508,
+                                    "route_name": "4",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 00:38:45 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8509,
+                                    "route_name": "5",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 00:48:31 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        },
+                        {
+                            "category_round_id": 8121,
+                            "round_name": "Semi-final",
+                            "rank": 3,
+                            "score": "2T4z 5 6",
+                            "ascents": [
+                                {
+                                    "route_id": 9895,
+                                    "route_name": "1",
+                                    "top": false,
+                                    "top_tries": 5,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 03:39:20 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9896,
+                                    "route_name": "2",
+                                    "top": true,
+                                    "top_tries": 4,
+                                    "zone": true,
+                                    "zone_tries": 3,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 03:49:29 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9897,
+                                    "route_name": "3",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 03:56:38 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9898,
+                                    "route_name": "4",
+                                    "top": false,
+                                    "top_tries": 3,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 04:10:43 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        },
+                        {
+                            "category_round_id": 8123,
+                            "round_name": "Final",
+                            "rank": 1,
+                            "score": "3T4z 6 6",
+                            "ascents": [
+                                {
+                                    "route_id": 9903,
+                                    "route_name": "1",
+                                    "top": true,
+                                    "top_tries": 2,
+                                    "zone": true,
+                                    "zone_tries": 2,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 08:25:44 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9904,
+                                    "route_name": "2",
+                                    "top": false,
+                                    "top_tries": 5,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 08:50:48 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9905,
+                                    "route_name": "3",
+                                    "top": true,
+                                    "top_tries": 2,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 09:18:57 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9906,
+                                    "route_name": "4",
+                                    "top": true,
+                                    "top_tries": 2,
+                                    "zone": true,
+                                    "zone_tries": 2,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 09:44:50 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "athlete_id": 3113,
+                    "rank": 2,
+                    "name": "Meul Hannah",
+                    "firstname": "Hannah",
+                    "lastname": "MEUL",
+                    "paraclimbing_sport_class": null,
+                    "sport_class_status": null,
+                    "bib": "143",
+                    "country": "GER",
+                    "flag_url": "https://ifsc.results.info/images/flags/GER.png",
+                    "federation_id": 6,
+                    "rounds": [
+                        {
+                            "category_round_id": 7670,
+                            "round_name": "Qualification",
+                            "rank": 7,
+                            "score": "4T5z 6 5",
+                            "starting_group": "Group B",
+                            "ascents": [
+                                {
+                                    "route_id": 8505,
+                                    "route_name": "1",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 00:12:06 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8506,
+                                    "route_name": "2",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 00:23:16 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8507,
+                                    "route_name": "3",
+                                    "top": true,
+                                    "top_tries": 3,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 00:36:55 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8508,
+                                    "route_name": "4",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 00:44:08 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8509,
+                                    "route_name": "5",
+                                    "top": false,
+                                    "top_tries": 3,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 00:57:47 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        },
+                        {
+                            "category_round_id": 8121,
+                            "round_name": "Semi-final",
+                            "rank": 1,
+                            "score": "2T4z 4 5",
+                            "ascents": [
+                                {
+                                    "route_id": 9895,
+                                    "route_name": "1",
+                                    "top": true,
+                                    "top_tries": 3,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 03:18:25 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9896,
+                                    "route_name": "2",
+                                    "top": false,
+                                    "top_tries": 3,
+                                    "zone": true,
+                                    "zone_tries": 2,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 03:28:42 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9897,
+                                    "route_name": "3",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 03:36:00 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9898,
+                                    "route_name": "4",
+                                    "top": false,
+                                    "top_tries": 3,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 03:49:43 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        },
+                        {
+                            "category_round_id": 8123,
+                            "round_name": "Final",
+                            "rank": 2,
+                            "score": "1T3z 1 8",
+                            "ascents": [
+                                {
+                                    "route_id": 9903,
+                                    "route_name": "1",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 08:34:01 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9904,
+                                    "route_name": "2",
+                                    "top": false,
+                                    "top_tries": 5,
+                                    "zone": true,
+                                    "zone_tries": 2,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 08:59:31 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9905,
+                                    "route_name": "3",
+                                    "top": false,
+                                    "top_tries": 8,
+                                    "zone": true,
+                                    "zone_tries": 5,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 09:27:52 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9906,
+                                    "route_name": "4",
+                                    "top": false,
+                                    "top_tries": 4,
+                                    "zone": false,
+                                    "zone_tries": 4,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 09:54:08 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "athlete_id": 12297,
+                    "rank": 3,
+                    "name": "Matsufuji Anon",
+                    "firstname": "Anon",
+                    "lastname": "MATSUFUJI",
+                    "paraclimbing_sport_class": null,
+                    "sport_class_status": null,
+                    "bib": "111",
+                    "country": "JPN",
+                    "flag_url": "https://ifsc.results.info/images/flags/JPN.png",
+                    "federation_id": 25,
+                    "rounds": [
+                        {
+                            "category_round_id": 7670,
+                            "round_name": "Qualification",
+                            "rank": 1,
+                            "score": "5T5z 5 5",
+                            "starting_group": "Group A",
+                            "ascents": [
+                                {
+                                    "route_id": 8500,
+                                    "route_name": "1",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 00:54:40 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8501,
+                                    "route_name": "2",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 01:05:06 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8502,
+                                    "route_name": "3",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 01:15:12 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8503,
+                                    "route_name": "4",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 01:25:38 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8504,
+                                    "route_name": "5",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 01:36:34 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        },
+                        {
+                            "category_round_id": 8121,
+                            "round_name": "Semi-final",
+                            "rank": 4,
+                            "score": "2T3z 5 6",
+                            "ascents": [
+                                {
+                                    "route_id": 9895,
+                                    "route_name": "1",
+                                    "top": false,
+                                    "top_tries": 6,
+                                    "zone": false,
+                                    "zone_tries": 6,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 03:44:38 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9896,
+                                    "route_name": "2",
+                                    "top": true,
+                                    "top_tries": 2,
+                                    "zone": true,
+                                    "zone_tries": 2,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 03:52:15 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9897,
+                                    "route_name": "3",
+                                    "top": true,
+                                    "top_tries": 3,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 04:05:12 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9898,
+                                    "route_name": "4",
+                                    "top": false,
+                                    "top_tries": 4,
+                                    "zone": true,
+                                    "zone_tries": 3,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 04:15:52 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        },
+                        {
+                            "category_round_id": 8123,
+                            "round_name": "Final",
+                            "rank": 3,
+                            "score": "0T3z 0 7",
+                            "ascents": [
+                                {
+                                    "route_id": 9903,
+                                    "route_name": "1",
+                                    "top": false,
+                                    "top_tries": 5,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 08:24:05 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9904,
+                                    "route_name": "2",
+                                    "top": false,
+                                    "top_tries": 6,
+                                    "zone": true,
+                                    "zone_tries": 4,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 08:46:13 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9905,
+                                    "route_name": "3",
+                                    "top": false,
+                                    "top_tries": 4,
+                                    "zone": true,
+                                    "zone_tries": 2,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 09:16:21 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9906,
+                                    "route_name": "4",
+                                    "top": false,
+                                    "top_tries": 6,
+                                    "zone": false,
+                                    "zone_tries": 6,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 09:42:23 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "dcats": [
+        {
+            "dcat_id": 3,
+            "event_id": 1291,
+            "dcat_name": "BOULDER Men",
+            "discipline_kind": "boulder",
+            "category_name": "Men",
+            "status": "finished",
+            "status_as_of": "2023-04-23 10:06:08 UTC",
+            "ranking_as_of": "2023-04-23 09:48:31 UTC",
+            "category_rounds": [
+                {
+                    "category_round_id": 7669,
+                    "kind": "boulder",
+                    "name": "Qualification",
+                    "category": "Men",
+                    "schedule": null,
+                    "status": "finished",
+                    "status_as_of": "2023-04-21 12:15:52 UTC",
+                    "result_url": "/api/v1/category_rounds/7669/results",
+                    "starting_groups": [
+                        {
+                            "id": 145,
+                            "name": "Group A",
+                            "ranking": "/api/v1/starting_groups/145/results",
+                            "routes": [
+                                {
+                                    "id": 8490,
+                                    "name": "1",
+                                    "startlist": "/api/v1/routes/8490/startlist"
+                                },
+                                {
+                                    "id": 8491,
+                                    "name": "2",
+                                    "startlist": "/api/v1/routes/8491/startlist"
+                                },
+                                {
+                                    "id": 8492,
+                                    "name": "3",
+                                    "startlist": "/api/v1/routes/8492/startlist"
+                                },
+                                {
+                                    "id": 8493,
+                                    "name": "4",
+                                    "startlist": "/api/v1/routes/8493/startlist"
+                                },
+                                {
+                                    "id": 8494,
+                                    "name": "5",
+                                    "startlist": "/api/v1/routes/8494/startlist"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 146,
+                            "name": "Group B",
+                            "ranking": "/api/v1/starting_groups/146/results",
+                            "routes": [
+                                {
+                                    "id": 8495,
+                                    "name": "1",
+                                    "startlist": "/api/v1/routes/8495/startlist"
+                                },
+                                {
+                                    "id": 8496,
+                                    "name": "2",
+                                    "startlist": "/api/v1/routes/8496/startlist"
+                                },
+                                {
+                                    "id": 8497,
+                                    "name": "3",
+                                    "startlist": "/api/v1/routes/8497/startlist"
+                                },
+                                {
+                                    "id": 8498,
+                                    "name": "4",
+                                    "startlist": "/api/v1/routes/8498/startlist"
+                                },
+                                {
+                                    "id": 8499,
+                                    "name": "5",
+                                    "startlist": "/api/v1/routes/8499/startlist"
+                                }
+                            ]
+                        }
+                    ],
+                    "combined_stages": [],
+                    "format": "IFSC: 2 groups",
+                    "routes": []
+                },
+                {
+                    "category_round_id": 8120,
+                    "kind": "boulder",
+                    "name": "Semi-final",
+                    "category": "Men",
+                    "schedule": null,
+                    "status": "finished",
+                    "status_as_of": "2023-04-23 04:17:38 UTC",
+                    "result_url": "/api/v1/category_rounds/8120/results",
+                    "starting_groups": [],
+                    "combined_stages": [],
+                    "format": "IFSC: 1 group",
+                    "routes": [
+                        {
+                            "id": 9891,
+                            "name": "1",
+                            "startlist": "/api/v1/routes/9891/startlist"
+                        },
+                        {
+                            "id": 9892,
+                            "name": "2",
+                            "startlist": "/api/v1/routes/9892/startlist"
+                        },
+                        {
+                            "id": 9893,
+                            "name": "3",
+                            "startlist": "/api/v1/routes/9893/startlist"
+                        },
+                        {
+                            "id": 9894,
+                            "name": "4",
+                            "startlist": "/api/v1/routes/9894/startlist"
+                        }
+                    ]
+                },
+                {
+                    "category_round_id": 8122,
+                    "kind": "boulder",
+                    "name": "Final",
+                    "category": "Men",
+                    "schedule": null,
+                    "status": "finished",
+                    "status_as_of": "2023-04-23 10:03:03 UTC",
+                    "result_url": "/api/v1/category_rounds/8122/results",
+                    "starting_groups": [],
+                    "combined_stages": [],
+                    "format": "IFSC: Finals",
+                    "routes": [
+                        {
+                            "id": 9899,
+                            "name": "1",
+                            "startlist": "/api/v1/routes/9899/startlist"
+                        },
+                        {
+                            "id": 9900,
+                            "name": "2",
+                            "startlist": "/api/v1/routes/9900/startlist"
+                        },
+                        {
+                            "id": 9901,
+                            "name": "3",
+                            "startlist": "/api/v1/routes/9901/startlist"
+                        },
+                        {
+                            "id": 9902,
+                            "name": "4",
+                            "startlist": "/api/v1/routes/9902/startlist"
+                        }
+                    ]
+                }
+            ],
+            "full_results_url": "/api/v1/events/1291/result/3",
+            "top_3_results": [
+                {
+                    "athlete_id": 11675,
+                    "rank": 1,
+                    "name": "Schalck Mejdi",
+                    "firstname": "Mejdi",
+                    "lastname": "SCHALCK",
+                    "paraclimbing_sport_class": null,
+                    "sport_class_status": null,
+                    "bib": "4",
+                    "country": "FRA",
+                    "flag_url": "https://ifsc.results.info/images/flags/FRA.png",
+                    "federation_id": 10,
+                    "rounds": [
+                        {
+                            "category_round_id": 7669,
+                            "round_name": "Qualification",
+                            "rank": 17,
+                            "score": "4T4z 6 6",
+                            "starting_group": "Group A",
+                            "ascents": [
+                                {
+                                    "route_id": 8490,
+                                    "route_name": "1",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 07:48:02 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8491,
+                                    "route_name": "2",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 07:57:54 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8492,
+                                    "route_name": "3",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 08:08:19 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8493,
+                                    "route_name": "4",
+                                    "top": false,
+                                    "top_tries": 5,
+                                    "zone": false,
+                                    "zone_tries": 5,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 08:22:24 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8494,
+                                    "route_name": "5",
+                                    "top": true,
+                                    "top_tries": 3,
+                                    "zone": true,
+                                    "zone_tries": 3,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 08:29:47 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        },
+                        {
+                            "category_round_id": 8120,
+                            "round_name": "Semi-final",
+                            "rank": 4,
+                            "score": "1T4z 2 9",
+                            "ascents": [
+                                {
+                                    "route_id": 9891,
+                                    "route_name": "1",
+                                    "top": false,
+                                    "top_tries": 4,
+                                    "zone": true,
+                                    "zone_tries": 2,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 02:20:33 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9892,
+                                    "route_name": "2",
+                                    "top": false,
+                                    "top_tries": 7,
+                                    "zone": true,
+                                    "zone_tries": 5,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 02:31:17 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9893,
+                                    "route_name": "3",
+                                    "top": false,
+                                    "top_tries": 3,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 02:41:51 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9894,
+                                    "route_name": "4",
+                                    "top": true,
+                                    "top_tries": 2,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 02:50:29 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        },
+                        {
+                            "category_round_id": 8122,
+                            "round_name": "Final",
+                            "rank": 1,
+                            "score": "2T3z 7 7",
+                            "ascents": [
+                                {
+                                    "route_id": 9899,
+                                    "route_name": "1",
+                                    "top": true,
+                                    "top_tries": 4,
+                                    "zone": true,
+                                    "zone_tries": 2,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 08:24:39 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9900,
+                                    "route_name": "2",
+                                    "top": true,
+                                    "top_tries": 3,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 08:50:06 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9901,
+                                    "route_name": "3",
+                                    "top": false,
+                                    "top_tries": 9,
+                                    "zone": true,
+                                    "zone_tries": 4,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 09:19:31 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9902,
+                                    "route_name": "4",
+                                    "top": false,
+                                    "top_tries": 6,
+                                    "zone": false,
+                                    "zone_tries": 6,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 09:48:30 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "athlete_id": 373,
+                    "rank": 2,
+                    "name": "Van Duysen Hannes",
+                    "firstname": "Hannes",
+                    "lastname": "VAN DUYSEN",
+                    "paraclimbing_sport_class": null,
+                    "sport_class_status": null,
+                    "bib": "77",
+                    "country": "BEL",
+                    "flag_url": "https://ifsc.results.info/images/flags/BEL.png",
+                    "federation_id": 9,
+                    "rounds": [
+                        {
+                            "category_round_id": 7669,
+                            "round_name": "Qualification",
+                            "rank": 11,
+                            "score": "3T5z 9 15",
+                            "starting_group": "Group B",
+                            "ascents": [
+                                {
+                                    "route_id": 8495,
+                                    "route_name": "1",
+                                    "top": true,
+                                    "top_tries": 5,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 09:50:59 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8496,
+                                    "route_name": "2",
+                                    "top": false,
+                                    "top_tries": 7,
+                                    "zone": true,
+                                    "zone_tries": 3,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 10:02:11 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8497,
+                                    "route_name": "3",
+                                    "top": false,
+                                    "top_tries": 16,
+                                    "zone": true,
+                                    "zone_tries": 9,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 10:12:38 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8498,
+                                    "route_name": "4",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 10:19:21 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8499,
+                                    "route_name": "5",
+                                    "top": true,
+                                    "top_tries": 3,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 10:30:38 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        },
+                        {
+                            "category_round_id": 8120,
+                            "round_name": "Semi-final",
+                            "rank": 5,
+                            "score": "1T4z 8 14",
+                            "ascents": [
+                                {
+                                    "route_id": 9891,
+                                    "route_name": "1",
+                                    "top": false,
+                                    "top_tries": 4,
+                                    "zone": true,
+                                    "zone_tries": 3,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 02:51:53 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9892,
+                                    "route_name": "2",
+                                    "top": true,
+                                    "top_tries": 8,
+                                    "zone": true,
+                                    "zone_tries": 8,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 03:02:01 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9893,
+                                    "route_name": "3",
+                                    "top": false,
+                                    "top_tries": 6,
+                                    "zone": true,
+                                    "zone_tries": 2,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 03:13:16 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9894,
+                                    "route_name": "4",
+                                    "top": false,
+                                    "top_tries": 4,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 03:23:45 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        },
+                        {
+                            "category_round_id": 8122,
+                            "round_name": "Final",
+                            "rank": 2,
+                            "score": "1T3z 2 11",
+                            "ascents": [
+                                {
+                                    "route_id": 9899,
+                                    "route_name": "1",
+                                    "top": false,
+                                    "top_tries": 9,
+                                    "zone": true,
+                                    "zone_tries": 9,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 08:20:12 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9900,
+                                    "route_name": "2",
+                                    "top": true,
+                                    "top_tries": 2,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 08:45:51 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9901,
+                                    "route_name": "3",
+                                    "top": false,
+                                    "top_tries": 6,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 09:14:53 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9902,
+                                    "route_name": "4",
+                                    "top": false,
+                                    "top_tries": 5,
+                                    "zone": false,
+                                    "zone_tries": 5,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 09:44:09 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "athlete_id": 547,
+                    "rank": 3,
+                    "name": "Jenft Paul",
+                    "firstname": "Paul",
+                    "lastname": "JENFT",
+                    "paraclimbing_sport_class": null,
+                    "sport_class_status": null,
+                    "bib": "7",
+                    "country": "FRA",
+                    "flag_url": "https://ifsc.results.info/images/flags/FRA.png",
+                    "federation_id": 10,
+                    "rounds": [
+                        {
+                            "category_round_id": 7669,
+                            "round_name": "Qualification",
+                            "rank": 7,
+                            "score": "4T5z 10 9",
+                            "starting_group": "Group A",
+                            "ascents": [
+                                {
+                                    "route_id": 8490,
+                                    "route_name": "1",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 08:02:56 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8491,
+                                    "route_name": "2",
+                                    "top": true,
+                                    "top_tries": 4,
+                                    "zone": true,
+                                    "zone_tries": 4,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 08:14:58 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8492,
+                                    "route_name": "3",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 08:23:44 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8493,
+                                    "route_name": "4",
+                                    "top": false,
+                                    "top_tries": 4,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 08:37:54 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8494,
+                                    "route_name": "5",
+                                    "top": true,
+                                    "top_tries": 4,
+                                    "zone": true,
+                                    "zone_tries": 2,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 08:46:58 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        },
+                        {
+                            "category_round_id": 8120,
+                            "round_name": "Semi-final",
+                            "rank": 1,
+                            "score": "2T4z 11 13",
+                            "ascents": [
+                                {
+                                    "route_id": 9891,
+                                    "route_name": "1",
+                                    "top": false,
+                                    "top_tries": 3,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 03:07:50 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9892,
+                                    "route_name": "2",
+                                    "top": false,
+                                    "top_tries": 9,
+                                    "zone": true,
+                                    "zone_tries": 5,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 03:18:40 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9893,
+                                    "route_name": "3",
+                                    "top": true,
+                                    "top_tries": 5,
+                                    "zone": true,
+                                    "zone_tries": 3,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 03:28:46 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9894,
+                                    "route_name": "4",
+                                    "top": true,
+                                    "top_tries": 6,
+                                    "zone": true,
+                                    "zone_tries": 4,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 03:38:57 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        },
+                        {
+                            "category_round_id": 8122,
+                            "round_name": "Final",
+                            "rank": 3,
+                            "score": "1T3z 3 3",
+                            "ascents": [
+                                {
+                                    "route_id": 9899,
+                                    "route_name": "1",
+                                    "top": false,
+                                    "top_tries": 5,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 08:37:53 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9900,
+                                    "route_name": "2",
+                                    "top": true,
+                                    "top_tries": 3,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 09:02:06 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9901,
+                                    "route_name": "3",
+                                    "top": false,
+                                    "top_tries": 6,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 09:33:52 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9902,
+                                    "route_name": "4",
+                                    "top": false,
+                                    "top_tries": 5,
+                                    "zone": false,
+                                    "zone_tries": 5,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-23 10:02:00 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "dcat_id": 7,
+            "event_id": 1291,
+            "dcat_name": "BOULDER Women",
+            "discipline_kind": "boulder",
+            "category_name": "Women",
+            "status": "finished",
+            "status_as_of": "2023-04-22 10:00:32 UTC",
+            "ranking_as_of": "2023-04-22 09:44:50 UTC",
+            "category_rounds": [
+                {
+                    "category_round_id": 7670,
+                    "kind": "boulder",
+                    "name": "Qualification",
+                    "category": "Women",
+                    "schedule": null,
+                    "status": "finished",
+                    "status_as_of": "2023-04-21 04:00:59 UTC",
+                    "result_url": "/api/v1/category_rounds/7670/results",
+                    "starting_groups": [
+                        {
+                            "id": 147,
+                            "name": "Group A",
+                            "ranking": "/api/v1/starting_groups/147/results",
+                            "routes": [
+                                {
+                                    "id": 8500,
+                                    "name": "1",
+                                    "startlist": "/api/v1/routes/8500/startlist"
+                                },
+                                {
+                                    "id": 8501,
+                                    "name": "2",
+                                    "startlist": "/api/v1/routes/8501/startlist"
+                                },
+                                {
+                                    "id": 8502,
+                                    "name": "3",
+                                    "startlist": "/api/v1/routes/8502/startlist"
+                                },
+                                {
+                                    "id": 8503,
+                                    "name": "4",
+                                    "startlist": "/api/v1/routes/8503/startlist"
+                                },
+                                {
+                                    "id": 8504,
+                                    "name": "5",
+                                    "startlist": "/api/v1/routes/8504/startlist"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 148,
+                            "name": "Group B",
+                            "ranking": "/api/v1/starting_groups/148/results",
+                            "routes": [
+                                {
+                                    "id": 8505,
+                                    "name": "1",
+                                    "startlist": "/api/v1/routes/8505/startlist"
+                                },
+                                {
+                                    "id": 8506,
+                                    "name": "2",
+                                    "startlist": "/api/v1/routes/8506/startlist"
+                                },
+                                {
+                                    "id": 8507,
+                                    "name": "3",
+                                    "startlist": "/api/v1/routes/8507/startlist"
+                                },
+                                {
+                                    "id": 8508,
+                                    "name": "4",
+                                    "startlist": "/api/v1/routes/8508/startlist"
+                                },
+                                {
+                                    "id": 8509,
+                                    "name": "5",
+                                    "startlist": "/api/v1/routes/8509/startlist"
+                                }
+                            ]
+                        }
+                    ],
+                    "combined_stages": [],
+                    "format": "IFSC: 2 groups",
+                    "routes": []
+                },
+                {
+                    "category_round_id": 8121,
+                    "kind": "boulder",
+                    "name": "Semi-final",
+                    "category": "Women",
+                    "schedule": null,
+                    "status": "finished",
+                    "status_as_of": "2023-04-22 04:22:33 UTC",
+                    "result_url": "/api/v1/category_rounds/8121/results",
+                    "starting_groups": [],
+                    "combined_stages": [],
+                    "format": "IFSC: 1 group",
+                    "routes": [
+                        {
+                            "id": 9895,
+                            "name": "1",
+                            "startlist": "/api/v1/routes/9895/startlist"
+                        },
+                        {
+                            "id": 9896,
+                            "name": "2",
+                            "startlist": "/api/v1/routes/9896/startlist"
+                        },
+                        {
+                            "id": 9897,
+                            "name": "3",
+                            "startlist": "/api/v1/routes/9897/startlist"
+                        },
+                        {
+                            "id": 9898,
+                            "name": "4",
+                            "startlist": "/api/v1/routes/9898/startlist"
+                        }
+                    ]
+                },
+                {
+                    "category_round_id": 8123,
+                    "kind": "boulder",
+                    "name": "Final",
+                    "category": "Women",
+                    "schedule": null,
+                    "status": "finished",
+                    "status_as_of": "2023-04-22 09:55:10 UTC",
+                    "result_url": "/api/v1/category_rounds/8123/results",
+                    "starting_groups": [],
+                    "combined_stages": [],
+                    "format": "IFSC: Finals",
+                    "routes": [
+                        {
+                            "id": 9903,
+                            "name": "1",
+                            "startlist": "/api/v1/routes/9903/startlist"
+                        },
+                        {
+                            "id": 9904,
+                            "name": "2",
+                            "startlist": "/api/v1/routes/9904/startlist"
+                        },
+                        {
+                            "id": 9905,
+                            "name": "3",
+                            "startlist": "/api/v1/routes/9905/startlist"
+                        },
+                        {
+                            "id": 9906,
+                            "name": "4",
+                            "startlist": "/api/v1/routes/9906/startlist"
+                        }
+                    ]
+                }
+            ],
+            "full_results_url": "/api/v1/events/1291/result/7",
+            "top_3_results": [
+                {
+                    "athlete_id": 1811,
+                    "rank": 1,
+                    "name": "Raboutou Brooke",
+                    "firstname": "Brooke",
+                    "lastname": "RABOUTOU",
+                    "paraclimbing_sport_class": null,
+                    "sport_class_status": null,
+                    "bib": "142",
+                    "country": "USA",
+                    "flag_url": "https://ifsc.results.info/images/flags/USA.png",
+                    "federation_id": 20,
+                    "rounds": [
+                        {
+                            "category_round_id": 7670,
+                            "round_name": "Qualification",
+                            "rank": 3,
+                            "score": "5T5z 12 12",
+                            "starting_group": "Group B",
+                            "ascents": [
+                                {
+                                    "route_id": 8505,
+                                    "route_name": "1",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 00:06:41 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8506,
+                                    "route_name": "2",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 00:17:37 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8507,
+                                    "route_name": "3",
+                                    "top": true,
+                                    "top_tries": 8,
+                                    "zone": true,
+                                    "zone_tries": 8,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 00:36:57 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8508,
+                                    "route_name": "4",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 00:38:45 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8509,
+                                    "route_name": "5",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 00:48:31 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        },
+                        {
+                            "category_round_id": 8121,
+                            "round_name": "Semi-final",
+                            "rank": 3,
+                            "score": "2T4z 5 6",
+                            "ascents": [
+                                {
+                                    "route_id": 9895,
+                                    "route_name": "1",
+                                    "top": false,
+                                    "top_tries": 5,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 03:39:20 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9896,
+                                    "route_name": "2",
+                                    "top": true,
+                                    "top_tries": 4,
+                                    "zone": true,
+                                    "zone_tries": 3,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 03:49:29 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9897,
+                                    "route_name": "3",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 03:56:38 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9898,
+                                    "route_name": "4",
+                                    "top": false,
+                                    "top_tries": 3,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 04:10:43 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        },
+                        {
+                            "category_round_id": 8123,
+                            "round_name": "Final",
+                            "rank": 1,
+                            "score": "3T4z 6 6",
+                            "ascents": [
+                                {
+                                    "route_id": 9903,
+                                    "route_name": "1",
+                                    "top": true,
+                                    "top_tries": 2,
+                                    "zone": true,
+                                    "zone_tries": 2,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 08:25:44 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9904,
+                                    "route_name": "2",
+                                    "top": false,
+                                    "top_tries": 5,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 08:50:48 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9905,
+                                    "route_name": "3",
+                                    "top": true,
+                                    "top_tries": 2,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 09:18:57 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9906,
+                                    "route_name": "4",
+                                    "top": true,
+                                    "top_tries": 2,
+                                    "zone": true,
+                                    "zone_tries": 2,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 09:44:50 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "athlete_id": 3113,
+                    "rank": 2,
+                    "name": "Meul Hannah",
+                    "firstname": "Hannah",
+                    "lastname": "MEUL",
+                    "paraclimbing_sport_class": null,
+                    "sport_class_status": null,
+                    "bib": "143",
+                    "country": "GER",
+                    "flag_url": "https://ifsc.results.info/images/flags/GER.png",
+                    "federation_id": 6,
+                    "rounds": [
+                        {
+                            "category_round_id": 7670,
+                            "round_name": "Qualification",
+                            "rank": 7,
+                            "score": "4T5z 6 5",
+                            "starting_group": "Group B",
+                            "ascents": [
+                                {
+                                    "route_id": 8505,
+                                    "route_name": "1",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 00:12:06 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8506,
+                                    "route_name": "2",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 00:23:16 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8507,
+                                    "route_name": "3",
+                                    "top": true,
+                                    "top_tries": 3,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 00:36:55 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8508,
+                                    "route_name": "4",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 00:44:08 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8509,
+                                    "route_name": "5",
+                                    "top": false,
+                                    "top_tries": 3,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 00:57:47 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        },
+                        {
+                            "category_round_id": 8121,
+                            "round_name": "Semi-final",
+                            "rank": 1,
+                            "score": "2T4z 4 5",
+                            "ascents": [
+                                {
+                                    "route_id": 9895,
+                                    "route_name": "1",
+                                    "top": true,
+                                    "top_tries": 3,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 03:18:25 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9896,
+                                    "route_name": "2",
+                                    "top": false,
+                                    "top_tries": 3,
+                                    "zone": true,
+                                    "zone_tries": 2,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 03:28:42 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9897,
+                                    "route_name": "3",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 03:36:00 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9898,
+                                    "route_name": "4",
+                                    "top": false,
+                                    "top_tries": 3,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 03:49:43 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        },
+                        {
+                            "category_round_id": 8123,
+                            "round_name": "Final",
+                            "rank": 2,
+                            "score": "1T3z 1 8",
+                            "ascents": [
+                                {
+                                    "route_id": 9903,
+                                    "route_name": "1",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 08:34:01 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9904,
+                                    "route_name": "2",
+                                    "top": false,
+                                    "top_tries": 5,
+                                    "zone": true,
+                                    "zone_tries": 2,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 08:59:31 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9905,
+                                    "route_name": "3",
+                                    "top": false,
+                                    "top_tries": 8,
+                                    "zone": true,
+                                    "zone_tries": 5,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 09:27:52 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9906,
+                                    "route_name": "4",
+                                    "top": false,
+                                    "top_tries": 4,
+                                    "zone": false,
+                                    "zone_tries": 4,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 09:54:08 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "athlete_id": 12297,
+                    "rank": 3,
+                    "name": "Matsufuji Anon",
+                    "firstname": "Anon",
+                    "lastname": "MATSUFUJI",
+                    "paraclimbing_sport_class": null,
+                    "sport_class_status": null,
+                    "bib": "111",
+                    "country": "JPN",
+                    "flag_url": "https://ifsc.results.info/images/flags/JPN.png",
+                    "federation_id": 25,
+                    "rounds": [
+                        {
+                            "category_round_id": 7670,
+                            "round_name": "Qualification",
+                            "rank": 1,
+                            "score": "5T5z 5 5",
+                            "starting_group": "Group A",
+                            "ascents": [
+                                {
+                                    "route_id": 8500,
+                                    "route_name": "1",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 00:54:40 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8501,
+                                    "route_name": "2",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 01:05:06 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8502,
+                                    "route_name": "3",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 01:15:12 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8503,
+                                    "route_name": "4",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 01:25:38 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 8504,
+                                    "route_name": "5",
+                                    "top": true,
+                                    "top_tries": 1,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-21 01:36:34 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        },
+                        {
+                            "category_round_id": 8121,
+                            "round_name": "Semi-final",
+                            "rank": 4,
+                            "score": "2T3z 5 6",
+                            "ascents": [
+                                {
+                                    "route_id": 9895,
+                                    "route_name": "1",
+                                    "top": false,
+                                    "top_tries": 6,
+                                    "zone": false,
+                                    "zone_tries": 6,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 03:44:38 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9896,
+                                    "route_name": "2",
+                                    "top": true,
+                                    "top_tries": 2,
+                                    "zone": true,
+                                    "zone_tries": 2,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 03:52:15 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9897,
+                                    "route_name": "3",
+                                    "top": true,
+                                    "top_tries": 3,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 04:05:12 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9898,
+                                    "route_name": "4",
+                                    "top": false,
+                                    "top_tries": 4,
+                                    "zone": true,
+                                    "zone_tries": 3,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 04:15:52 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        },
+                        {
+                            "category_round_id": 8123,
+                            "round_name": "Final",
+                            "rank": 3,
+                            "score": "0T3z 0 7",
+                            "ascents": [
+                                {
+                                    "route_id": 9903,
+                                    "route_name": "1",
+                                    "top": false,
+                                    "top_tries": 5,
+                                    "zone": true,
+                                    "zone_tries": 1,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 08:24:05 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9904,
+                                    "route_name": "2",
+                                    "top": false,
+                                    "top_tries": 6,
+                                    "zone": true,
+                                    "zone_tries": 4,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 08:46:13 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9905,
+                                    "route_name": "3",
+                                    "top": false,
+                                    "top_tries": 4,
+                                    "zone": true,
+                                    "zone_tries": 2,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 09:16:21 +00:00",
+                                    "status": "confirmed"
+                                },
+                                {
+                                    "route_id": 9906,
+                                    "route_name": "4",
+                                    "top": false,
+                                    "top_tries": 6,
+                                    "zone": false,
+                                    "zone_tries": 6,
+                                    "low_zone": false,
+                                    "points": null,
+                                    "low_zone_tries": null,
+                                    "modified": "2023-04-22 09:42:23 +00:00",
+                                    "status": "confirmed"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "computed_combined_categories": [],
+    "team_ranking_disciplines": ["boulder"],
+    "team_ranking_url": "/api/v1/events/1291/team_results/"
+}
