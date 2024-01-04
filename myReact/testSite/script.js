@@ -2,7 +2,7 @@ const table = $("#myTable tbody");
 
 // Function to load JSON file and append it to the table
 const loadAndAppendJSON = () => {
-    const jsonFileUrl = "./api-v1/seasons-35.json";
+    const jsonFileUrl = "./api-v1/eventData.json";
 
     fetch(jsonFileUrl)
         .then((response) => response.json())

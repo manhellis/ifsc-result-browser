@@ -1,0 +1,2120 @@
+{
+    "name": "2023",
+    "leagues": [
+        {
+            "name": "World Cups and World Championships",
+            "url": "/api/v1/season_leagues/418"
+        },
+        { "name": "IFSC Youth", "url": "/api/v1/season_leagues/419" },
+        { "name": "IFSC Paraclimbing", "url": "/api/v1/season_leagues/420" },
+        { "name": "IFSC Asia Adults", "url": "/api/v1/season_leagues/421" },
+        { "name": "IFSC Asia Youth", "url": "/api/v1/season_leagues/422" },
+        { "name": "IFSC Europe Adults", "url": "/api/v1/season_leagues/423" },
+        { "name": "IFSC Europe Youth", "url": "/api/v1/season_leagues/424" },
+        { "name": "Games", "url": "/api/v1/season_leagues/425" },
+        { "name": "Other events", "url": "/api/v1/season_leagues/426" },
+        {
+            "name": "Masters and Promotional Events",
+            "url": "/api/v1/season_leagues/427"
+        },
+        {
+            "name": "IFSC Pan America Adults",
+            "url": "/api/v1/season_leagues/428"
+        },
+        { "name": "IFSC Oceania", "url": "/api/v1/season_leagues/429" },
+        { "name": "IFSC Africa", "url": "/api/v1/season_leagues/430" }
+    ],
+    "events": [
+        {
+            "event": "International Climbing Series - Studio Bloc Master - Pfungstadt (GER) 2023",
+            "league_season_id": 427,
+            "location": "Pfungstadt",
+            "event_id": 1314,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1314",
+            "registration_url": "/api/v1/events/1314/registrations",
+            "infosheet_url": null,
+            "additional_info_url": null,
+            "starts_at": "2023-03-10 23:00:00 UTC",
+            "ends_at": "2023-03-12 22:59:00 UTC",
+            "local_start_date": "2023-03-11",
+            "local_end_date": "2023-03-12",
+            "timezone": { "value": "Europe/Berlin" },
+            "disciplines": [
+                {
+                    "id": 1574,
+                    "kind": "boulder",
+                    "event_id": 1314,
+                    "created_at": "2022-09-27T07:35:19.000Z",
+                    "updated_at": "2022-09-27T07:35:19.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "Promo Event - Delfts Bleau International Youth Open - Delft (NED) 2023",
+            "league_season_id": 427,
+            "location": "Delft",
+            "event_id": 1340,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1340",
+            "registration_url": "/api/v1/events/1340/registrations",
+            "infosheet_url": "/events/1340/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-03-24 23:00:00 UTC",
+            "ends_at": "2023-03-26 21:59:00 UTC",
+            "local_start_date": "2023-03-25",
+            "local_end_date": "2023-03-26",
+            "timezone": { "value": "Europe/Amsterdam" },
+            "disciplines": []
+        },
+        {
+            "event": "IFSC European Cup Tarn\u00f3w 2023",
+            "league_season_id": 423,
+            "location": "Tarn\u00f3w",
+            "event_id": 1331,
+            "cup_name": "IFSC-Europe Climbing European Cup 2023",
+            "cup_id": 92,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1331",
+            "registration_url": "/api/v1/events/1331/registrations",
+            "infosheet_url": "/events/1331/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-03-31 22:00:00 UTC",
+            "ends_at": "2023-04-02 21:59:00 UTC",
+            "local_start_date": "2023-04-01",
+            "local_end_date": "2023-04-02",
+            "timezone": { "value": "Europe/Warsaw" },
+            "disciplines": [
+                {
+                    "id": 1597,
+                    "kind": "speed",
+                    "event_id": 1331,
+                    "created_at": "2022-11-29T15:11:42.000Z",
+                    "updated_at": "2022-11-29T15:11:42.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Continental Youth Cup (S) - Tarn\u00f3w (POL) 2023",
+            "league_season_id": 424,
+            "location": "Tarn\u00f3w",
+            "event_id": 1332,
+            "cup_name": "IFSC-Europe Climbing European Youth Cup 2023",
+            "cup_id": 91,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1332",
+            "registration_url": "/api/v1/events/1332/registrations",
+            "infosheet_url": "/events/1332/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-03-31 22:00:00 UTC",
+            "ends_at": "2023-04-02 21:59:00 UTC",
+            "local_start_date": "2023-04-01",
+            "local_end_date": "2023-04-02",
+            "timezone": { "value": "Europe/Warsaw" },
+            "disciplines": [
+                {
+                    "id": 1598,
+                    "kind": "speed",
+                    "event_id": 1332,
+                    "created_at": "2022-11-29T15:13:33.000Z",
+                    "updated_at": "2022-11-29T15:13:33.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC European Cup Chamb\u00e9ry 2023",
+            "league_season_id": 423,
+            "location": "Chamb\u00e9ry",
+            "event_id": 1317,
+            "cup_name": "IFSC-Europe Climbing European Cup 2023",
+            "cup_id": 92,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1317",
+            "registration_url": "/api/v1/events/1317/registrations",
+            "infosheet_url": "/events/1317/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-04-06 22:00:00 UTC",
+            "ends_at": "2023-04-08 21:59:00 UTC",
+            "local_start_date": "2023-04-07",
+            "local_end_date": "2023-04-08",
+            "timezone": { "value": "Europe/Paris" },
+            "disciplines": [
+                {
+                    "id": 1582,
+                    "kind": "boulder",
+                    "event_id": 1317,
+                    "created_at": "2022-11-14T11:03:06.000Z",
+                    "updated_at": "2022-11-14T11:03:06.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC World Cup Hachioji 2023",
+            "league_season_id": 418,
+            "location": "Hachioji",
+            "event_id": 1291,
+            "cup_name": "IFSC Climbing World Cup 2023",
+            "cup_id": 90,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1291",
+            "registration_url": "/api/v1/events/1291/registrations",
+            "infosheet_url": "/events/1291/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-04-20 15:00:00 UTC",
+            "ends_at": "2023-04-23 14:59:00 UTC",
+            "local_start_date": "2023-04-21",
+            "local_end_date": "2023-04-23",
+            "timezone": { "value": "Asia/Tokyo" },
+            "disciplines": [
+                {
+                    "id": 1536,
+                    "kind": "boulder",
+                    "event_id": 1291,
+                    "created_at": "2022-09-19T08:25:36.000Z",
+                    "updated_at": "2022-09-19T08:25:36.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Continental Youth Cup (B) - Soure (POR) 2023",
+            "league_season_id": 424,
+            "location": "Soure",
+            "event_id": 1321,
+            "cup_name": "IFSC-Europe Climbing European Youth Cup 2023",
+            "cup_id": 91,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1321",
+            "registration_url": "/api/v1/events/1321/registrations",
+            "infosheet_url": "/events/1321/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-04-21 23:00:00 UTC",
+            "ends_at": "2023-04-23 22:59:00 UTC",
+            "local_start_date": "2023-04-22",
+            "local_end_date": "2023-04-23",
+            "timezone": { "value": "Europe/Lisbon" },
+            "disciplines": [
+                {
+                    "id": 1584,
+                    "kind": "boulder",
+                    "event_id": 1321,
+                    "created_at": "2022-11-14T11:09:45.000Z",
+                    "updated_at": "2022-11-14T11:09:45.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC World Cup Seoul 2023",
+            "league_season_id": 418,
+            "location": "Seoul",
+            "event_id": 1292,
+            "cup_name": "IFSC Climbing World Cup 2023",
+            "cup_id": 90,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1292",
+            "registration_url": "/api/v1/events/1292/registrations",
+            "infosheet_url": "/events/1292/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-04-27 15:00:00 UTC",
+            "ends_at": "2023-04-30 14:59:00 UTC",
+            "local_start_date": "2023-04-28",
+            "local_end_date": "2023-04-30",
+            "timezone": { "value": "Asia/Seoul" },
+            "disciplines": [
+                {
+                    "id": 1537,
+                    "kind": "boulder",
+                    "event_id": 1292,
+                    "created_at": "2022-09-19T08:27:46.000Z",
+                    "updated_at": "2022-09-19T08:27:46.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1538,
+                    "kind": "speed",
+                    "event_id": 1292,
+                    "created_at": "2022-09-19T08:27:49.000Z",
+                    "updated_at": "2022-09-19T08:27:49.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Continental Youth Cup (B) - Kaunas (LTU) 2023",
+            "league_season_id": 424,
+            "location": "Kaunas",
+            "event_id": 1322,
+            "cup_name": "IFSC-Europe Climbing European Youth Cup 2023",
+            "cup_id": 91,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1322",
+            "registration_url": "/api/v1/events/1322/registrations",
+            "infosheet_url": "/events/1322/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-04-27 21:00:00 UTC",
+            "ends_at": "2023-04-30 20:59:00 UTC",
+            "local_start_date": "2023-04-28",
+            "local_end_date": "2023-04-30",
+            "timezone": { "value": "Europe/Vilnius" },
+            "disciplines": [
+                {
+                    "id": 1585,
+                    "kind": "boulder",
+                    "event_id": 1322,
+                    "created_at": "2022-11-14T11:16:29.000Z",
+                    "updated_at": "2022-11-14T11:16:29.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Continental Youth Cup (B) - Graz (AUT) 2023",
+            "league_season_id": 424,
+            "location": "Graz",
+            "event_id": 1323,
+            "cup_name": "IFSC-Europe Climbing European Youth Cup 2023",
+            "cup_id": 91,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1323",
+            "registration_url": "/api/v1/events/1323/registrations",
+            "infosheet_url": "/events/1323/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-05-04 22:00:00 UTC",
+            "ends_at": "2023-05-07 21:59:00 UTC",
+            "local_start_date": "2023-05-05",
+            "local_end_date": "2023-05-07",
+            "timezone": { "value": "Europe/Vienna" },
+            "disciplines": [
+                {
+                    "id": 1586,
+                    "kind": "boulder",
+                    "event_id": 1323,
+                    "created_at": "2022-11-14T11:22:39.000Z",
+                    "updated_at": "2022-11-14T11:22:39.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC World Cup Jakarta 2023",
+            "league_season_id": 418,
+            "location": "Indonesia",
+            "event_id": 1293,
+            "cup_name": "IFSC Climbing World Cup 2023",
+            "cup_id": 90,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1293",
+            "registration_url": "/api/v1/events/1293/registrations",
+            "infosheet_url": "/events/1293/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-05-05 17:00:00 UTC",
+            "ends_at": "2023-05-07 16:59:00 UTC",
+            "local_start_date": "2023-05-06",
+            "local_end_date": "2023-05-07",
+            "timezone": { "value": "Asia/Jakarta" },
+            "disciplines": [
+                {
+                    "id": 1539,
+                    "kind": "speed",
+                    "event_id": 1293,
+                    "created_at": "2022-09-19T08:29:27.000Z",
+                    "updated_at": "2022-09-19T08:29:27.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC European Cup Li\u00e9bana 2023",
+            "league_season_id": 423,
+            "location": "Li\u00e9bana",
+            "event_id": 1320,
+            "cup_name": "IFSC-Europe Climbing European Cup 2023",
+            "cup_id": 92,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1320",
+            "registration_url": "/api/v1/events/1320/registrations",
+            "infosheet_url": "/events/1320/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-05-11 22:00:00 UTC",
+            "ends_at": "2023-05-14 21:59:00 UTC",
+            "local_start_date": "2023-05-12",
+            "local_end_date": "2023-05-14",
+            "timezone": { "value": "Europe/Madrid" },
+            "disciplines": [
+                {
+                    "id": 1583,
+                    "kind": "boulder",
+                    "event_id": 1320,
+                    "created_at": "2022-11-14T11:05:14.000Z",
+                    "updated_at": "2022-11-14T11:05:14.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1601,
+                    "kind": "speed",
+                    "event_id": 1320,
+                    "created_at": "2022-11-29T15:19:36.000Z",
+                    "updated_at": "2022-11-29T15:19:36.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Paraclimbing World Cup Salt Lake City 2023",
+            "league_season_id": 420,
+            "location": "Salt Lake City",
+            "event_id": 1335,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1335",
+            "registration_url": "/api/v1/events/1335/registrations",
+            "infosheet_url": "/events/1335/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-05-16 06:00:00 UTC",
+            "ends_at": "2023-05-18 05:59:00 UTC",
+            "local_start_date": "2023-05-16",
+            "local_end_date": "2023-05-17",
+            "timezone": { "value": "America/Denver" },
+            "disciplines": [
+                {
+                    "id": 1604,
+                    "kind": "lead",
+                    "event_id": 1335,
+                    "created_at": "2022-12-14T16:47:10.000Z",
+                    "updated_at": "2022-12-14T16:47:10.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC World Cup Salt Lake City 2023",
+            "league_season_id": 418,
+            "location": "Salt Lake City",
+            "event_id": 1294,
+            "cup_name": "IFSC Climbing World Cup 2023",
+            "cup_id": 90,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1294",
+            "registration_url": "/api/v1/events/1294/registrations",
+            "infosheet_url": "/events/1294/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-05-19 06:00:00 UTC",
+            "ends_at": "2023-05-22 05:59:00 UTC",
+            "local_start_date": "2023-05-19",
+            "local_end_date": "2023-05-21",
+            "timezone": { "value": "America/Denver" },
+            "disciplines": [
+                {
+                    "id": 1540,
+                    "kind": "boulder",
+                    "event_id": 1294,
+                    "created_at": "2022-09-19T08:31:10.000Z",
+                    "updated_at": "2022-09-19T08:31:10.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1541,
+                    "kind": "speed",
+                    "event_id": 1294,
+                    "created_at": "2022-09-19T08:31:13.000Z",
+                    "updated_at": "2022-09-19T08:31:13.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC European Cup Loverval 2023",
+            "league_season_id": 423,
+            "location": "Loverval",
+            "event_id": 1318,
+            "cup_name": "IFSC-Europe Climbing European Cup 2023",
+            "cup_id": 92,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1318",
+            "registration_url": "/api/v1/events/1318/registrations",
+            "infosheet_url": "/events/1318/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-05-26 22:00:00 UTC",
+            "ends_at": "2023-05-28 21:59:00 UTC",
+            "local_start_date": "2023-05-27",
+            "local_end_date": "2023-05-28",
+            "timezone": { "value": "Europe/Brussels" },
+            "disciplines": [
+                {
+                    "id": 1581,
+                    "kind": "boulder",
+                    "event_id": 1318,
+                    "created_at": "2022-11-14T11:01:54.000Z",
+                    "updated_at": "2022-11-14T11:01:54.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC World Cup Prague 2023",
+            "league_season_id": 418,
+            "location": "Prague",
+            "event_id": 1295,
+            "cup_name": "IFSC Climbing World Cup 2023",
+            "cup_id": 90,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1295",
+            "registration_url": "/api/v1/events/1295/registrations",
+            "infosheet_url": "/events/1295/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-06-01 22:00:00 UTC",
+            "ends_at": "2023-06-04 21:59:00 UTC",
+            "local_start_date": "2023-06-02",
+            "local_end_date": "2023-06-04",
+            "timezone": { "value": "Europe/Prague" },
+            "disciplines": [
+                {
+                    "id": 1542,
+                    "kind": "boulder",
+                    "event_id": 1295,
+                    "created_at": "2022-09-19T08:33:40.000Z",
+                    "updated_at": "2022-09-19T08:33:40.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Continental Youth Championship (B,S) - Duisburg (GER) 2023",
+            "league_season_id": 424,
+            "location": "Duisburg",
+            "event_id": 1329,
+            "cup_name": "IFSC-Europe Climbing European Youth Cup 2023",
+            "cup_id": 91,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1329",
+            "registration_url": "/api/v1/events/1329/registrations",
+            "infosheet_url": "/events/1329/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-06-07 22:00:00 UTC",
+            "ends_at": "2023-06-11 21:59:00 UTC",
+            "local_start_date": "2023-06-08",
+            "local_end_date": "2023-06-11",
+            "timezone": { "value": "Europe/Berlin" },
+            "disciplines": [
+                {
+                    "id": 1594,
+                    "kind": "boulder",
+                    "event_id": 1329,
+                    "created_at": "2022-11-14T11:45:41.000Z",
+                    "updated_at": "2022-11-14T11:45:41.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1595,
+                    "kind": "speed",
+                    "event_id": 1329,
+                    "created_at": "2022-11-14T11:45:45.000Z",
+                    "updated_at": "2022-11-14T11:45:45.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC World Cup Brixen 2023",
+            "league_season_id": 418,
+            "location": "Brixen",
+            "event_id": 1296,
+            "cup_name": "IFSC Climbing World Cup 2023",
+            "cup_id": 90,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1296",
+            "registration_url": "/api/v1/events/1296/registrations",
+            "infosheet_url": "/events/1296/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-06-08 22:00:00 UTC",
+            "ends_at": "2023-06-11 21:59:00 UTC",
+            "local_start_date": "2023-06-09",
+            "local_end_date": "2023-06-11",
+            "timezone": { "value": "Europe/Rome" },
+            "disciplines": [
+                {
+                    "id": 1543,
+                    "kind": "boulder",
+                    "event_id": 1296,
+                    "created_at": "2022-09-19T08:34:47.000Z",
+                    "updated_at": "2022-09-19T08:34:47.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC European Cup Innsbruck 2023",
+            "league_season_id": 423,
+            "location": "Innsbruck",
+            "event_id": 1325,
+            "cup_name": "IFSC-Europe Climbing European Cup 2023",
+            "cup_id": 92,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1325",
+            "registration_url": "/api/v1/events/1325/registrations",
+            "infosheet_url": "/events/1325/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-06-11 22:00:00 UTC",
+            "ends_at": "2023-06-12 21:59:00 UTC",
+            "local_start_date": "2023-06-12",
+            "local_end_date": "2023-06-12",
+            "timezone": { "value": "Europe/Vienna" },
+            "disciplines": [
+                {
+                    "id": 1589,
+                    "kind": "speed",
+                    "event_id": 1325,
+                    "created_at": "2022-11-14T11:30:19.000Z",
+                    "updated_at": "2022-11-14T11:30:19.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Paraclimbing World Cup Innsbruck 2023",
+            "league_season_id": 420,
+            "location": "Innsbruck",
+            "event_id": 1337,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1337",
+            "registration_url": "/api/v1/events/1337/registrations",
+            "infosheet_url": "/events/1337/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-06-11 22:00:00 UTC",
+            "ends_at": "2023-06-13 21:59:00 UTC",
+            "local_start_date": "2023-06-12",
+            "local_end_date": "2023-06-13",
+            "timezone": { "value": "Europe/Vienna" },
+            "disciplines": [
+                {
+                    "id": 1607,
+                    "kind": "lead",
+                    "event_id": 1337,
+                    "created_at": "2022-12-21T13:46:57.000Z",
+                    "updated_at": "2023-05-17T19:35:02.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC World Cup Innsbruck 2023",
+            "league_season_id": 418,
+            "location": "Innsbruck",
+            "event_id": 1297,
+            "cup_name": "IFSC Climbing World Cup 2023",
+            "cup_id": 90,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1297",
+            "registration_url": "/api/v1/events/1297/registrations",
+            "infosheet_url": "/events/1297/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-06-13 22:00:00 UTC",
+            "ends_at": "2023-06-18 21:59:00 UTC",
+            "local_start_date": "2023-06-14",
+            "local_end_date": "2023-06-18",
+            "timezone": { "value": "Europe/Vienna" },
+            "disciplines": [
+                {
+                    "id": 1544,
+                    "kind": "boulder",
+                    "event_id": 1297,
+                    "created_at": "2022-09-19T08:36:01.000Z",
+                    "updated_at": "2023-05-17T19:35:35.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1545,
+                    "kind": "lead",
+                    "event_id": 1297,
+                    "created_at": "2022-09-19T08:36:04.000Z",
+                    "updated_at": "2023-05-17T19:35:54.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Continental Youth Cup (L) - Niederwangen (SUI) 2023",
+            "league_season_id": 424,
+            "location": "Niederwangen",
+            "event_id": 1326,
+            "cup_name": "IFSC-Europe Climbing European Youth Cup 2023",
+            "cup_id": 91,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1326",
+            "registration_url": "/api/v1/events/1326/registrations",
+            "infosheet_url": "/events/1326/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-06-16 22:00:00 UTC",
+            "ends_at": "2023-06-18 21:59:00 UTC",
+            "local_start_date": "2023-06-17",
+            "local_end_date": "2023-06-18",
+            "timezone": { "value": "Europe/Zurich" },
+            "disciplines": [
+                {
+                    "id": 1590,
+                    "kind": "lead",
+                    "event_id": 1326,
+                    "created_at": "2022-11-14T11:33:17.000Z",
+                    "updated_at": "2022-11-14T11:33:17.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "European Games Krakow-Malopolska 2023",
+            "league_season_id": 425,
+            "location": "Tarnow",
+            "event_id": 1305,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1305",
+            "registration_url": "/api/v1/events/1305/registrations",
+            "infosheet_url": null,
+            "additional_info_url": null,
+            "starts_at": "2023-06-20 22:00:00 UTC",
+            "ends_at": "2023-07-02 21:59:00 UTC",
+            "local_start_date": "2023-06-21",
+            "local_end_date": "2023-07-02",
+            "timezone": { "value": "Europe/Warsaw" },
+            "disciplines": [
+                {
+                    "id": 1560,
+                    "kind": "boulder",
+                    "event_id": 1305,
+                    "created_at": "2022-09-19T10:03:18.000Z",
+                    "updated_at": "2022-09-19T10:03:18.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1561,
+                    "kind": "lead",
+                    "event_id": 1305,
+                    "created_at": "2022-09-19T10:03:20.000Z",
+                    "updated_at": "2022-09-19T10:03:20.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1562,
+                    "kind": "speed",
+                    "event_id": 1305,
+                    "created_at": "2022-09-19T10:03:23.000Z",
+                    "updated_at": "2022-09-19T10:03:23.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Paraclimbing World Cup Villars 2023",
+            "league_season_id": 420,
+            "location": "Villars-sur-Ollon",
+            "event_id": 1341,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1341",
+            "registration_url": "/api/v1/events/1341/registrations",
+            "infosheet_url": "/events/1341/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-06-22 22:00:00 UTC",
+            "ends_at": "2023-06-24 21:59:00 UTC",
+            "local_start_date": "2023-06-23",
+            "local_end_date": "2023-06-24",
+            "timezone": { "value": "Europe/Zurich" },
+            "disciplines": [
+                {
+                    "id": 1609,
+                    "kind": "lead",
+                    "event_id": 1341,
+                    "created_at": "2023-03-07T08:29:20.000Z",
+                    "updated_at": "2023-03-07T08:29:20.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Continental Youth Cup (L) - St. Pierre en Faucigny (FRA) 2023",
+            "league_season_id": 424,
+            "location": "St. Pierre en Faucigny",
+            "event_id": 1327,
+            "cup_name": "IFSC-Europe Climbing European Youth Cup 2023",
+            "cup_id": 91,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1327",
+            "registration_url": "/api/v1/events/1327/registrations",
+            "infosheet_url": "/events/1327/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-06-23 22:00:00 UTC",
+            "ends_at": "2023-06-25 21:59:00 UTC",
+            "local_start_date": "2023-06-24",
+            "local_end_date": "2023-06-25",
+            "timezone": { "value": "Europe/Paris" },
+            "disciplines": [
+                {
+                    "id": 1591,
+                    "kind": "lead",
+                    "event_id": 1327,
+                    "created_at": "2022-11-14T11:39:40.000Z",
+                    "updated_at": "2022-11-14T11:39:40.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC World Cup Villars 2023",
+            "league_season_id": 418,
+            "location": "Villars-sur-Ollon",
+            "event_id": 1298,
+            "cup_name": "IFSC Climbing World Cup 2023",
+            "cup_id": 90,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1298",
+            "registration_url": "/api/v1/events/1298/registrations",
+            "infosheet_url": "/events/1298/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-06-29 22:00:00 UTC",
+            "ends_at": "2023-07-02 21:59:00 UTC",
+            "local_start_date": "2023-06-30",
+            "local_end_date": "2023-07-02",
+            "timezone": { "value": "Europe/Zurich" },
+            "disciplines": [
+                {
+                    "id": 1546,
+                    "kind": "lead",
+                    "event_id": 1298,
+                    "created_at": "2022-09-19T08:38:18.000Z",
+                    "updated_at": "2022-09-19T08:38:18.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1547,
+                    "kind": "speed",
+                    "event_id": 1298,
+                    "created_at": "2022-09-19T08:38:20.000Z",
+                    "updated_at": "2022-09-19T08:38:20.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Continental Youth Cup (L,S) - Imst (AUT) 2023",
+            "league_season_id": 424,
+            "location": "Imst",
+            "event_id": 1328,
+            "cup_name": "IFSC-Europe Climbing European Youth Cup 2023",
+            "cup_id": 91,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1328",
+            "registration_url": "/api/v1/events/1328/registrations",
+            "infosheet_url": "/events/1328/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-06-29 22:00:00 UTC",
+            "ends_at": "2023-07-02 21:59:00 UTC",
+            "local_start_date": "2023-06-30",
+            "local_end_date": "2023-07-02",
+            "timezone": { "value": "Europe/Vienna" },
+            "disciplines": [
+                {
+                    "id": 1592,
+                    "kind": "lead",
+                    "event_id": 1328,
+                    "created_at": "2022-11-14T11:43:17.000Z",
+                    "updated_at": "2022-11-14T11:43:17.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1593,
+                    "kind": "speed",
+                    "event_id": 1328,
+                    "created_at": "2022-11-14T11:43:21.000Z",
+                    "updated_at": "2022-11-14T11:43:21.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC World Cup Chamonix 2023",
+            "league_season_id": 418,
+            "location": "Chamonix",
+            "event_id": 1299,
+            "cup_name": "IFSC Climbing World Cup 2023",
+            "cup_id": 90,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1299",
+            "registration_url": "/api/v1/events/1299/registrations",
+            "infosheet_url": "/events/1299/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-07-06 22:00:00 UTC",
+            "ends_at": "2023-07-09 21:59:00 UTC",
+            "local_start_date": "2023-07-07",
+            "local_end_date": "2023-07-09",
+            "timezone": { "value": "Europe/Paris" },
+            "disciplines": [
+                {
+                    "id": 1548,
+                    "kind": "lead",
+                    "event_id": 1299,
+                    "created_at": "2022-09-19T08:48:38.000Z",
+                    "updated_at": "2023-06-16T12:56:36.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1549,
+                    "kind": "speed",
+                    "event_id": 1299,
+                    "created_at": "2022-09-19T08:48:40.000Z",
+                    "updated_at": "2023-06-16T12:56:58.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Asia - Continental Youth Cup (S) - Singapore (SGP) 2023",
+            "league_season_id": 422,
+            "location": "Singapore",
+            "event_id": 1342,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1342",
+            "registration_url": "/api/v1/events/1342/registrations",
+            "infosheet_url": "/events/1342/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-07-07 16:00:00 UTC",
+            "ends_at": "2023-07-08 15:59:00 UTC",
+            "local_start_date": "2023-07-08",
+            "local_end_date": "2023-07-08",
+            "timezone": { "value": "Asia/Singapore" },
+            "disciplines": [
+                {
+                    "id": 1611,
+                    "kind": "speed",
+                    "event_id": 1342,
+                    "created_at": "2023-03-10T10:53:51.000Z",
+                    "updated_at": "2023-03-10T10:53:51.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC World Cup Brian\u00e7on 2023",
+            "league_season_id": 418,
+            "location": "Brian\u00e7on",
+            "event_id": 1300,
+            "cup_name": "IFSC Climbing World Cup 2023",
+            "cup_id": 90,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1300",
+            "registration_url": "/api/v1/events/1300/registrations",
+            "infosheet_url": "/events/1300/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-07-13 22:00:00 UTC",
+            "ends_at": "2023-07-15 21:59:00 UTC",
+            "local_start_date": "2023-07-14",
+            "local_end_date": "2023-07-15",
+            "timezone": { "value": "Europe/Paris" },
+            "disciplines": [
+                {
+                    "id": 1550,
+                    "kind": "lead",
+                    "event_id": 1300,
+                    "created_at": "2022-09-19T08:50:10.000Z",
+                    "updated_at": "2022-09-19T08:50:10.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC European Cup \u017dilina 2023",
+            "league_season_id": 423,
+            "location": "\u017dilina",
+            "event_id": 1324,
+            "cup_name": "IFSC-Europe Climbing European Cup 2023",
+            "cup_id": 92,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1324",
+            "registration_url": "/api/v1/events/1324/registrations",
+            "infosheet_url": "/events/1324/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-07-20 22:00:00 UTC",
+            "ends_at": "2023-07-22 21:59:00 UTC",
+            "local_start_date": "2023-07-21",
+            "local_end_date": "2023-07-22",
+            "timezone": { "value": "Europe/Bratislava" },
+            "disciplines": [
+                {
+                    "id": 1587,
+                    "kind": "lead",
+                    "event_id": 1324,
+                    "created_at": "2022-11-14T11:26:53.000Z",
+                    "updated_at": "2022-11-14T11:26:53.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1588,
+                    "kind": "speed",
+                    "event_id": 1324,
+                    "created_at": "2022-11-14T11:26:56.000Z",
+                    "updated_at": "2022-11-14T11:26:56.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC World Championships Bern 2023",
+            "league_season_id": 418,
+            "location": "Bern",
+            "event_id": 1301,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1301",
+            "registration_url": "/api/v1/events/1301/registrations",
+            "infosheet_url": "/events/1301/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-07-31 22:00:00 UTC",
+            "ends_at": "2023-08-12 21:59:00 UTC",
+            "local_start_date": "2023-08-01",
+            "local_end_date": "2023-08-12",
+            "timezone": { "value": "Europe/Zurich" },
+            "disciplines": [
+                {
+                    "id": 1551,
+                    "kind": "boulder",
+                    "event_id": 1301,
+                    "created_at": "2022-09-19T08:51:29.000Z",
+                    "updated_at": "2022-09-19T08:51:29.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1552,
+                    "kind": "lead",
+                    "event_id": 1301,
+                    "created_at": "2022-09-19T08:51:32.000Z",
+                    "updated_at": "2022-09-19T08:51:32.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1553,
+                    "kind": "speed",
+                    "event_id": 1301,
+                    "created_at": "2022-09-19T08:51:34.000Z",
+                    "updated_at": "2022-09-19T08:51:34.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1619,
+                    "kind": "boulder&lead",
+                    "event_id": 1301,
+                    "created_at": "2023-07-19T07:17:37.000Z",
+                    "updated_at": "2023-07-19T07:17:37.000Z",
+                    "settings": {
+                        "lead": {
+                            "points": [
+                                100, 96, 92, 88, 84, 80, 76, 72, 68, 64, 60, 57,
+                                54, 51, 48, 45, 42, 39, 36, 33, 30, 28, 26, 24,
+                                22, 20, 18, 16, 14, 12, 10, 9, 8, 7, 6, 5, 4, 3,
+                                2, 1
+                            ],
+                            "plus": 0.1
+                        },
+                        "boulder": {
+                            "low_zone": 5,
+                            "high_zone": 10,
+                            "top": 25,
+                            "fall_deduction": 0.1
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "event": "IFSC Paraclimbing World Championships Bern 2023",
+            "league_season_id": 420,
+            "location": "Bern",
+            "event_id": 1338,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1338",
+            "registration_url": "/api/v1/events/1338/registrations",
+            "infosheet_url": "/events/1338/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-08-07 22:00:00 UTC",
+            "ends_at": "2023-08-10 21:59:00 UTC",
+            "local_start_date": "2023-08-08",
+            "local_end_date": "2023-08-10",
+            "timezone": { "value": "Europe/Zurich" },
+            "disciplines": [
+                {
+                    "id": 1608,
+                    "kind": "lead",
+                    "event_id": 1338,
+                    "created_at": "2022-12-21T13:49:42.000Z",
+                    "updated_at": "2022-12-21T13:49:42.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Youth World Championships Seoul 2023",
+            "league_season_id": 419,
+            "location": "South Korea",
+            "event_id": 1304,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1304",
+            "registration_url": "/api/v1/events/1304/registrations",
+            "infosheet_url": "/events/1304/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-08-17 15:00:00 UTC",
+            "ends_at": "2023-08-27 14:59:00 UTC",
+            "local_start_date": "2023-08-18",
+            "local_end_date": "2023-08-27",
+            "timezone": { "value": "Asia/Seoul" },
+            "disciplines": [
+                {
+                    "id": 1557,
+                    "kind": "boulder",
+                    "event_id": 1304,
+                    "created_at": "2022-09-19T09:54:11.000Z",
+                    "updated_at": "2022-09-19T09:54:11.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1558,
+                    "kind": "lead",
+                    "event_id": 1304,
+                    "created_at": "2022-09-19T09:54:13.000Z",
+                    "updated_at": "2022-09-19T09:54:13.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1559,
+                    "kind": "speed",
+                    "event_id": 1304,
+                    "created_at": "2022-09-19T09:54:15.000Z",
+                    "updated_at": "2022-09-19T09:54:15.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "International Climbing Series - Rock Master - Arco (ITA) 2023",
+            "league_season_id": 427,
+            "location": "Arco",
+            "event_id": 1348,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1348",
+            "registration_url": "/api/v1/events/1348/registrations",
+            "infosheet_url": null,
+            "additional_info_url": null,
+            "starts_at": "2023-08-31 22:00:00 UTC",
+            "ends_at": "2023-09-01 21:59:00 UTC",
+            "local_start_date": "2023-09-01",
+            "local_end_date": "2023-09-01",
+            "timezone": { "value": "Europe/Rome" },
+            "disciplines": []
+        },
+        {
+            "event": "IFSC European Cup Bologna 2023",
+            "league_season_id": 423,
+            "location": "Bologna",
+            "event_id": 1336,
+            "cup_name": "IFSC-Europe Climbing European Cup 2023",
+            "cup_id": 92,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1336",
+            "registration_url": "/api/v1/events/1336/registrations",
+            "infosheet_url": "/events/1336/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-09-01 22:00:00 UTC",
+            "ends_at": "2023-09-03 21:59:00 UTC",
+            "local_start_date": "2023-09-02",
+            "local_end_date": "2023-09-03",
+            "timezone": { "value": "Europe/Rome" },
+            "disciplines": [
+                {
+                    "id": 1605,
+                    "kind": "lead",
+                    "event_id": 1336,
+                    "created_at": "2022-12-19T08:46:23.000Z",
+                    "updated_at": "2022-12-19T08:46:23.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1606,
+                    "kind": "speed",
+                    "event_id": 1336,
+                    "created_at": "2022-12-19T08:46:25.000Z",
+                    "updated_at": "2022-12-19T08:46:25.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "International Climbing Series - Triglav The Rock - Ljubljana (SLO) 2023",
+            "league_season_id": 427,
+            "location": "Ljubljana",
+            "event_id": 1345,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1345",
+            "registration_url": "/api/v1/events/1345/registrations",
+            "infosheet_url": null,
+            "additional_info_url": null,
+            "starts_at": "2023-09-01 22:00:00 UTC",
+            "ends_at": "2023-09-02 21:59:00 UTC",
+            "local_start_date": "2023-09-02",
+            "local_end_date": "2023-09-02",
+            "timezone": { "value": "Europe/Ljubljana" },
+            "disciplines": []
+        },
+        {
+            "event": "IFSC World Cup Koper 2023",
+            "league_season_id": 418,
+            "location": "Koper",
+            "event_id": 1302,
+            "cup_name": "IFSC Climbing World Cup 2023",
+            "cup_id": 90,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1302",
+            "registration_url": "/api/v1/events/1302/registrations",
+            "infosheet_url": "/events/1302/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-09-07 22:00:00 UTC",
+            "ends_at": "2023-09-09 21:59:00 UTC",
+            "local_start_date": "2023-09-08",
+            "local_end_date": "2023-09-09",
+            "timezone": { "value": "Europe/Ljubljana" },
+            "disciplines": [
+                {
+                    "id": 1554,
+                    "kind": "lead",
+                    "event_id": 1302,
+                    "created_at": "2022-09-19T09:49:43.000Z",
+                    "updated_at": "2022-09-19T09:49:43.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Asian Cup Hong Kong, China 2023",
+            "league_season_id": 421,
+            "location": "Hong Kong",
+            "event_id": 1343,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1343",
+            "registration_url": "/api/v1/events/1343/registrations",
+            "infosheet_url": "/events/1343/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-09-08 16:00:00 UTC",
+            "ends_at": "2023-09-10 15:59:00 UTC",
+            "local_start_date": "2023-09-09",
+            "local_end_date": "2023-09-10",
+            "timezone": { "value": "Asia/Hong_Kong" },
+            "disciplines": [
+                {
+                    "id": 1612,
+                    "kind": "boulder",
+                    "event_id": 1343,
+                    "created_at": "2023-03-10T10:58:41.000Z",
+                    "updated_at": "2023-03-10T10:58:41.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Europe - Youth Championship - Helsinki (FIN) 2023",
+            "league_season_id": 424,
+            "location": "Helsinki",
+            "event_id": 1330,
+            "cup_name": "IFSC-Europe Climbing European Youth Cup 2023",
+            "cup_id": 91,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1330",
+            "registration_url": "/api/v1/events/1330/registrations",
+            "infosheet_url": "/events/1330/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-09-14 21:00:00 UTC",
+            "ends_at": "2023-09-16 20:59:00 UTC",
+            "local_start_date": "2023-09-15",
+            "local_end_date": "2023-09-16",
+            "timezone": { "value": "Europe/Helsinki" },
+            "disciplines": [
+                {
+                    "id": 1596,
+                    "kind": "lead",
+                    "event_id": 1330,
+                    "created_at": "2022-11-14T11:50:54.000Z",
+                    "updated_at": "2022-11-14T11:50:54.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1627,
+                    "kind": "boulder&lead",
+                    "event_id": 1330,
+                    "created_at": "2023-09-17T05:11:26.000Z",
+                    "updated_at": "2023-09-17T05:11:26.000Z",
+                    "settings": {
+                        "lead": {
+                            "points": [
+                                100, 96, 92, 88, 84, 80, 76, 72, 68, 64, 60, 57,
+                                54, 51, 48, 45, 42, 39, 36, 33, 30, 28, 26, 24,
+                                22, 20, 18, 16, 14, 12, 10, 9, 8, 7, 6, 5, 4, 3,
+                                2, 1
+                            ],
+                            "plus": 0.1
+                        },
+                        "boulder": {
+                            "low_zone": 5,
+                            "high_zone": 10,
+                            "top": 25,
+                            "fall_deduction": 0.1
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "event": "IFSC European Qualifier Rome 2023",
+            "league_season_id": 423,
+            "location": "Rome",
+            "event_id": 1309,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1309",
+            "registration_url": "/api/v1/events/1309/registrations",
+            "infosheet_url": "/events/1309/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-09-14 22:00:00 UTC",
+            "ends_at": "2023-09-15 21:59:00 UTC",
+            "local_start_date": "2023-09-15",
+            "local_end_date": "2023-09-15",
+            "timezone": { "value": "Europe/Rome" },
+            "disciplines": [
+                {
+                    "id": 1566,
+                    "kind": "speed",
+                    "event_id": 1309,
+                    "created_at": "2022-09-19T10:10:47.000Z",
+                    "updated_at": "2022-09-19T10:10:47.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC World Cup Wujiang 2023",
+            "league_season_id": 418,
+            "location": "Wujiang",
+            "event_id": 1303,
+            "cup_name": "IFSC Climbing World Cup 2023",
+            "cup_id": 90,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1303",
+            "registration_url": "/api/v1/events/1303/registrations",
+            "infosheet_url": "/events/1303/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-09-21 16:00:00 UTC",
+            "ends_at": "2023-09-24 15:59:00 UTC",
+            "local_start_date": "2023-09-22",
+            "local_end_date": "2023-09-24",
+            "timezone": { "value": "Asia/Chongqing" },
+            "disciplines": [
+                {
+                    "id": 1555,
+                    "kind": "lead",
+                    "event_id": 1303,
+                    "created_at": "2022-09-19T09:51:35.000Z",
+                    "updated_at": "2022-09-19T09:51:35.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1556,
+                    "kind": "speed",
+                    "event_id": 1303,
+                    "created_at": "2022-09-19T09:51:37.000Z",
+                    "updated_at": "2022-09-19T09:51:37.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "Asian Games Hangzhou 2022",
+            "league_season_id": 425,
+            "location": "Hangzhou",
+            "event_id": 1306,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1306",
+            "registration_url": "/api/v1/events/1306/registrations",
+            "infosheet_url": null,
+            "additional_info_url": null,
+            "starts_at": "2023-09-22 16:00:00 UTC",
+            "ends_at": "2023-10-08 15:59:00 UTC",
+            "local_start_date": "2023-09-23",
+            "local_end_date": "2023-10-08",
+            "timezone": { "value": "Asia/Chongqing" },
+            "disciplines": []
+        },
+        {
+            "event": "IFSC Europe - Continental Youth Cup (S) - Hamburg (GER) 2023",
+            "league_season_id": 424,
+            "location": "Hamburg",
+            "event_id": 1334,
+            "cup_name": "IFSC-Europe Climbing European Youth Cup 2023",
+            "cup_id": 91,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1334",
+            "registration_url": "/api/v1/events/1334/registrations",
+            "infosheet_url": "/events/1334/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-09-23 22:00:00 UTC",
+            "ends_at": "2023-09-24 21:59:00 UTC",
+            "local_start_date": "2023-09-24",
+            "local_end_date": "2023-09-24",
+            "timezone": { "value": "Europe/Berlin" },
+            "disciplines": [
+                {
+                    "id": 1603,
+                    "kind": "speed",
+                    "event_id": 1334,
+                    "created_at": "2022-12-12T10:06:53.000Z",
+                    "updated_at": "2022-12-12T10:06:53.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "International Climbing Series - El-Capp Fest (B) - La Rochelle (FRA) 2023",
+            "league_season_id": 427,
+            "location": "La Rochelle",
+            "event_id": 1350,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1350",
+            "registration_url": "/api/v1/events/1350/registrations",
+            "infosheet_url": null,
+            "additional_info_url": null,
+            "starts_at": "2023-09-28 22:00:00 UTC",
+            "ends_at": "2023-09-30 21:59:00 UTC",
+            "local_start_date": "2023-09-29",
+            "local_end_date": "2023-09-30",
+            "timezone": { "value": "Europe/Paris" },
+            "disciplines": [
+                {
+                    "id": 1623,
+                    "kind": "boulder",
+                    "event_id": 1350,
+                    "created_at": "2023-08-21T00:23:40.000Z",
+                    "updated_at": "2023-08-21T00:23:40.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Asia - Continental Youth Championships (B, S, L, B&L) - Chongqing (CHN) 2023",
+            "league_season_id": 422,
+            "location": "Chongqing",
+            "event_id": 1349,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1349",
+            "registration_url": "/api/v1/events/1349/registrations",
+            "infosheet_url": "/events/1349/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-10-17 16:00:00 UTC",
+            "ends_at": "2023-10-22 15:59:00 UTC",
+            "local_start_date": "2023-10-18",
+            "local_end_date": "2023-10-22",
+            "timezone": { "value": "Asia/Shanghai" },
+            "disciplines": [
+                {
+                    "id": 1620,
+                    "kind": "lead",
+                    "event_id": 1349,
+                    "created_at": "2023-08-19T01:05:20.000Z",
+                    "updated_at": "2023-08-19T01:05:20.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1621,
+                    "kind": "speed",
+                    "event_id": 1349,
+                    "created_at": "2023-08-19T01:05:24.000Z",
+                    "updated_at": "2023-08-19T01:05:24.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1622,
+                    "kind": "boulder",
+                    "event_id": 1349,
+                    "created_at": "2023-08-19T01:05:28.000Z",
+                    "updated_at": "2023-08-19T01:05:28.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1664,
+                    "kind": "boulder&lead",
+                    "event_id": 1349,
+                    "created_at": "2023-10-20T07:02:36.000Z",
+                    "updated_at": "2023-10-20T07:02:36.000Z",
+                    "settings": {
+                        "lead": {
+                            "points": [
+                                100, 96, 92, 88, 84, 80, 76, 72, 68, 64, 60, 57,
+                                54, 51, 48, 45, 42, 39, 36, 33, 30, 28, 26, 24,
+                                22, 20, 18, 16, 14, 12, 10, 9, 8, 7, 6, 5, 4, 3,
+                                2, 1
+                            ],
+                            "plus": 0.1
+                        },
+                        "boulder": {
+                            "low_zone": 5,
+                            "high_zone": 10,
+                            "top": 25,
+                            "fall_deduction": 0.1
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "event": "Pan American Games Santiago 2023",
+            "league_season_id": 425,
+            "location": "Santiago",
+            "event_id": 1307,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1307",
+            "registration_url": "/api/v1/events/1307/registrations",
+            "infosheet_url": null,
+            "additional_info_url": null,
+            "starts_at": "2023-10-20 03:00:00 UTC",
+            "ends_at": "2023-10-26 02:59:00 UTC",
+            "local_start_date": "2023-10-20",
+            "local_end_date": "2023-10-25",
+            "timezone": { "value": "America/Santiago" },
+            "disciplines": [
+                {
+                    "id": 1563,
+                    "kind": "speed",
+                    "event_id": 1307,
+                    "created_at": "2022-09-19T10:07:17.000Z",
+                    "updated_at": "2022-09-19T10:07:17.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1564,
+                    "kind": "boulder&lead",
+                    "event_id": 1307,
+                    "created_at": "2022-09-19T10:07:22.000Z",
+                    "updated_at": "2023-10-22T12:05:54.000Z",
+                    "settings": {
+                        "lead": {
+                            "points": [
+                                100,
+                                "96",
+                                "92",
+                                "88",
+                                "84",
+                                "80",
+                                "76",
+                                "72",
+                                "68",
+                                "64",
+                                "60",
+                                "57",
+                                "54",
+                                "51",
+                                "48",
+                                "45",
+                                "42",
+                                "39",
+                                "36",
+                                "33",
+                                "30",
+                                "28",
+                                "26",
+                                "24",
+                                "22",
+                                "20",
+                                "18",
+                                "16",
+                                "14",
+                                "12",
+                                "10",
+                                "9",
+                                "8",
+                                "7",
+                                "6",
+                                "5",
+                                "4",
+                                "3",
+                                "2",
+                                "1"
+                            ],
+                            "plus": 0.1
+                        },
+                        "boulder": {
+                            "low_zone": "5",
+                            "high_zone": "10",
+                            "top": 25,
+                            "fall_deduction": 0.1
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "event": "IFSC European Qualifier Laval 2023",
+            "league_season_id": 423,
+            "location": "Laval",
+            "event_id": 1308,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1308",
+            "registration_url": "/api/v1/events/1308/registrations",
+            "infosheet_url": "/events/1308/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-10-25 22:00:00 UTC",
+            "ends_at": "2023-10-29 22:59:00 UTC",
+            "local_start_date": "2023-10-26",
+            "local_end_date": "2023-10-29",
+            "timezone": { "value": "Europe/Paris" },
+            "disciplines": [
+                {
+                    "id": 1565,
+                    "kind": "boulder&lead",
+                    "event_id": 1308,
+                    "created_at": "2022-09-19T10:09:30.000Z",
+                    "updated_at": "2023-10-24T15:26:19.000Z",
+                    "settings": {
+                        "lead": {
+                            "points": [
+                                100,
+                                "96",
+                                "92",
+                                "88",
+                                "84",
+                                "80",
+                                "76",
+                                "72",
+                                "68",
+                                "64",
+                                "60",
+                                "57",
+                                "54",
+                                "51",
+                                "48",
+                                "45",
+                                "42",
+                                "39",
+                                "36",
+                                "33",
+                                "30",
+                                "28",
+                                "26",
+                                "24",
+                                "22",
+                                "20",
+                                "18",
+                                "16",
+                                "14",
+                                "12",
+                                "10",
+                                "9",
+                                "8",
+                                "7",
+                                "6",
+                                "5",
+                                "4",
+                                "3",
+                                "2",
+                                "1"
+                            ],
+                            "plus": 0.1
+                        },
+                        "boulder": {
+                            "low_zone": "5",
+                            "high_zone": "10",
+                            "top": 25,
+                            "fall_deduction": 0.1
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "event": "IFSC Asian Qualifier Jakarta 2023",
+            "league_season_id": 421,
+            "location": "Jakarta",
+            "event_id": 1310,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1310",
+            "registration_url": "/api/v1/events/1310/registrations",
+            "infosheet_url": "/events/1310/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-11-08 17:00:00 UTC",
+            "ends_at": "2023-11-12 16:59:00 UTC",
+            "local_start_date": "2023-11-09",
+            "local_end_date": "2023-11-12",
+            "timezone": { "value": "Asia/Jakarta" },
+            "disciplines": [
+                {
+                    "id": 1567,
+                    "kind": "speed",
+                    "event_id": 1310,
+                    "created_at": "2022-09-19T10:12:42.000Z",
+                    "updated_at": "2022-09-19T10:12:42.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1568,
+                    "kind": "boulder&lead",
+                    "event_id": 1310,
+                    "created_at": "2022-09-19T10:12:44.000Z",
+                    "updated_at": "2023-10-24T15:30:04.000Z",
+                    "settings": {
+                        "lead": {
+                            "points": [
+                                100,
+                                "96",
+                                "92",
+                                "88",
+                                "84",
+                                "80",
+                                "76",
+                                "72",
+                                "68",
+                                "64",
+                                "60",
+                                "57",
+                                "54",
+                                "51",
+                                "48",
+                                "45",
+                                "42",
+                                "39",
+                                "36",
+                                "33",
+                                "30",
+                                "28",
+                                "26",
+                                "24",
+                                "22",
+                                "20",
+                                "18",
+                                "16",
+                                "14",
+                                "12",
+                                "10",
+                                "9",
+                                "8",
+                                "7",
+                                "6",
+                                "5",
+                                "4",
+                                "3",
+                                "2",
+                                "1"
+                            ],
+                            "plus": 0.1
+                        },
+                        "boulder": {
+                            "low_zone": "5",
+                            "high_zone": "10",
+                            "top": 25,
+                            "fall_deduction": 0.1
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "event": "International Climbing Series - The Belt and Road (S) - Ningbo (CHN) 2023",
+            "league_season_id": 427,
+            "location": "Ningbo",
+            "event_id": 1380,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1380",
+            "registration_url": "/api/v1/events/1380/registrations",
+            "infosheet_url": "/events/1380/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-11-15 16:00:00 UTC",
+            "ends_at": "2023-11-16 15:59:00 UTC",
+            "local_start_date": "2023-11-16",
+            "local_end_date": "2023-11-16",
+            "timezone": { "value": "Asia/Shanghai" },
+            "disciplines": [
+                {
+                    "id": 1669,
+                    "kind": "speed",
+                    "event_id": 1380,
+                    "created_at": "2023-10-27T12:20:02.000Z",
+                    "updated_at": "2023-10-27T12:20:02.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "NEOM IFSC Masters 2023",
+            "league_season_id": 427,
+            "location": "Neom Beach Games Mountain Village",
+            "event_id": 1351,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1351",
+            "registration_url": "/api/v1/events/1351/registrations",
+            "infosheet_url": "/events/1351/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-11-21 21:00:00 UTC",
+            "ends_at": "2023-11-24 20:59:00 UTC",
+            "local_start_date": "2023-11-22",
+            "local_end_date": "2023-11-24",
+            "timezone": { "value": "Asia/Riyadh" },
+            "disciplines": [
+                {
+                    "id": 1625,
+                    "kind": "speed",
+                    "event_id": 1351,
+                    "created_at": "2023-08-25T02:52:54.000Z",
+                    "updated_at": "2023-08-25T02:52:54.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1626,
+                    "kind": "boulder",
+                    "event_id": 1351,
+                    "created_at": "2023-08-25T06:59:31.000Z",
+                    "updated_at": "2023-08-25T06:59:31.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC Oceania Qualifier Melbourne 2023",
+            "league_season_id": 429,
+            "location": "Melbourne",
+            "event_id": 1311,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1311",
+            "registration_url": "/api/v1/events/1311/registrations",
+            "infosheet_url": "/events/1311/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-11-23 14:00:00 UTC",
+            "ends_at": "2023-11-26 13:59:00 UTC",
+            "local_start_date": "2023-11-24",
+            "local_end_date": "2023-11-26",
+            "timezone": { "value": "Australia/Brisbane" },
+            "disciplines": [
+                {
+                    "id": 1569,
+                    "kind": "speed",
+                    "event_id": 1311,
+                    "created_at": "2022-09-19T10:13:56.000Z",
+                    "updated_at": "2022-09-19T10:13:56.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1570,
+                    "kind": "boulder&lead",
+                    "event_id": 1311,
+                    "created_at": "2022-09-19T10:13:59.000Z",
+                    "updated_at": "2023-10-24T15:33:32.000Z",
+                    "settings": {
+                        "lead": {
+                            "points": [
+                                100,
+                                "96",
+                                "92",
+                                "88",
+                                "84",
+                                "80",
+                                "76",
+                                "72",
+                                "68",
+                                "64",
+                                "60",
+                                "57",
+                                "54",
+                                "51",
+                                "48",
+                                "45",
+                                "42",
+                                "39",
+                                "36",
+                                "33",
+                                "30",
+                                "28",
+                                "26",
+                                "24",
+                                "22",
+                                "20",
+                                "18",
+                                "16",
+                                "14",
+                                "12",
+                                "10",
+                                "9",
+                                "8",
+                                "7",
+                                "6",
+                                "5",
+                                "4",
+                                "3",
+                                "2",
+                                "1"
+                            ],
+                            "plus": 0.1
+                        },
+                        "boulder": {
+                            "low_zone": "5",
+                            "high_zone": "10",
+                            "top": 25,
+                            "fall_deduction": 0.1
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "event": "IFSC South American Cup Curitiba 2023",
+            "league_season_id": 428,
+            "location": "Curitiba",
+            "event_id": 1346,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1346",
+            "registration_url": "/api/v1/events/1346/registrations",
+            "infosheet_url": "/events/1346/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-12-01 03:00:00 UTC",
+            "ends_at": "2023-12-04 02:59:00 UTC",
+            "local_start_date": "2023-12-01",
+            "local_end_date": "2023-12-03",
+            "timezone": { "value": "America/Sao_Paulo" },
+            "disciplines": [
+                {
+                    "id": 1617,
+                    "kind": "boulder",
+                    "event_id": 1346,
+                    "created_at": "2023-05-03T09:13:15.000Z",
+                    "updated_at": "2023-05-03T09:13:15.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC African Qualifier Pretoria 2023",
+            "league_season_id": 430,
+            "location": "Pretoria",
+            "event_id": 1312,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1312",
+            "registration_url": "/api/v1/events/1312/registrations",
+            "infosheet_url": "/events/1312/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-12-06 22:00:00 UTC",
+            "ends_at": "2023-12-09 21:59:00 UTC",
+            "local_start_date": "2023-12-07",
+            "local_end_date": "2023-12-09",
+            "timezone": { "value": "Africa/Johannesburg" },
+            "disciplines": [
+                {
+                    "id": 1571,
+                    "kind": "speed",
+                    "event_id": 1312,
+                    "created_at": "2022-09-19T10:15:02.000Z",
+                    "updated_at": "2022-09-19T10:15:02.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1572,
+                    "kind": "boulder&lead",
+                    "event_id": 1312,
+                    "created_at": "2022-09-19T10:15:05.000Z",
+                    "updated_at": "2023-10-24T15:31:41.000Z",
+                    "settings": {
+                        "lead": {
+                            "points": [
+                                100,
+                                "96",
+                                "92",
+                                "88",
+                                "84",
+                                "80",
+                                "76",
+                                "72",
+                                "68",
+                                "64",
+                                "60",
+                                "57",
+                                "54",
+                                "51",
+                                "48",
+                                "45",
+                                "42",
+                                "39",
+                                "36",
+                                "33",
+                                "30",
+                                "28",
+                                "26",
+                                "24",
+                                "22",
+                                "20",
+                                "18",
+                                "16",
+                                "14",
+                                "12",
+                                "10",
+                                "9",
+                                "8",
+                                "7",
+                                "6",
+                                "5",
+                                "4",
+                                "3",
+                                "2",
+                                "1"
+                            ],
+                            "plus": 0.1
+                        },
+                        "boulder": {
+                            "low_zone": "5",
+                            "high_zone": "10",
+                            "top": 25,
+                            "fall_deduction": 0.1
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "event": "IFSC Asia - Asian K Championships (B, L, S) - Jamshedpur (IND) 2023",
+            "league_season_id": 422,
+            "location": "Jamshedpur",
+            "event_id": 1382,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1382",
+            "registration_url": "/api/v1/events/1382/registrations",
+            "infosheet_url": "/events/1382/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-12-07 16:00:00 UTC",
+            "ends_at": "2023-12-10 15:59:00 UTC",
+            "local_start_date": "2023-12-08",
+            "local_end_date": "2023-12-10",
+            "timezone": { "value": "Asia/Kuala_Lumpur" },
+            "disciplines": []
+        },
+        {
+            "event": "IFSC Asian Cup Riyadh 2023",
+            "league_season_id": 421,
+            "location": "Riyadh",
+            "event_id": 1344,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1344",
+            "registration_url": "/api/v1/events/1344/registrations",
+            "infosheet_url": "/events/1344/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-12-11 21:00:00 UTC",
+            "ends_at": "2023-12-16 20:59:00 UTC",
+            "local_start_date": "2023-12-12",
+            "local_end_date": "2023-12-16",
+            "timezone": { "value": "Asia/Riyadh" },
+            "disciplines": [
+                {
+                    "id": 1614,
+                    "kind": "boulder",
+                    "event_id": 1344,
+                    "created_at": "2023-03-10T11:00:52.000Z",
+                    "updated_at": "2023-03-10T11:00:52.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1615,
+                    "kind": "speed",
+                    "event_id": 1344,
+                    "created_at": "2023-03-10T11:00:55.000Z",
+                    "updated_at": "2023-03-10T11:00:55.000Z",
+                    "settings": null
+                },
+                {
+                    "id": 1616,
+                    "kind": "lead",
+                    "event_id": 1344,
+                    "created_at": "2023-03-10T11:00:58.000Z",
+                    "updated_at": "2023-03-10T11:00:58.000Z",
+                    "settings": null
+                }
+            ]
+        },
+        {
+            "event": "IFSC South American Cup Mar del Plata 2023",
+            "league_season_id": 428,
+            "location": "Mar del Plata",
+            "event_id": 1347,
+            "cup_name": "",
+            "cup_id": null,
+            "custom_cup_ids": [],
+            "url": "/api/v1/events/1347",
+            "registration_url": "/api/v1/events/1347/registrations",
+            "infosheet_url": "/events/1347/infosheet",
+            "additional_info_url": null,
+            "starts_at": "2023-12-15 03:00:00 UTC",
+            "ends_at": "2023-12-18 02:59:00 UTC",
+            "local_start_date": "2023-12-15",
+            "local_end_date": "2023-12-17",
+            "timezone": { "value": "America/Argentina/Buenos_Aires" },
+            "disciplines": [
+                {
+                    "id": 1618,
+                    "kind": "boulder",
+                    "event_id": 1347,
+                    "created_at": "2023-05-03T09:18:23.000Z",
+                    "updated_at": "2023-05-03T09:18:23.000Z",
+                    "settings": null
+                }
+            ]
+        }
+    ]
+}
