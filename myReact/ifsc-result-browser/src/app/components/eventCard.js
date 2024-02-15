@@ -28,7 +28,7 @@ const EventCard = ({ event, index }) => {
     //     console.log(event.league_season_id, leagueId, event.location);
     
     // const cardClasses = `w-36 h-36 border border-gray-200 p-2 m-2 flex flex-col justify-center items-center rounded shadow-sm text-center overflow-hidden ${isLeagueMatch ? "bg-blue-500" : "bg-white"}`;
-    const cardClasses = `w-36 h-36 border border-gray-200 p-2 m-2 flex flex-col justify-center items-center rounded shadow-sm text-center overflow-hidden bg-white`;
+    const cardClasses = `w-36 h-36 border border-gray-200 p-2 m-2 flex flex-col justify-center items-center rounded shadow-sm text-center overflow-hidden bg-white hover:bg-sky-200 transition-all`;
 
     return (
         <div key={index} className={cardClasses}>

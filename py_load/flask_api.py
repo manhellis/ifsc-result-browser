@@ -1,47 +1,46 @@
-from flask import Flask, jsonify, request
+from flask import Flask, request
 import requests
 from bs4 import BeautifulSoup
-import pandas as pd
 
 app = Flask(__name__)
-url_main = "https://ifsc.results.info"
-
-@app.route('/get_csrf_token', methods=['GET'])
-def get_csrf_token():
-    session = requests.Session()
-    response_main = session.get(url_main)
-    soup = BeautifulSoup(response_main.text, 'html.parser')
-    csrf_token = soup.find('meta', {'name': 'csrf-token'})['content']
-    return jsonify({'csrf_token': csrf_token})
-
-@app.route('/', methods=['GET'])
-def default_route():
-    return "Welcome to the API!"
 
 
-@app.route('/api/v1/<path:subpath>', methods=['GET', 'POST', 'PUT', 'DELETE'])
+# Global variable to store CSRF token
+CSRF_TOKEN = None
+
+# Initialize a session object globally
+session = requests.Session()
+
+
+def initialize_api():
+    global CSRF_TOKEN
+    # Perform a GET request to the external API to fetch the CSRF token
+    response = session.get('https://ifsc.results.info')
+    cookies = response.cookies
+    soup = BeautifulSoup(response.text, 'html.parser')
+    CSRF_TOKEN = soup.find('meta', {'name': 'csrf-token'})['content']
+    # Update session headers with the CSRF token
+    session.headers.update({'X-CSRFToken': CSRF_TOKEN})
+
+initialize_api()
+
+@app.route('/proxy/<path:subpath>', methods=['GET', 'POST', 'PUT', 'DELETE'])
 def proxy(subpath):
-    # External API base URL
-    external_api_base_url = "https://ifsc.results.info/api/v1/"
-
-    # Complete external API URL by appending the subpath
-    external_api_url = f"{external_api_base_url}{subpath}"
+    target_url = f'https://ifsc.results.info/"{subpath}'
 
     # Forward the request to the external API
-    response = requests.request(
+    response = session.request(
         method=request.method,
-        url=external_api_url,
-        headers={key: value for key, value in request.headers if key != 'Host'},
-        data=request.get_data(),
-        cookies=request.cookies,
-        allow_redirects=False)
+        url=target_url,
+        allow_redirects=False
+    )
 
-    # Return the response from the external API to the client
+    # Exclude certain headers from the forwarded response
     excluded_headers = ['content-encoding', 'content-length', 'transfer-encoding', 'connection']
-    headers = [(name, value) for (name, value) in response.raw.headers.items()
-               if name.lower() not in excluded_headers]
+    headers = {name: value for (name, value) in response.raw.headers.items()
+               if name.lower() not in excluded_headers}
 
-    # Return response with the same status code and headers
+    # Send the response from the external API back to the client
     return (response.content, response.status_code, headers)
 
 if __name__ == '__main__':
