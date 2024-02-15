@@ -4,22 +4,19 @@ import YearBrowser from "./components/yearBrowser";
 import YearEventDropdown from "./components/yearEventDropdown";
 // import data from "../data/yearEventData.json";
 
-
-
-// const text = "season_2023.json";
-
-
-
 const Page = () => {
-    // const [filter, setFilter] = useState(eventsData);
-    // console.log(data);
-    // pass link to data to object
-    return (
-        <>
+    const [selectedYear, setSelectedYear] = useState(2023); // Default year
+    // or useState(new Date().getFullYear()) to default to current year
 
-            <YearEventDropdown />
-            <YearBrowser  />
-        </>
+    const handleYearChange = (year) => {
+        setSelectedYear(year);
+    };
+    return (
+        <div className="flex flex-col items-center justify-center">
+            <YearEventDropdown className=""
+            selectedYear={selectedYear} onYearChange={handleYearChange} />
+            <YearBrowser year={selectedYear} />
+        </div>
     );
 };
 

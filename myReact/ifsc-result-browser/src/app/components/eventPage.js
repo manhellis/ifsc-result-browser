@@ -1,6 +1,7 @@
 import React from "react";
-
+import { useLocation } from "next/navigation"
 const EventPageHeader = ({ event }) => {
+    
     const startDate = new Date(event.starts_at).toLocaleString("en-US", {
         dateStyle: "full",
         timeStyle: "short",

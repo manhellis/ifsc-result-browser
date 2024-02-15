@@ -1,18 +1,18 @@
+'use client'
 import React from 'react';
+
 import singleEvent from '../../data/singleEvent.json';
 import EventPage from '../components/eventPage'
-import FetchApi from '../components/fetchApi'
+import { useLocation} from "next/navigation"
+import { useRouter } from 'next/navigation';
 
-const route1 = '/get_csrf_token'
-const route2 = '/get_leagues'
 const Page = () => {
-    // console.log(singleEvent.name)
-    
-    // console.log(singleEvent.d_cats);
+    const router = useRouter();
+    const { key } = router.query;
     return (
         <div className='flex flex-col justify-center items-center'>
+            <div>Data: {key}</div>
             <EventPage event={singleEvent} />
-            <FetchApi route={'/'}/>
             
         </div>
     );

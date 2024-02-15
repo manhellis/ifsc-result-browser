@@ -5,17 +5,18 @@ import LeagueDropdown from "./leagueDropdown";
 // import { data } from "autoprefixer";
 
 
-const API_URL = "http://127.0.0.1:8000/current/2023"
+const API_BASE = "http://127.0.0.1:8000/current/"
 
-const YearBrowser = () => {
+
+const YearBrowser = ({ year }) => { // i guess if this was typescript it would be working already
     // States for managing fetched data and loading state
     const [data, setData] = useState({ events: [], leagues: [] });
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
-
-    // State for selected league ID
     const [selectedLeagueId, setSelectedLeagueId] = useState(null);
-
+    
+    let API_URL = API_BASE + String(year);
+    console.log(API_URL)
     // Fetch data from API
     useEffect(() => {
         const fetchData = async () => {
@@ -35,7 +36,7 @@ const YearBrowser = () => {
         };
 
         fetchData();
-    }, []);
+    }, [year]); // include year in dependency array to refetch when it changes ?? wizard 
     // Handler for league selection change
     const handleLeagueChange = (leagueId) => {
         setSelectedLeagueId(Number(leagueId));
