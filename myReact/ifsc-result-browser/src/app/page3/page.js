@@ -7,11 +7,9 @@ import { useLocation} from "next/navigation"
 import { useRouter } from 'next/navigation';
 
 const Page = () => {
-    const router = useRouter();
-    const { key } = router.query;
     return (
         <div className='flex flex-col justify-center items-center'>
-            <div>Data: {key}</div>
+            {/* <div>Data: {key}</div> */}
             <EventPage event={singleEvent} />
             
         </div>
