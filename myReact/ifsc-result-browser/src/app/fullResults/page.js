@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 
 // this whole page should be componentized?? but i will dev it here first
@@ -28,21 +28,72 @@ const Rounds = (rounds) => {
         </>
     );
 };
+// maybe inside the modal compare boulder ranks? very advanced feature
+const Modal = ({ closeModal, data, name }) => {
+    // Function to close modal on Escape key press
+    const handleKeyDown = (event) => {
+        if (event.key === 'Escape') {
+            closeModal();
+        }
+    };
 
-const Modal = ({ closeModal, content }) => {
-    // pass in the athlete data and create a modal
+    // Adding event listeners when component mounts
+    useEffect(() => {
+        window.addEventListener('keydown', handleKeyDown);
+        
+        // Clean-up function to remove event listeners when component unmounts
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown);
+        };
+    }, []); // Empty dependency array to ensure this runs only once on mount
+
+    // Closing modal when clicking outside the modal's content
+    // Assuming the modal overlay (backdrop) has a ref of modalRef
+    const modalRef = useRef(); // Remember to import useRef from react
+
+    const handleClickOutside = (event) => {
+        if (modalRef.current && !modalRef.current.contains(event.target)) {
+            closeModal();
+        }
+    };
+
+    useEffect(() => {
+        // Handling clicks outside the modal
+        document.addEventListener('mousedown', handleClickOutside);
+
+        return () => {
+            // Clean-up
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []); // Ensure the modalRef is accessed properly in the dependency array
 
     return (
-        <div className="modal-overlay" onClick={closeModal}>
-            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                <button className="close-button" onClick={closeModal}>
-                    Close
-                </button>
-                <p>{content.event}</p> {/* Display the passed-in content */}
+        <div className="fixed inset-0 z-50 overflow-auto bg-black bg-opacity-40">
+            <div
+                className="fixed top-0 right-0 bottom-0 z-50 w-full max-w-md p-4 overflow-hidden bg-white shadow-xl transition-transform transform translate-x-0"
+                style={{ transition: "transform .3s ease-in-out" }}
+                ref={modalRef} // IMPORTANT: This is where the div is set to be checked for the 'outside click'
+            >
+                <div className="flex items-center justify-between">
+                    <h2 className="text-xl font-bold">{data?.round_name}</h2>
+                    <button
+                        onClick={closeModal}
+                        className="text-lg font-semibold"
+                    >
+                        &times;
+                    </button>
+                </div>
+                <div className="mt-4">
+                    <p><strong>Name: </strong>{name}</p>
+                    <p><strong>Round Name: </strong>{data?.round_name}</p>
+                    {data?.score && <p><strong>Score:</strong> {data.score}</p>}
+                    {/* Dynamic content */}
+                </div>
             </div>
         </div>
     );
 };
+
 
 const Page = () => {
     const API_BASE = "http://127.0.0.1:8000/fullResults?";
@@ -52,7 +103,12 @@ const Page = () => {
     const [data, setData] = useState({ ranking: [] });
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    // const [isModalOpen, setIsModalOpen] = useState(false);
+    const [modalState, setModalState] = useState({
+        isOpen: false,
+        data: null,
+        name: null,
+    });
 
     let API_URL = API_BASE + "id=" + event_id + "&cid=" + category_id;
     console.log(API_URL);
@@ -77,10 +133,6 @@ const Page = () => {
         fetchData();
     }, []);
 
-    const toggleModal = () => {
-        setIsModalOpen(!isModalOpen);
-    };
-
     if (isLoading) return <div>Loading...</div>; // do i need to add error checking or will all these apis be converted to nextjs data fetching
     return (
         <div>
@@ -88,21 +140,25 @@ const Page = () => {
                 {data.event} - id:
                 <span className="text-blue-500">{event_id} </span>
                 cid:<span className="text-blue-500">{category_id}</span>
-                <div>
+                {/* <div>
                     <button
                         className="bg-lime-400 p-4 hover:bg-lime-700 transition-colors"
                         onClick={toggleModal}
                     >
                         Toggle Modal
                     </button>
-                    {isModalOpen && (
-                        <Modal
-                            content={data}
-                            closeModal={toggleModal}
-                        />
-                    )}
-                </div>
+                    
+                </div> */}
             </h1>
+            {modalState.isOpen && (
+                <Modal
+                    data={modalState.data}
+                    closeModal={() =>
+                        setModalState({ isOpen: false, data: null })
+                    }
+                    name={modalState.name}
+                />
+            )}
             <div className="flex flex-col items-center justify-center">
                 <div className="flex flex-row items-center justify-between w-6/12 px-6 pt-6 bg-white">
                     <h1 className="text-lg text-blue-600">Ranking - Name</h1>
@@ -133,12 +189,22 @@ const Page = () => {
                                 </div>
 
                                 {/* right side, on click text slide out window */}
-                                <div className="">
+                                <div className="flex flex-col items-end">
                                     {ranking.rounds.map((round) => {
                                         return (
-                                            <h1 className="hover:text-sky-700 transition-colors">
+                                            <button
+                                                className="hover:text-sky-700 transition-colors"
+                                                key={round.round_id}
+                                                onClick={() =>
+                                                    setModalState({
+                                                        isOpen: true,
+                                                        data: round,
+                                                        name: ranking.name,
+                                                    })
+                                                }
+                                            >
                                                 {round.round_name + " "}
-                                            </h1>
+                                            </button>
                                         );
                                     })}
 
