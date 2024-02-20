@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -42,30 +42,26 @@ async def read_current(year: int = 2023):
         raise HTTPException(status_code=404, detail="Season not found")
     
     
-@app.get("/event/{id}")
-async def read_event(id: int = 65):
+# Modified event endpoint to use query parameters
+@app.get("/event")
+async def read_event(id: int = Query(default=65, alias="id")):
     directory = "../data/outputEvents/"
     file_name = f"event_{id}.json"
     file_path = os.path.join(directory, file_name)
 
-    # Check if the file exists
     if os.path.exists(file_path):
-        # Return the file
         return FileResponse(path=file_path, media_type='application/json')
     else:
-        # If the file does not exist, return a 404 error
         raise HTTPException(status_code=404, detail="Event not found")
 
-@app.get("/fullResults/{id}/{cid}") #id is event id, cid is category id
-async def read_event(id: int = 65, cid: int = 1):
+# Modified full results endpoint to use query parameters
+@app.get("/fullResults")
+async def read_full_results(id: int = Query(default=65, alias="id"), cid: int = Query(default=1, alias="cid")):
     directory = "../data/outputFullResults/"
     file_name = f"fullResults_{id}_{cid}.json"
     file_path = os.path.join(directory, file_name)
 
-    # Check if the file exists
     if os.path.exists(file_path):
-        # Return the file
         return FileResponse(path=file_path, media_type='application/json')
     else:
-        # If the file does not exist, return a 404 error
         raise HTTPException(status_code=404, detail="Event or Result not found")

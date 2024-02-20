@@ -1,22 +1,61 @@
-'use client'
-import { useSearchParams } from 'next/navigation';
-import React from 'react';
-import Link from 'next/link';
+"use client";
+import { useEffect, useState } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
+import React from "react";
+import EventPage from "../components/eventPage";
+
+const API_BASE = "http://127.0.0.1:8000/event?";
 
 const Page = () => {
     const searchParams = useSearchParams();
+    const router = useRouter();
+    const search = searchParams.get("id"); // Get the query parameter from the URL - event id
+    const btnStyle =
+        "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 m-4 rounded";
 
-    const search = searchParams.get('query');
+    const [data, setData] = useState({ event: [] });
+    const [isLoading, setIsLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    let API_URL = `${API_BASE}id=${search}`;
+    console.log(API_URL);
+    // Fetch data from API
+    useEffect(() => {
+        const fetchData = async () => {
+            setIsLoading(true);
+            try {
+                const response = await fetch(API_URL);
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                const jsonData = await response.json();
+                setData(jsonData); // Assuming the JSON structure matches your data variable
+                setIsLoading(false);
+            } catch (error) {
+                setError(error.message);
+                setIsLoading(false);
+            }
+        };
+
+        fetchData();
+    }, []);
+
+
 
     return (
         <div>
-            <Link href="/">
+            <button className={btnStyle} onClick={() => router.back()}>
                 Back
-            </Link>
-            <h1 className='text-4xl text-pink-600'>Event Page! load data here</h1>
-            <h2 className='text-2xl text-blue-600'>{search ? "your query: " + search : 'no query'}</h2>
+            </button>
+            <div className='flex flex-col justify-center items-center'>
+                <EventPage event={data} /> 
+
+            </div>
+            <h2 className="text-2xl text-blue-600">
+                {search ? "your query: " + search : "no query"}
+            </h2>
         </div>
     );
-}
+};
 
 export default Page;

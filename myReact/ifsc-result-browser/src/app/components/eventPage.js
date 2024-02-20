@@ -43,7 +43,10 @@ const CategoryRounds = ({ category }) => {
 };
 
 const EventPageCategory = ({ event }) => {
-    return event.d_cats.map((category) => {
+    if (!event.d_cats) {
+        return <div>No categories</div>;
+    }
+    return event.d_cats.map((category) => { // need to add if empty dcats check
         // Added return statement here
         // console.log(category.category_name);
         return (
