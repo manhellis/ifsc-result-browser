@@ -1,7 +1,6 @@
 import React from "react";
-import { useLocation } from "next/navigation"
+import { useRouter } from "next/navigation";
 const EventPageHeader = ({ event }) => {
-    
     const startDate = new Date(event.starts_at).toLocaleString("en-US", {
         dateStyle: "full",
         timeStyle: "short",
@@ -43,18 +42,29 @@ const CategoryRounds = ({ category }) => {
 };
 
 const EventPageCategory = ({ event }) => {
+
+    const router = useRouter();
+
     if (!event.d_cats) {
         return <div>No categories</div>;
     }
-    return event.d_cats.map((category) => { // need to add if empty dcats check
+    return event.d_cats.map((category) => {
+        // need to add if empty dcats check
         // Added return statement here
         // console.log(category.category_name);
         return (
-            <div key={category.d_cat_id}>
-                <h1 className="text-xl">{`${category.category_name} ${category.discipline_kind}`}</h1>
+            <div
+                className="bg-white hover:bg-sky-200 p-4 m-4  transition-all rounded shadow-sm cursor-pointer"
+                key={category.dcat_id}
+                onClick={() => router.push(`/fullResults?id=${event.id}&cid=${category.dcat_id}`)}
+            >
+                {/* does this do anything? */}
+                <h1 className="text-xl">
+                    {`${category.category_name} ${category.discipline_kind} - cid: ${category.dcat_id}`}
+                </h1>
                 <CategoryRounds category={category} />
             </div>
-        );
+        ); // onclick this div, goto a results page.
     });
 };
 

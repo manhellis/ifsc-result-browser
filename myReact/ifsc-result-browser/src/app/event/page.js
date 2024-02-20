@@ -7,8 +7,8 @@ import EventPage from "../components/eventPage";
 const API_BASE = "http://127.0.0.1:8000/event?";
 
 const Page = () => {
-    const searchParams = useSearchParams();
     const router = useRouter();
+    const searchParams = useSearchParams();
     const search = searchParams.get("id"); // Get the query parameter from the URL - event id
     const btnStyle =
         "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 m-4 rounded";
@@ -40,20 +40,20 @@ const Page = () => {
         fetchData();
     }, []);
 
-
-
     return (
         <div>
-            <button className={btnStyle} onClick={() => router.back()}>
-                Back
-            </button>
-            <div className='flex flex-col justify-center items-center'>
-                <EventPage event={data} /> 
+            <div className="flex flex-col justify-center items-center">
+                <div className="flex flex-row items-start justify-start w-full">
+                    <button className={btnStyle} onClick={() => router.back()}>
+                        Back
+                    </button>
+                    <h2 className="text-2xl text-blue-600">
+                        {search ? "your query: " + search : "no query"}
+                    </h2>
+                </div>
 
+                <EventPage event={data} />
             </div>
-            <h2 className="text-2xl text-blue-600">
-                {search ? "your query: " + search : "no query"}
-            </h2>
         </div>
     );
 };
