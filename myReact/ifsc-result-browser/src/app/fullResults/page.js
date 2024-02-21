@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState, useRef } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
+import RouteResult from "../components/RouteResult";
 
 // this whole page should be componentized?? but i will dev it here first
 
@@ -28,28 +29,46 @@ const Rounds = (rounds) => {
         </>
     );
 };
+
+const TopCard = ({ route }) => {
+    const cardBaseStyle = "border rounded-lg p-4 mb-4";
+    const cardHighlightStyle = route.top ? "bg-blue-400" : "bg-blue-200";
+
+    return (
+        <div className={`${cardBaseStyle} ${cardHighlightStyle}`}>
+            <h2 className="text-lg font-semibold">{`Route Name: ${route.route_name}`}</h2>
+            <p>{`Top: ${route.top ? "Yes" : "No"} (Tries: ${
+                route.top_tries
+            })`}</p>
+            <p>{`Zone: ${route.zone ? "Yes" : "No"} (Tries: ${
+                route.zone_tries
+            })`}</p>
+        </div>
+    );
+};
+
 // maybe inside the modal compare boulder ranks? very advanced feature
 const Modal = ({ closeModal, data, name }) => {
     // Function to close modal on Escape key press
     const handleKeyDown = (event) => {
-        if (event.key === 'Escape') {
+        if (event.key === "Escape") {
             closeModal();
         }
     };
 
     // Adding event listeners when component mounts
     useEffect(() => {
-        window.addEventListener('keydown', handleKeyDown);
-        
+        window.addEventListener("keydown", handleKeyDown);
+
         // Clean-up function to remove event listeners when component unmounts
         return () => {
-            window.removeEventListener('keydown', handleKeyDown);
+            window.removeEventListener("keydown", handleKeyDown);
         };
     }, []); // Empty dependency array to ensure this runs only once on mount
 
     // Closing modal when clicking outside the modal's content
     // Assuming the modal overlay (backdrop) has a ref of modalRef
-    const modalRef = useRef(); // Remember to import useRef from react
+    const modalRef = useRef();
 
     const handleClickOutside = (event) => {
         if (modalRef.current && !modalRef.current.contains(event.target)) {
@@ -59,11 +78,11 @@ const Modal = ({ closeModal, data, name }) => {
 
     useEffect(() => {
         // Handling clicks outside the modal
-        document.addEventListener('mousedown', handleClickOutside);
+        document.addEventListener("mousedown", handleClickOutside);
 
         return () => {
             // Clean-up
-            document.removeEventListener('mousedown', handleClickOutside);
+            document.removeEventListener("mousedown", handleClickOutside);
         };
     }, []); // Ensure the modalRef is accessed properly in the dependency array
 
@@ -84,16 +103,32 @@ const Modal = ({ closeModal, data, name }) => {
                     </button>
                 </div>
                 <div className="mt-4">
-                    <p><strong>Name: </strong>{name}</p>
-                    <p><strong>Round Name: </strong>{data?.round_name}</p>
-                    {data?.score && <p><strong>Score:</strong> {data.score}</p>}
+                    <p>
+                        <strong>Name: </strong>
+                        {name}
+                    </p>
+                    <p>
+                        <strong>Round Name: </strong>
+                        {data?.round_name}
+                    </p>
+                    {data?.score && (
+                        <p>
+                            <strong>Score:</strong> {data.score}
+                        </p>
+                    )}
                     {/* Dynamic content */}
+
+                    {data?.ascents &&
+                        data.ascents.map((route) => (
+                            <div className="flex flex-row">
+                                <TopCard key={route.route_id} route={route} />
+                            </div>
+                        ))}
                 </div>
             </div>
         </div>
     );
 };
-
 
 const Page = () => {
     const API_BASE = "http://127.0.0.1:8000/fullResults?";
@@ -103,12 +138,18 @@ const Page = () => {
     const [data, setData] = useState({ ranking: [] });
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [isComponentVisible, setIsComponentVisible] = useState(false);
+
     // const [isModalOpen, setIsModalOpen] = useState(false);
     const [modalState, setModalState] = useState({
         isOpen: false,
         data: null,
         name: null,
     });
+
+    const toggleComponentVisibility = () => {
+        setIsComponentVisible(!isComponentVisible);
+    };
 
     let API_URL = API_BASE + "id=" + event_id + "&cid=" + category_id;
     console.log(API_URL);
@@ -140,6 +181,12 @@ const Page = () => {
                 {data.event} - id:
                 <span className="text-blue-500">{event_id} </span>
                 cid:<span className="text-blue-500">{category_id}</span>
+                <button
+                    onClick={toggleComponentVisibility}
+                    className="bg-lime-400 p-4 hover:bg-lime-700 transition-colors"
+                >
+                    Toggle Component
+                </button>
                 {/* <div>
                     <button
                         className="bg-lime-400 p-4 hover:bg-lime-700 transition-colors"
@@ -159,62 +206,68 @@ const Page = () => {
                     name={modalState.name}
                 />
             )}
-            <div className="flex flex-col items-center justify-center">
-                <div className="flex flex-row items-center justify-between w-6/12 px-6 pt-6 bg-white">
-                    <h1 className="text-lg text-blue-600">Ranking - Name</h1>
-                    <h1 className="text-lg text-blue-600">Result</h1>
+            {isComponentVisible ? ( // huge ternary to toggle route view of full result or ranking view
+                <RouteResult data={data} />
+            ) : (
+                <div className="flex flex-col items-center justify-center">
+                    <div className="flex flex-row items-center justify-between w-6/12 px-6 pt-6 bg-white">
+                        <h1 className="text-lg text-blue-600">
+                            Ranking - Name
+                        </h1>
+                        <h1 className="text-lg text-blue-600">Result</h1>
+                    </div>
+                    {/* Ensure data.ranking exists and is an array before mapping, idk why it works */}
+                    {Array.isArray(data.ranking) &&
+                        data.ranking.map((ranking) => {
+                            return (
+                                <div
+                                    className="flex flex-row justify-between items-center w-6/12 h-36 p-6 border-green-50 bg-white hover:bg-sky-200 transition-all"
+                                    key={ranking.athlete_id}
+                                >
+                                    {/* left side */}
+                                    <div className="">
+                                        <h2>
+                                            <span className="text-2xl">
+                                                {ranking.rank}
+                                                {". "}
+                                            </span>
+                                            <span className="text-xl">
+                                                {ranking.firstname}{" "}
+                                                {ranking.lastname}
+                                            </span>
+                                        </h2>
+                                        <p>{ranking.athlete_id}</p>
+                                        <p>{ranking.country}</p>
+                                    </div>
+
+                                    {/* right side, on click text slide out window */}
+                                    <div className="flex flex-col items-end">
+                                        {ranking.rounds.map((round) => {
+                                            return (
+                                                <button
+                                                    className="hover:text-sky-700 transition-colors"
+                                                    key={round.round_id}
+                                                    onClick={() =>
+                                                        setModalState({
+                                                            isOpen: true,
+                                                            data: round,
+                                                            name: ranking.name,
+                                                        })
+                                                    }
+                                                >
+                                                    {round.round_name + " "}
+                                                </button>
+                                            );
+                                        })}
+
+                                        {/* <Rounds rounds={ranking.rounds} /> */}
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    {/* <AthleteRow data={data} /> */}
                 </div>
-                {/* Ensure data.ranking exists and is an array before mapping, idk why it works */}
-                {Array.isArray(data.ranking) &&
-                    data.ranking.map((ranking) => {
-                        return (
-                            <div
-                                className="flex flex-row justify-between items-center w-6/12 h-36 p-6 border-green-50 bg-white hover:bg-sky-200 transition-all"
-                                key={ranking.athlete_id}
-                            >
-                                {/* left side */}
-                                <div className="">
-                                    <h2>
-                                        <span className="text-2xl">
-                                            {ranking.rank}
-                                            {". "}
-                                        </span>
-                                        <span className="text-xl">
-                                            {ranking.firstname}{" "}
-                                            {ranking.lastname}
-                                        </span>
-                                    </h2>
-                                    <p>{ranking.athlete_id}</p>
-                                    <p>{ranking.country}</p>
-                                </div>
-
-                                {/* right side, on click text slide out window */}
-                                <div className="flex flex-col items-end">
-                                    {ranking.rounds.map((round) => {
-                                        return (
-                                            <button
-                                                className="hover:text-sky-700 transition-colors"
-                                                key={round.round_id}
-                                                onClick={() =>
-                                                    setModalState({
-                                                        isOpen: true,
-                                                        data: round,
-                                                        name: ranking.name,
-                                                    })
-                                                }
-                                            >
-                                                {round.round_name + " "}
-                                            </button>
-                                        );
-                                    })}
-
-                                    {/* <Rounds rounds={ranking.rounds} /> */}
-                                </div>
-                            </div>
-                        );
-                    })}
-                {/* <AthleteRow data={data} /> */}
-            </div>
+            )}
         </div>
     );
 };
