@@ -13,23 +13,54 @@ const RouteResult = ({ data }) => {
                     routes: {},
                 };
             }
-
-            round.ascents.forEach((ascent) => {
-                if (!acc[round.category_round_id].routes[ascent.route_id]) {
-                    acc[round.category_round_id].routes[ascent.route_id] = {
-                        route_name: ascent.route_name,
-                        athletes: [],
-                    };
-                }
-
-                acc[round.category_round_id].routes[
-                    ascent.route_id
-                ].athletes.push({
-                    athlete_id: athlete.athlete_id,
-                    name: athlete.firstname, // firstname or full name?
-                    ...ascent,
+            // here need to implement speed
+            // also need to check old format data
+            if (!round.hasOwnProperty("speed_elimination_stages")) {
+                // if not old format
+                round.ascents.forEach((ascent) => {
+                    if (!acc[round.category_round_id].routes[ascent.route_id]) {
+                        acc[round.category_round_id].routes[ascent.route_id] = {
+                            route_name: ascent.route_name,
+                            athletes: [],
+                        };
+                    }
+                    // if quali group a or b
+                    if (!ascent?.starting_group) {
+                        acc[round.category_round_id].routes[
+                            ascent.route_id
+                        ].athletes.push({
+                            athlete_id: athlete.athlete_id,
+                            name: athlete.firstname, // firstname or full name?
+                            ...ascent, // do i need to pass this or not
+                        });
+                    } else {
+                        // add grp a/b logic
+                    }
                 });
-            });
+            } else {
+                // else build tables on old format
+                const ascents = round.speed_elimination_stages?.ascents ?? [];
+                ascents.forEach((ascent,index) => {
+                    if (!acc[round.category_round_id].routes[ascent.route_id]) {
+                        acc[round.category_round_id].routes[ascent.route_id] = {
+                            route_name: index + 1, // increment since no route_name stored in older format
+                            route_id: ascent.route_id,
+                            athletes: [],
+                        };
+                    }
+                    acc[round.category_round_id].routes[
+                        ascent.route_id
+                    ].athletes.push({
+                        athlete_id: athlete.athlete_id,
+                        name: athlete.firstname, // firstname or full name?
+                        top: ascent.top,
+                        zone: ascent.zone,
+                        top_tries: ascent.top_tries,
+                        zone_tries: ascent.zone_tries,
+                        ...ascent,
+                    });
+                });
+            }
         });
         return acc;
     }, {});
@@ -59,6 +90,7 @@ const RouteResult = ({ data }) => {
                     ))}
                 </ul>
             </div>
+            {/* route content bellow */}
             <div className="flex flex-col mt-4">
                 {Object.entries(roundsData).map(([roundId, round]) => (
                     <>
@@ -69,64 +101,69 @@ const RouteResult = ({ data }) => {
                             } flex-row p-2`}
                         >
                             {/* scroll func?  */}
-                            <div className="flex flex-row w-full overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100 focus:outline-none" tabIndex={0} aria-label="Scrollable content">
-                            {Object.entries(round.routes).map(
-                                ([routeId, route]) => (
-                                    <div
-                                        key={routeId}
-                                        className="flex-none w-64 min-w-max p-2 shadow rounded-lg bg-white m-2"
-                                    >
-                                        <h3 className="px-4 pt-3 pb-2 text-lg font-semibold text-gray-900">
-                                            Route: {route.route_name}
-                                        </h3>
-                                        <div className="p-2">
-                                            <table className="min-w-full">
-                                                <thead className="bg-gray-100">
-                                                    <tr>
-                                                        <th className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                                            Athlete
-                                                        </th>
-                                                        <th className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                                            Top Attempts (T)
-                                                        </th>
-                                                        <th className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                                            Zone Attempts (Z)
-                                                        </th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    {route.athletes.map(
-                                                        (athlete) => (
-                                                            <tr
-                                                                key={
-                                                                    athlete.athlete_id
-                                                                }
-                                                                className="border-b border-gray-200"
-                                                            >
-                                                                <td className="px-4 py-2 whitespace-nowrap text-sm font-medium text-gray-900">
-                                                                    {
-                                                                        athlete.name
+                            <div
+                                className="flex flex-row w-screen overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100 focus:outline-none"
+                                tabIndex={0}
+                                aria-label="Scrollable content"
+                            >
+                                {Object.entries(round.routes).map(
+                                    ([routeId, route]) => (
+                                        <div
+                                            key={routeId}
+                                            className="flex-none w-64 min-w-max p-2 shadow rounded-lg bg-white m-2"
+                                        >
+                                            <h3 className="px-4 pt-3 pb-2 text-lg font-semibold text-gray-900">
+                                                Route: {route.route_name}
+                                            </h3>
+                                            <div className="p-2">
+                                                <table className="min-w-full">
+                                                    <thead className="bg-gray-100">
+                                                        <tr>
+                                                            <th className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                                Athlete
+                                                            </th>
+                                                            <th className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                                Top Attempts (T)
+                                                            </th>
+                                                            <th className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                                Zone Attempts
+                                                                (Z)
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        {route.athletes.map(
+                                                            (athlete) => (
+                                                                <tr
+                                                                    key={
+                                                                        athlete.athlete_id
                                                                     }
-                                                                </td>
-                                                                <td className="px-4 py-2 whitespace-nowrap text-sm text-gray-500">
-                                                                    {
-                                                                        athlete.top_tries
-                                                                    }
-                                                                </td>
-                                                                <td className="px-4 py-2 whitespace-nowrap text-sm text-gray-500">
-                                                                    {
-                                                                        athlete.zone_tries
-                                                                    }
-                                                                </td>
-                                                            </tr>
-                                                        )
-                                                    )}
-                                                </tbody>
-                                            </table>
+                                                                    className="border-b border-gray-200"
+                                                                >
+                                                                    <td className="px-4 py-2 whitespace-nowrap text-sm font-medium text-gray-900">
+                                                                        {
+                                                                            athlete.name
+                                                                        }
+                                                                    </td>
+                                                                    <td className="px-4 py-2 whitespace-nowrap text- text-gray-500">
+                                                                        {
+                                                                            athlete.top_tries
+                                                                        }
+                                                                    </td>
+                                                                    <td className="px-4 py-2 whitespace-nowrap text- text-gray-500">
+                                                                        {
+                                                                            athlete.zone_tries
+                                                                        }
+                                                                    </td>
+                                                                </tr>
+                                                            )
+                                                        )}
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
-                                    </div>
-                                )
-                            )}
+                                    )
+                                )}
                             </div>
                         </div>
                     </>
