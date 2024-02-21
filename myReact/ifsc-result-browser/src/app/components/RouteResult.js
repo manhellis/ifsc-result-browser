@@ -4,7 +4,7 @@ const RouteResult = ({ data }) => {
     // Assuming 'data' is your prop with all the necessary information
     const [activeTab, setActiveTab] = useState(null);
 
-    // Prepare rounds data
+    // Prepare rounds data - boulder only?
     const roundsData = data.ranking.reduce((acc, athlete) => {
         athlete.rounds.forEach((round) => {
             if (!acc[round.category_round_id]) {
@@ -90,7 +90,7 @@ const RouteResult = ({ data }) => {
                     ))}
                 </ul>
             </div>
-            {/* route content bellow */}
+            {/* route content bellow if*/}
             <div className="flex flex-col mt-4">
                 {Object.entries(roundsData).map(([roundId, round]) => (
                     <>

@@ -2,6 +2,7 @@
 import { useEffect, useState, useRef } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import RouteResult from "../components/RouteResult";
+import RankingView from "../components/RankingView";
 
 // this whole page should be componentized?? but i will dev it here first
 
@@ -130,6 +131,66 @@ const Modal = ({ closeModal, data, name }) => {
     );
 };
 
+const OverallEventRanking = (data) => {
+    return (
+        <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-row items-center justify-between w-6/12 px-6 pt-6 bg-white">
+                <h1 className="text-lg text-blue-600">Ranking - Name</h1>
+                <h1 className="text-lg text-blue-600">Result</h1>
+            </div>
+            {/* Ensure data.ranking exists and is an array before mapping, idk why it works */}
+            {Array.isArray(data.ranking) &&
+                data.ranking.map((ranking) => {
+                    return (
+                        <div
+                            className="flex flex-row justify-between items-center w-6/12 h-36 p-6 border-green-50 bg-white hover:bg-sky-200 transition-all"
+                            key={ranking.athlete_id}
+                        >
+                            {/* left side */}
+                            <div className="">
+                                <h2>
+                                    <span className="text-2xl">
+                                        {ranking.rank}
+                                        {". "}
+                                    </span>
+                                    <span className="text-xl">
+                                        {ranking.firstname} {ranking.lastname}
+                                    </span>
+                                </h2>
+                                <p>{ranking.athlete_id}</p>
+                                <p>{ranking.country}</p>
+                            </div>
+
+                            {/* right side, on click text slide out window */}
+                            <div className="flex flex-col items-end">
+                                {ranking.rounds.map((round) => {
+                                    return (
+                                        <button
+                                            className="hover:text-sky-700 transition-colors"
+                                            key={round.round_id}
+                                            onClick={() =>
+                                                setModalState({
+                                                    isOpen: true,
+                                                    data: round,
+                                                    name: ranking.name,
+                                                })
+                                            }
+                                        >
+                                            {round.round_name + " "}
+                                        </button>
+                                    );
+                                })}
+
+                                {/* <Rounds rounds={ranking.rounds} /> */}
+                            </div>
+                        </div>
+                    );
+                })}
+            {/* <AthleteRow data={data} /> */}
+        </div>
+    );
+};
+
 const Page = () => {
     const API_BASE = "http://127.0.0.1:8000/fullResults?";
     const searchParams = useSearchParams();
@@ -209,64 +270,9 @@ const Page = () => {
             {isComponentVisible ? ( // huge ternary to toggle route view of full result or ranking view
                 <RouteResult data={data} />
             ) : (
-                <div className="flex flex-col items-center justify-center">
-                    <div className="flex flex-row items-center justify-between w-6/12 px-6 pt-6 bg-white">
-                        <h1 className="text-lg text-blue-600">
-                            Ranking - Name
-                        </h1>
-                        <h1 className="text-lg text-blue-600">Result</h1>
-                    </div>
-                    {/* Ensure data.ranking exists and is an array before mapping, idk why it works */}
-                    {Array.isArray(data.ranking) &&
-                        data.ranking.map((ranking) => {
-                            return (
-                                <div
-                                    className="flex flex-row justify-between items-center w-6/12 h-36 p-6 border-green-50 bg-white hover:bg-sky-200 transition-all"
-                                    key={ranking.athlete_id}
-                                >
-                                    {/* left side */}
-                                    <div className="">
-                                        <h2>
-                                            <span className="text-2xl">
-                                                {ranking.rank}
-                                                {". "}
-                                            </span>
-                                            <span className="text-xl">
-                                                {ranking.firstname}{" "}
-                                                {ranking.lastname}
-                                            </span>
-                                        </h2>
-                                        <p>{ranking.athlete_id}</p>
-                                        <p>{ranking.country}</p>
-                                    </div>
-
-                                    {/* right side, on click text slide out window */}
-                                    <div className="flex flex-col items-end">
-                                        {ranking.rounds.map((round) => {
-                                            return (
-                                                <button
-                                                    className="hover:text-sky-700 transition-colors"
-                                                    key={round.round_id}
-                                                    onClick={() =>
-                                                        setModalState({
-                                                            isOpen: true,
-                                                            data: round,
-                                                            name: ranking.name,
-                                                        })
-                                                    }
-                                                >
-                                                    {round.round_name + " "}
-                                                </button>
-                                            );
-                                        })}
-
-                                        {/* <Rounds rounds={ranking.rounds} /> */}
-                                    </div>
-                                </div>
-                            );
-                        })}
-                    {/* <AthleteRow data={data} /> */}
-                </div>
+                // build if different events, use different views.
+                <RankingView data={data} setModalState={setModalState} />
+                
             )}
         </div>
     );
