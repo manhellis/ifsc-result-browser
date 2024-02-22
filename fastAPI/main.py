@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
-
+import json
 import os
 
 app = FastAPI()
@@ -65,3 +65,38 @@ async def read_full_results(id: int = Query(default=65, alias="id"), cid: int = 
         return FileResponse(path=file_path, media_type='application/json')
     else:
         raise HTTPException(status_code=404, detail="Event or Result not found")
+
+@app.get("/athlete")
+async def read_athlete(id: int = Query(default=1612, alias="id")):
+    directory = "../data/athlete/"
+    file_name = f"athlete_{id}.json"
+
+    file_path = os.path.join(directory, file_name)
+    if os.path.exists(file_path):
+        return FileResponse(path=file_path, media_type='application/json')
+    else:
+        raise HTTPException(status_code=404, detail="Athlete not found")
+    
+    
+index = []
+
+# @app.on_event("startup")
+def load_index():
+    global index
+    with open('athlete_index.json', 'r') as infile:
+        index = json.load(infile)
+
+load_index()
+@app.get("/searchAthlete")
+async def search_athletes(name: str = Query(None), birthday: str = Query(None), gender: str = Query(None)):
+    results = []
+    for athlete in index:
+        full_name = f"{athlete['firstname']} {athlete['lastname']}".lower()
+        if name and name.lower() not in full_name:
+            continue
+        if birthday and birthday != athlete["birthday"]:
+            continue
+        if gender and gender.lower() != athlete["gender"].lower():
+            continue
+        results.append(athlete)
+    return {"results": results}

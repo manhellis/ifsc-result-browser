@@ -41,12 +41,14 @@ const YearBrowser = ({ year }) => { // i guess if this was typescript it would b
     const handleLeagueChange = (leagueId) => {
         setSelectedLeagueId(Number(leagueId));
     };
+    
 
     // Process leagues data to add season_id
     // This operation should now be done after data is fetched and only if data.leagues is populated
     data.leagues.forEach((league) => {
         league.season_id = Number(league.url.split("/")[4]);
     });
+    
 
     // Filter events based on selected league
     const filteredEvents = selectedLeagueId
