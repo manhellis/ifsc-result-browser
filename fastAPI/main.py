@@ -91,9 +91,23 @@ load_index()
 
 @app.get("/searchAthlete")
 async def search_athlete(query: str = Query(None, min_length=3)):
-    
-    
-    # Filter athletes based on the query
-    results = [athlete for athlete in index if query.lower() in (athlete['firstname'].lower() + athlete['lastname'].lower() + athlete['country'].lower())]
+    # Assuming 'index' is loaded or defined earlier with athlete data
+    # Split the query into parts
+    query_parts = query.lower().split()
+
+    # Filter athletes based on the query parts
+    results = [
+        athlete for athlete in index
+        if all(
+            part in (
+                athlete['firstname'].lower() + " " + 
+                athlete['lastname'].lower() + " " + 
+                (athlete['country'].lower() if athlete['country'] else "") + " " + 
+                (athlete.get('country_name', '').lower() if athlete.get('country_name') else "") + " " + 
+                (athlete['birthday'] if athlete['birthday'] else "")
+            )
+            for part in query_parts
+        )
+    ]
     
     return {"results": results}
