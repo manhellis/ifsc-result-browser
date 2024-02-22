@@ -87,7 +87,7 @@ def load_index():
         index = json.load(infile)
 
 load_index()
-@app.get("/searchAthlete")
+@app.get("/searchAthlete") # once index returned, return the full value item 
 async def search_athletes(name: str = Query(None), birthday: str = Query(None), gender: str = Query(None)):
     results = []
     for athlete in index:
