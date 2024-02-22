@@ -11,6 +11,10 @@ const Navbar = () => {
                 <Link href="/athlete" className="hover:text-gray-300 mx-4">
                     Athlete
                 </Link>
+                <Link href="/searchAthlete" className="hover:text-gray-300 mx-4">
+                    Search
+
+                </Link>
 
                 {/* <Link href="/page2" className="hover:text-gray-300 mx-4">
             page2

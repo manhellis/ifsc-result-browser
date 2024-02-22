@@ -87,16 +87,13 @@ def load_index():
         index = json.load(infile)
 
 load_index()
-@app.get("/searchAthlete") # once index returned, return the full value item 
-async def search_athletes(name: str = Query(None), birthday: str = Query(None), gender: str = Query(None)):
-    results = []
-    for athlete in index:
-        full_name = f"{athlete['firstname']} {athlete['lastname']}".lower()
-        if name and name.lower() not in full_name:
-            continue
-        if birthday and birthday != athlete["birthday"]:
-            continue
-        if gender and gender.lower() != athlete["gender"].lower():
-            continue
-        results.append(athlete)
+
+
+@app.get("/searchAthlete")
+async def search_athlete(query: str = Query(None, min_length=3)):
+    
+    
+    # Filter athletes based on the query
+    results = [athlete for athlete in index if query.lower() in (athlete['firstname'].lower() + athlete['lastname'].lower() + athlete['country'].lower())]
+    
     return {"results": results}
