@@ -5,12 +5,25 @@ const SuggestedAthletes = () => {
         <div>
             <h1 className="text-2xl p-2">Suggested Athletes</h1>
             <Link href="/athlete?id=1364">
-                <h1 className="p-4 text-sky-700 hover:text-sky-300">Adam Ondra</h1>
+                <h1 className="p-4 text-sky-700 hover:text-sky-300">
+                    Adam Ondra
+                </h1>
             </Link>
             <Link href="/athlete?id=1147">
-                <h1 className="p-4 text-sky-700 hover:text-sky-300">Janja Garnbret</h1>
+                <h1 className="p-4 text-sky-700 hover:text-sky-300">
+                    Janja Garnbret
+                </h1>
             </Link>
+            <h1>
+                or,{" "}
+                <Link
+                    className="text-sky-700 hover:text-sky-300"
+                    href="/searchAthlete"
+                >
+                    Search athletes
+                </Link>
+            </h1>
         </div>
-    )
+    );
 };
-export default SuggestedAthletes
+export default SuggestedAthletes;

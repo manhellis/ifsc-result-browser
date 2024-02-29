@@ -13,7 +13,7 @@ const SearchBar = ({ onSearch }) => {
             <div className="flex items-center border-b border-sky-500 py-2">
                 <input
                     className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
-                    type="text"
+                    type="search"
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                     placeholder="Search athletes..."

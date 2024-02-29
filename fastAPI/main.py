@@ -1,13 +1,18 @@
 from fastapi import FastAPI, HTTPException, Query
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, RedirectResponse
 from fastapi.middleware.cors import CORSMiddleware
 import json
+import datetime
 import os
 
 app = FastAPI()
 # Add CORSMiddleware to your FastAPI app
 origins = [
-    "http://localhost:3000",  # Add the origin of your Next.js app
+    "http://localhost",
+    "http://localhost:3000",
+    "http://localhost:3001",
+    
+    # Add the origin of your Next.js app
     # Add any other origins you want to allow requests from
 ]
 app.add_middleware(
@@ -17,6 +22,16 @@ app.add_middleware(
     allow_methods=["*"],  # Allow all methods
     allow_headers=["*"],  # Allow all headers
 )
+
+index = []
+
+# @app.on_event("startup")
+def load_index():
+    global index
+    with open('athlete_index.json', 'r') as infile:
+        index = json.load(infile)
+
+load_index()
 
 @app.get("/")
 def read_root():
@@ -40,7 +55,11 @@ async def read_current(year: int = 2023):
     else:
         # If the file does not exist, return a 404 error
         raise HTTPException(status_code=404, detail="Season not found")
-    
+
+@app.get("/current/")
+async def read_current_redirect():
+    most_recent_year = datetime.date.today().year # year get 
+    return RedirectResponse(url=f"/current/{most_recent_year}")    
     
 # Modified event endpoint to use query parameters
 @app.get("/event")
@@ -78,15 +97,7 @@ async def read_athlete(id: int = Query(default=1612, alias="id")):
         raise HTTPException(status_code=404, detail="Athlete not found")
     
     
-index = []
 
-# @app.on_event("startup")
-def load_index():
-    global index
-    with open('athlete_index.json', 'r') as infile:
-        index = json.load(infile)
-
-load_index()
 
 
 @app.get("/searchAthlete")

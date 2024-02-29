@@ -1,13 +1,31 @@
+"use client";
 import React, { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
+// import { convertIocCode } from "convert-country-codes/test";
 // import AthleteCard from "../components/AthleteCard";
-const getCountryISO2 = require("country-iso-3-to-2");
 
 const replaceFlagUrlWithOpenSource = (athleteData) => {
-    // Construct new flag URL with the open-source flag API
-    const countryISO2 = getCountryISO2(athleteData?.country).toLowerCase();
-    athleteData.flag_url = `https://flagcdn.com/w40/${countryISO2}.png`;
+    const [iso2, iso3] = convertIocCode(athleteData.country); // rest should be iso3
+    console.log(convertIocCode(athleteData.country));
+    if (!iso2) {
+        console.error("Invalid country code for", athleteData);
+        return athleteData; // Return original data if no valid country code found
+    }
+    athleteData.flag_url = `https://flagcdn.com/w40/${iso2.toLowerCase()}.png`; // overwrting ifsc result cdn
+    return athleteData;
 };
+// const FlagImg = (flag_url) => {
+  
+//     const [iso2, iso3] = convertIocCode(flag_url); // rest should be iso3
+//     if (!iso2) {
+//         console.error("Invalid country code for", athleteData);
+//         return; // Return original data if no valid country code found
+//     }
+//     const new_flag_url = `https://flagcdn.com/w40/${iso2.toLowerCase()}.png`; // overwrting ifsc result cdn
+
+//     return <img className="" src={new_flag_url}></img>;
+// };
+
 const AthleteCard = () => {
     const API_BASE = process.env.NEXT_PUBLIC_API_URL + "/athlete?";
     const searchParams = useSearchParams();
@@ -26,11 +44,9 @@ const AthleteCard = () => {
                 if (!response.ok) {
                     throw new Error("Network response was not ok");
                 }
-                let jsonData = await response.json();
-
-                replaceFlagUrlWithOpenSource(jsonData); // call replace
-                setData(jsonData); // Assuming the JSON structure matches your data variable
-                //preprocess
+                const jsonData = await response.json();
+                // const updatedData = replaceFlagUrlWithOpenSource(jsonData);
+                setData(jsonData);
 
                 setIsLoading(false);
             } catch (error) {
@@ -40,9 +56,10 @@ const AthleteCard = () => {
         };
 
         fetchData();
-    }, []);
+    }, [event_id]);
 
     if (isLoading) return <div>Loading...</div>;
+
     return (
         <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white border border-sky-200">
             <div className="px-6 py-4">
@@ -50,18 +67,18 @@ const AthleteCard = () => {
                     <div>
                         {data.firstname} {data.lastname}
                     </div>
-                    <img
-                        src={data.flag_url}
-                        alt={`Flag of ${data.country}`}
-                        className="w-10 h-6"
-                    />
+                    {/* <FlagImg /> */}
+                    <img className="w-10 ml-2"src={data.flag_url} alt={data.country} />
                 </div>
+                {data.federation && (
+                    <p className="text-gray-700 text-base">
+                        Federation: {data?.federation.name}
+                    </p>
+                )}
+
                 <p className="text-gray-700 text-base">
-                    Federation: {data.federation.name}
-                </p>
-                <p className="text-gray-700 text-base">
-                    Personal Best: {data.speed_personal_best.time}s in{" "}
-                    {data.speed_personal_best.event_name}
+                    Personal Best: {data?.speed_personal_best?.time}s in{" "}
+                    {data?.speed_personal_best?.event_name}
                 </p>
                 <p className="text-gray-700 text-base">
                     Country: {data.country}, City: {data.city}
