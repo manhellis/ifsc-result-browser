@@ -12,39 +12,34 @@ origins = [
     "http://localhost:3000",
     "http://localhost:3001",
     
-    # Add the origin of your Next.js app
-    # Add any other origins you want to allow requests from
 ]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,  # Allow specified origins
     allow_credentials=True,
-    allow_methods=["*"],  # Allow all methods
+    allow_methods=["GET"],  # Allow get, do i need put? if image backend.
     allow_headers=["*"],  # Allow all headers
 )
 
 index = []
-
+index_path = './data/athlete_index.json'
+directory = "./data/output/" # directory for the data
 # @app.on_event("startup")
 def load_index():
     global index
-    with open('athlete_index.json', 'r') as infile:
+    with open(index_path, 'r') as infile:
         index = json.load(infile)
 
 load_index()
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
-
-@app.get("/items/{item_id}")
-def read_item(item_id: int, q: str = None):
-    return {"item_id": item_id, "q": q}
+    return {"Manh's": "World"}
 
 
 @app.get("/current/{year}")
 async def read_current(year: int = 2023):
-    directory = "../data/output/"
+    
     file_name = f"season_{year}.json"
     file_path = os.path.join(directory, file_name)
 
@@ -122,3 +117,7 @@ async def search_athlete(query: str = Query(None, min_length=3)):
     ]
     
     return {"results": results}
+
+    
+
+
