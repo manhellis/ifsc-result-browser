@@ -5,7 +5,7 @@ import LeagueDropdown from "./leagueDropdown";
 // import { data } from "autoprefixer";
 
 
-const API_BASE = "http://127.0.0.1:8000/current/"
+const API_BASE = `${process.env.NEXT_PUBLIC_API_URL}/current/`
 
 
 const YearBrowser = ({ year }) => { // i guess if this was typescript it would be working already

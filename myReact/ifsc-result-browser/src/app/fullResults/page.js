@@ -3,33 +3,7 @@ import { useEffect, useState, useRef } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import RouteResult from "../components/RouteResult";
 import RankingView from "../components/RankingView";
-
-// this whole page should be componentized?? but i will dev it here first
-
-const AthleteRow = (data) => {
-    // map the ranking list from full result
-    return <></>;
-};
-
-const Rounds = (rounds) => {
-    // pass in a rounds obj from athlete - can be 1-3 rounds depending onresult if made final, semi etc.
-    return (
-        <>
-            {/* <h2>Rounds</h2> */}
-            <p>
-                {Array.isArray(rounds) &&
-                    rounds.map((roundName) => {
-                        // quali obj, or semi or final
-                        return (
-                            <>
-                                <h1>{roundName.round_name}</h1>
-                            </>
-                        );
-                    })}
-            </p>
-        </>
-    );
-};
+import { Router } from "next/router";
 
 const TopCard = ({ route }) => {
     const cardBaseStyle = "border rounded-lg p-4 mb-4";
@@ -192,7 +166,7 @@ const OverallEventRanking = (data) => {
 };
 
 const Page = () => {
-    const API_BASE = "http://127.0.0.1:8000/fullResults?";
+    const API_BASE = process.env.NEXT_PUBLIC_API_URL + "/fullResults?";
     const searchParams = useSearchParams();
     const event_id = searchParams.get("id");
     const category_id = searchParams.get("cid");
@@ -200,7 +174,10 @@ const Page = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
     const [isComponentVisible, setIsComponentVisible] = useState(false);
-
+    const router = useRouter();
+    if (!event_id || !category_id) { // jank
+        router.push("/");
+    }
     // const [isModalOpen, setIsModalOpen] = useState(false);
     const [modalState, setModalState] = useState({
         isOpen: false,
@@ -272,7 +249,6 @@ const Page = () => {
             ) : (
                 // build if different events, use different views.
                 <RankingView data={data} setModalState={setModalState} />
-                
             )}
         </div>
     );

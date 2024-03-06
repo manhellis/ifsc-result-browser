@@ -4,7 +4,8 @@ import { useSearchParams, useRouter } from "next/navigation";
 import React from "react";
 import EventPage from "../components/eventPage";
 
-const API_BASE = "http://127.0.0.1:8000/event?";
+// const API_BASE = "http://127.0.0.1:8000/event?";
+const API_BASE = process.env.NEXT_PUBLIC_API_URL;
 
 const Page = () => {
     const router = useRouter();
@@ -17,7 +18,7 @@ const Page = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    let API_URL = `${API_BASE}id=${search}`;
+    let API_URL = `${API_BASE}/event?${search}`;
     console.log(API_URL);
     // Fetch data from API
     useEffect(() => {
