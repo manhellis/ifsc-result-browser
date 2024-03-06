@@ -1,6 +1,8 @@
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import FileResponse, RedirectResponse
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.httpsredirect import HTTPSRedirectMiddleware
+import ssl
 import json
 import datetime
 import os
@@ -13,12 +15,17 @@ origins = [
     "http://localhost:3001",
 ]
 app.add_middleware(
-    CORSMiddleware,
+    CORSMiddleware, 
+    
     allow_origins=origins,  # Allow specified origins
     allow_credentials=True,
     allow_methods=["GET"],  # Allow GET requests, you can add "PUT" if needed for image backend
     allow_headers=["*"],  # Allow all headers
+   
 )
+# app.add_middleware(HTTPSRedirectMiddleware)
+# ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
+# ssl_context.load_cert_chain('./ssl/cert.pem', keyfile='./ssl/key.pem')
 
 index = []
 base_directory = "./data/"  # Base directory for the data

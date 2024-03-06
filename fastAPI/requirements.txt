@@ -11,5 +11,6 @@ starlette==0.36.3
 
 urllib3==2.1.0
 uvicorn==0.27.1
+cryptography==3.4.7
 
 
