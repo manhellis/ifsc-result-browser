@@ -9,7 +9,7 @@ const EventPageHeader = ({ event }) => {
     });
 
     return (
-        <header className="bg-sky-700 text-white p-4 rounded-t">
+        <header className="bg-sky-700 text-white p-4 ">
             <h1 className="text-3xl font-bold mb-2">{event.name}</h1>
             <p className="text-lg">ID: {event.id}</p>
             <p>Location: {event.location}</p>
@@ -43,8 +43,8 @@ const EventPageCategory = ({ event }) => {
             key={category.dcat_id}
             onClick={() => router.push(`/fullResults?id=${event.id}&cid=${category.dcat_id}`)}
         >
-            <h1 className="text-xl text-sky-700 font-semibold mb-2">
-                {`${category.category_name} ${category.discipline_kind} - cid: ${category.dcat_id}`}
+            <h1 className="text-xl text-sky-700 font-semibold mb-2" title={`Category ID: ${category.dcat_id}`}>
+                {`${category.category_name} ${category.discipline_kind}`}
             </h1>
             <CategoryRounds category={category} />
         </div>

@@ -175,7 +175,8 @@ const Page = () => {
     const [error, setError] = useState(null);
     const [isComponentVisible, setIsComponentVisible] = useState(false);
     const router = useRouter();
-    if (!event_id || !category_id) { // jank
+    if (!event_id || !category_id) {
+        // jank
         router.push("/");
     }
     // const [isModalOpen, setIsModalOpen] = useState(false);
@@ -214,27 +215,14 @@ const Page = () => {
 
     if (isLoading) return <div>Loading...</div>; // do i need to add error checking or will all these apis be converted to nextjs data fetching
     return (
-        <div>
-            <h1 className="text-2xl">
-                {data.event} - id:
-                <span className="text-blue-500">{event_id} </span>
-                cid:<span className="text-blue-500">{category_id}</span>
-                <button
-                    onClick={toggleComponentVisibility}
-                    className="bg-lime-400 p-4 hover:bg-lime-700 transition-colors"
-                >
-                    Toggle Component
-                </button>
-                {/* <div>
-                    <button
-                        className="bg-lime-400 p-4 hover:bg-lime-700 transition-colors"
-                        onClick={toggleModal}
-                    >
-                        Toggle Modal
-                    </button>
-                    
-                </div> */}
-            </h1>
+        <div className="flex flex-col bg-slate-200 items-center">
+            <h1 className="text-4xl p-4 text-center">{data.event}</h1>
+            <button
+                onClick={toggleComponentVisibility}
+                className="bg-lime-400 p-4 hover:bg-lime-700 transition-colors"
+            >
+                Toggle Component
+            </button>
             {modalState.isOpen && (
                 <Modal
                     data={modalState.data}

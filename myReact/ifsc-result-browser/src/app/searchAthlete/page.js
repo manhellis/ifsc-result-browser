@@ -13,7 +13,7 @@ const Page = () => {
     return (
         <main className="flex flex-col items-center justify-center">
             <div className="container w-6/12">
-                <h1 className="p-4 text-xl">Search for an Athlete</h1>
+                <p className="p-2">Search by firstname, lastname, country code (IOC) or birthday</p>
                 <SearchBar className=""onSearch={handleSearch} />
                 {/* {searchQuery && <SearchResults searchQuery={searchQuery} />} */}
                 <SearchResults searchQuery={searchQuery} />

@@ -41,17 +41,18 @@ const Page = () => {
         fetchData();
     }, []);
 
+    if (isLoading) return <div>Loading...</div>;
+    if (error) return <div>Error: {error}</div>;
+
     return (
         <div>
             <div className="flex flex-col justify-center items-center">
-                <div className="flex flex-row items-start justify-start w-full">
+                {/* <div className="flex flex-row items-start justify-start w-full">
                     <button className={btnStyle} onClick={() => router.back()}>
                         Back
                     </button>
-                    <h2 className="text-2xl text-blue-600">
-                        {search ? "your query: " + search : "no query"}
-                    </h2>
-                </div>
+                    
+                </div> */}
 
                 <EventPage event={data} />
             </div>

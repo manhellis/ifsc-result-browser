@@ -71,7 +71,7 @@ const RouteResult = ({ data }) => {
     }
 
     return (
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center m-4">
             <div className="border-b border-gray-200 shadow">
                 <ul className="flex flex-row -mb-px">
                     {Object.entries(roundsData).map(([roundId, round]) => (
