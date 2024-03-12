@@ -1,4 +1,12 @@
 import React from "react";
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuLabel,
+    DropdownMenuSeparator,
+    DropdownMenuTrigger,
+  } from "@/components/ui/dropdown-menu"
 
 const YearEventDropdown = ({ selectedYear, onYearChange }) => {
     const currentYear = new Date().getFullYear(); // Get the current year
@@ -9,19 +17,36 @@ const YearEventDropdown = ({ selectedYear, onYearChange }) => {
     );
 
     return (
-        <div>
-            <label htmlFor="year">Select a year: </label>
-            <select
-                value={selectedYear}
-                onChange={(e) => onYearChange(parseInt(e.target.value, 10))}
-            >
+        <DropdownMenu>
+            <DropdownMenuTrigger>
+                <DropdownMenuLabel>Select a year</DropdownMenuLabel>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
                 {years.map((year) => (
-                    <option key={year} value={year}>
+                    <DropdownMenuItem
+                        key={year}
+                        value={year}
+                        onClick={() => onYearChange(year)}
+                    >
                         {year}
-                    </option>
+                    </DropdownMenuItem>
                 ))}
-            </select>
-        </div>
+            </DropdownMenuContent>
+        </DropdownMenu>
+
+        // <div>
+        //     <label htmlFor="year">Select a year: </label>
+        //     <select
+        //         value={selectedYear}
+        //         onChange={(e) => onYearChange(parseInt(e.target.value, 10))}
+        //     >
+        //         {years.map((year) => (
+        //             <option key={year} value={year}>
+        //                 {year}
+        //             </option>
+        //         ))}
+        //     </select>
+        // </div>
     );
 };
 

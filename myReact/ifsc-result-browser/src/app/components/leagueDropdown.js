@@ -1,4 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuLabel,
+    DropdownMenuSeparator,
+    DropdownMenuTrigger,
+  } from "@/components/ui/dropdown-menu"
 
 const LeagueDropdown = ({ leagues, onChange }) => {
     const [selectedLeague, setSelectedLeague] = useState("");
@@ -31,19 +39,38 @@ const LeagueDropdown = ({ leagues, onChange }) => {
             // Optionally call onChange here if you want to notify about the initial selection
         }
     }, [selectedLeague, leagues]);
-
     return (
-        <div>
-            <select value={selectedLeague} onChange={handleSelectChange}>
+        <DropdownMenu>
+            <DropdownMenuTrigger>
+                <DropdownMenuLabel>Select a league</DropdownMenuLabel>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
                 {leagues.map((league) => (
-                    <option key={league.season_id} value={league.season_id}>
+                    <DropdownMenuItem
+                        key={league.season_id}
+                        value={league.season_id}
+                        onClick={() => onChange(league.season_id)}
+                    >
                         {league.name}
-                    </option>
+                    </DropdownMenuItem>
                 ))}
-            </select>
-            <p>Selected League ID: {selectedLeague}</p>
-        </div>
+            </DropdownMenuContent>
+        </DropdownMenu>
     );
+    
+    // return (
+    //     <div>
+    //         <select classname="text-xl"
+    //         value={selectedLeague} onChange={handleSelectChange}>
+    //             {leagues.map((league) => (
+    //                 <option key={league.season_id} value={league.season_id}>
+    //                     {league.name}
+    //                 </option>
+    //             ))}
+    //         </select>
+    //         {/* <p>Selected League ID: {selectedLeague}</p> */}
+    //     </div>
+    // );
 };
 
 export default LeagueDropdown;
