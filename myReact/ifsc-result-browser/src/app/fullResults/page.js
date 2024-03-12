@@ -5,11 +5,18 @@ import RouteResult from "../components/RouteResult";
 import RankingView from "../components/RankingView";
 import { Router } from "next/router";
 
+// need to add multi discipline support
+// if route top then score is a float ex 8.83? is this time?
+// otherwise ascents:n:score is the normal lead score ex 39+
+// maybe if lead, display a LeadCard
+// and if speed, speed card.
+
+// need to query all discipline options
 const TopCard = ({ route }) => {
     const cardBaseStyle = "border rounded-lg p-4 mb-4";
     const cardHighlightStyle = route.top ? "bg-blue-400" : "bg-blue-200";
 
-    return (
+    return ( 
         <div className={`${cardBaseStyle} ${cardHighlightStyle}`}>
             <h2 className="text-lg font-semibold">{`Route Name: ${route.route_name}`}</h2>
             <p>{`Top: ${route.top ? "Yes" : "No"} (Tries: ${
@@ -215,7 +222,7 @@ const Page = () => {
 
     if (isLoading) return <div>Loading...</div>; // do i need to add error checking or will all these apis be converted to nextjs data fetching
     return (
-        <div className="flex flex-col bg-slate-200 items-center">
+        <div className="flex flex-col bg-slate-200 items-center overflow-hidden">
             <h1 className="text-4xl p-4 text-center">{data.event}</h1>
             <button
                 onClick={toggleComponentVisibility}
