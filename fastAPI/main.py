@@ -10,10 +10,13 @@ import os
 app = FastAPI()
 # Add CORSMiddleware to your FastAPI app
 origins = [
+    "http://143.198.154.140",
+    "http://24.144.69.193",
     "http://localhost",
+    "http://*.manhellis.com",
     "http://localhost:3000",
     "http://localhost:3001",
-]
+
 app.add_middleware(
     CORSMiddleware, 
     

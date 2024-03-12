@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  web:
+    build:
+      context: ./myReact/ifsc-result-browser/
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    environment:
+      - NODE_ENV=production
+
+  api:
+    build:
+      context: ./fastAPI
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - UVICORN_HOST=0.0.0.0
+      - UVICORN_PORT=8000
+     
