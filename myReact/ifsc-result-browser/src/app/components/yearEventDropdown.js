@@ -1,19 +1,27 @@
-import React from 'react';
+import React from "react";
 
 const YearEventDropdown = ({ selectedYear, onYearChange }) => {
     const currentYear = new Date().getFullYear(); // Get the current year
     const startYear = 2000; // Set the earliest year you want to include
-    const years = Array.from({ length: currentYear - startYear + 1 }, (v, k) => currentYear - k);
-
+    const years = Array.from(
+        { length: currentYear - startYear + 1 },
+        (v, k) => currentYear - k
+    );
 
     return (
-        <select value={selectedYear} onChange={(e) => onYearChange(parseInt(e.target.value, 10))}>
-            {years.map((year) => (
-                <option key={year} value={year}>
-                    {year}
-                </option>
-            ))}
-        </select>
+        <div>
+            <label htmlFor="year">Select a year: </label>
+            <select
+                value={selectedYear}
+                onChange={(e) => onYearChange(parseInt(e.target.value, 10))}
+            >
+                {years.map((year) => (
+                    <option key={year} value={year}>
+                        {year}
+                    </option>
+                ))}
+            </select>
+        </div>
     );
 };
 

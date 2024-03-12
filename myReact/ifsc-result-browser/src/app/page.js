@@ -13,6 +13,9 @@ const Page = () => {
     };
     return (
         <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-col">
+                <h1 className="text-4xl">{selectedYear}</h1>
+            </div>
             <YearEventDropdown className=""
             selectedYear={selectedYear} onYearChange={handleYearChange} />
             <YearBrowser year={selectedYear} />

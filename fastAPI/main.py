@@ -2,6 +2,7 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import FileResponse, RedirectResponse
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.httpsredirect import HTTPSRedirectMiddleware
+# from fastapi.middleware.gzip import GZIPMiddleware
 import ssl
 import json
 import datetime
@@ -15,8 +16,9 @@ origins = [
     "http://localhost",
     "http://*.manhellis.com",
     "http://localhost:3000",
-    "http://localhost:3001",
-
+    "http://localhost:3001", 
+]
+# app.add_middleware(GZIPMiddleware, minimum_size=1000) # ensure this works later for page speed
 app.add_middleware(
     CORSMiddleware, 
     
