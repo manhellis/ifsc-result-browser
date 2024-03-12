@@ -18,7 +18,7 @@ const Page = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    let API_URL = `${API_BASE}/event?${search}`;
+    let API_URL = `${API_BASE}/event?id=${search}`;
     console.log(API_URL);
     // Fetch data from API
     useEffect(() => {
