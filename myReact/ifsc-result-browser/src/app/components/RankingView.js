@@ -1,4 +1,19 @@
 import React from "react";
+import { reactProductionProfiling } from "../../../next.config";
+
+const nthNumber = (number) => {
+    if (number > 3 && number < 21) return "th";
+    switch (number % 10) {
+        case 1:
+            return "st";
+        case 2:
+            return "nd";
+        case 3:
+            return "rd";
+        default:
+            return "th";
+    }
+};
 
 const RankingView = ({ data, setModalState }) => {
     return (
@@ -6,7 +21,7 @@ const RankingView = ({ data, setModalState }) => {
             <h1 className="text-3xl p-2">Full Result </h1>
             <div className="flex flex-row items-center justify-between w-8/12 px-6 pt-6 bg-white">
                 <h1 className="text-lg text-blue-600">Ranking - Name</h1>
-                <h1 className="text-lg text-blue-600">Result</h1>
+                <h1 className="text-lg text-blue-600">Round - Result</h1>
             </div>
             {Array.isArray(data.ranking) &&
                 data.ranking.map((ranking) => (
@@ -45,7 +60,7 @@ const RankingView = ({ data, setModalState }) => {
                                             })
                                         }
                                     >
-                                        {round.round_name + " "}
+                                        {round.round_name + " - " + round.rank + nthNumber(round.rank)}
                                     </button>
                                 ))
                             )}

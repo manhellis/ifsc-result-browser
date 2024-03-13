@@ -4,7 +4,8 @@ import { useSearchParams, useRouter } from "next/navigation";
 import RouteResult from "../components/RouteResult";
 import RankingView from "../components/RankingView";
 import { Router } from "next/router";
-
+import { Button } from "@/components/ui/button";
+import { AlignJustify } from "lucide-react";
 // need to add multi discipline support
 // if route top then score is a float ex 8.83? is this time?
 // otherwise ascents:n:score is the normal lead score ex 39+
@@ -13,24 +14,35 @@ import { Router } from "next/router";
 
 // need to query all discipline options
 const TopCard = ({ route }) => {
+    // for boulder only
     const cardBaseStyle = "border rounded-lg p-4 mb-4";
     const cardHighlightStyle = route.top ? "bg-blue-400" : "bg-blue-200";
 
-    return ( 
+    return (
         <div className={`${cardBaseStyle} ${cardHighlightStyle}`}>
-            <h2 className="text-lg font-semibold">{`Route Name: ${route.route_name}`}</h2>
-            <p>{`Top: ${route.top ? "Yes" : "No"} (Tries: ${
-                route.top_tries
-            })`}</p>
-            <p>{`Zone: ${route.zone ? "Yes" : "No"} (Tries: ${
-                route.zone_tries
-            })`}</p>
+            <h2 className="text-lg font-semibold">{`Boulder ${route.route_name}`}</h2>
+            <p>
+                {route.top
+                    ? `t${route.top_tries} z${route.zone_tries}`
+                    : `z${route.zone_tries}`}
+            </p>
         </div>
     );
 };
-
+const RouteCard = ({ route }) => {
+    const cardBaseStyle = "border rounded-lg p-4 mb-4";
+    const cardHighlightStyle = route.top ? "bg-blue-400" : "bg-blue-200";
+    return (
+        <div className={`${cardBaseStyle} ${cardHighlightStyle}`}>
+            <h2 className="text-lg font-semibold">{`Route ${route.route_name}`}</h2>
+            <p>
+               {route.top ? `${route.score}` : `Score ${route.score}`}
+            </p>
+        </div>
+    );
+};
 // maybe inside the modal compare boulder ranks? very advanced feature
-const Modal = ({ closeModal, data, name }) => {
+const BoulderModal = ({ closeModal, data, name }) => {
     // Function to close modal on Escape key press
     const handleKeyDown = (event) => {
         if (event.key === "Escape") {
@@ -98,12 +110,89 @@ const Modal = ({ closeModal, data, name }) => {
                             <strong>Score:</strong> {data.score}
                         </p>
                     )}
-                    {/* Dynamic content */}
-
                     {data?.ascents &&
                         data.ascents.map((route) => (
                             <div className="flex flex-row">
                                 <TopCard key={route.route_id} route={route} />
+                            </div>
+                        ))}
+                </div>
+            </div>
+        </div>
+    );
+};
+const LeadModal = ({ closeModal, data, name }) => {
+    // Function to close modal on Escape key press
+    const handleKeyDown = (event) => {
+        if (event.key === "Escape") {
+            closeModal();
+        }
+    };
+
+    // Adding event listeners when component mounts
+    useEffect(() => {
+        window.addEventListener("keydown", handleKeyDown);
+
+        // Clean-up function to remove event listeners when component unmounts
+        return () => {
+            window.removeEventListener("keydown", handleKeyDown);
+        };
+    }, []); // Empty dependency array to ensure this runs only once on mount
+
+    // Closing modal when clicking outside the modal's content
+    // Assuming the modal overlay (backdrop) has a ref of modalRef
+    const modalRef = useRef();
+
+    const handleClickOutside = (event) => {
+        if (modalRef.current && !modalRef.current.contains(event.target)) {
+            closeModal();
+        }
+    };
+
+    useEffect(() => {
+        // Handling clicks outside the modal
+        document.addEventListener("mousedown", handleClickOutside);
+
+        return () => {
+            // Clean-up
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []); // Ensure the modalRef is accessed properly in the dependency array
+
+    return (
+        <div className="fixed inset-0 z-50 overflow-auto bg-black bg-opacity-40">
+            <div
+                className="fixed top-0 right-0 bottom-0 z-50 w-full max-w-md p-4 overflow-hidden bg-white shadow-xl transition-transform transform translate-x-0"
+                style={{ transition: "transform .3s ease-in-out" }}
+                ref={modalRef} // IMPORTANT: This is where the div is set to be checked for the 'outside click'
+            >
+                <div className="flex items-center justify-between">
+                    <h2 className="text-xl font-bold">{data?.round_name}</h2>
+                    <button
+                        onClick={closeModal}
+                        className="text-lg font-semibold"
+                    >
+                        &times;
+                    </button>
+                </div>
+                <div className="mt-4">
+                    <p>
+                        <strong>Name: </strong>
+                        {name}
+                    </p>
+                    <p>
+                        <strong>Round Name: </strong>
+                        {data?.round_name}
+                    </p>
+                    {data?.score && (
+                        <p>
+                            <strong>Score:</strong> {data.score}
+                        </p>
+                    )}
+                    {data?.ascents &&
+                        data.ascents.map((route) => (
+                            <div className="flex flex-row">
+                                <RouteCard key={route.route_id} route={route} />
                             </div>
                         ))}
                 </div>
@@ -172,6 +261,50 @@ const OverallEventRanking = (data) => {
     );
 };
 
+const renderModal = (data, modalState, setModalState) => {
+    // const { data, isOpen, name } = modalState;
+
+    // if (!data || !data.dcat) {
+    //     return null;
+    // }
+
+    const dcat = data.dcat.toLowerCase();
+
+    if (dcat.includes("boulder")) {
+        return (
+            <BoulderModal
+                data={modalState.data}
+                closeModal={() =>
+                    setModalState({
+                        isOpen: false,
+                        data: null,
+                        name: null,
+                    })
+                }
+                name={name}
+            />
+        );
+    } else if (dcat.includes("lead")) {
+        return (
+            <LeadModal
+                data={modalState.data}
+                closeModal={() =>
+                    setModalState({
+                        isOpen: false,
+                        data: null,
+                        name: null,
+                    })
+                }
+                name={name}
+            />
+        );
+    }
+    // Continue with other conditions as needed
+
+    // Default case if no matches
+    return null;
+};
+
 const Page = () => {
     const API_BASE = process.env.NEXT_PUBLIC_API_URL + "/fullResults?";
     const searchParams = useSearchParams();
@@ -221,24 +354,17 @@ const Page = () => {
     }, []);
 
     if (isLoading) return <div>Loading...</div>; // do i need to add error checking or will all these apis be converted to nextjs data fetching
+
     return (
         <div className="flex flex-col bg-slate-200 items-center overflow-hidden">
             <h1 className="text-4xl p-4 text-center">{data.event}</h1>
-            <button
-                onClick={toggleComponentVisibility}
-                className="bg-lime-400 p-4 hover:bg-lime-700 transition-colors"
-            >
+            <h2 className="text-2xl pb-2 text-center">{data.dcat}</h2>
+            <Button onClick={toggleComponentVisibility}>
+                <AlignJustify />
                 Toggle Component
-            </button>
-            {modalState.isOpen && (
-                <Modal
-                    data={modalState.data}
-                    closeModal={() =>
-                        setModalState({ isOpen: false, data: null })
-                    }
-                    name={modalState.name}
-                />
-            )}
+            </Button>
+            {modalState.isOpen && renderModal(data, modalState, setModalState)}
+
             {isComponentVisible ? ( // huge ternary to toggle route view of full result or ranking view
                 <RouteResult data={data} />
             ) : (

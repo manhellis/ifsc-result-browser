@@ -31,24 +31,62 @@ const CategoryRounds = ({ category }) => {
     return <div>{rounds}</div>;
 };
 
+const getDisciplineColor = (event) => {
+    let discipline_color = "bg-white";
+
+    const hasBouldering = event.discipline_kind === "boulder";
+    const hasLead = event.discipline_kind === "lead";
+    const hasSpeed = event.discipline_kind === "speed";
+    const hasCombined = event.discipline_kind === "boulder&lead";
+
+    const hasOldCombined = event.disciplines === "combined"; 
+
+    if ((hasBouldering && hasLead && hasSpeed) || hasOldCombined) {
+        discipline_color = "bg-purple-300"; // Combination of all three
+    } else if (hasBouldering && hasLead || hasCombined) {
+        discipline_color = "bg-orange-300"; // Combination of bouldering and lead
+    } else if (hasBouldering && hasSpeed) {
+        discipline_color = "bg-pink-300"; // Combination of bouldering and speed
+    } else if (hasLead && hasSpeed) {
+        discipline_color = "bg-teal-300"; // Combination of lead and speed
+    } else if (hasBouldering) {
+        discipline_color = "bg-red-300"; // Only bouldering
+    } else if (hasLead) {
+        discipline_color = "bg-green-300"; // Only lead
+    } else if (hasSpeed) {
+        discipline_color = "bg-blue-300"; // Only speed
+    }
+
+    return discipline_color;
+};
+
 const EventPageCategory = ({ event }) => {
     const router = useRouter();
+    // let discipline_color = getDisciplineColor(event);
+    // let discipline_color = "bg-white";
+    return event.d_cats.map((category) => {
+        let discipline_color = getDisciplineColor(category);
 
-    if (!event.d_cats) {
-        return <div>No categories</div>;
-    }
-    return event.d_cats.map((category) => (
-        <div
-            className="bg-white hover:bg-sky-100 p-4 m-4 transition-all duration-200 ease-in-out rounded shadow hover:shadow-md cursor-pointer"
-            key={category.dcat_id}
-            onClick={() => router.push(`/fullResults?id=${event.id}&cid=${category.dcat_id}`)}
-        >
-            <h1 className="text-xl text-sky-700 font-semibold mb-2" title={`Category ID: ${category.dcat_id}`}>
-                {`${category.category_name} ${category.discipline_kind}`}
-            </h1>
-            <CategoryRounds category={category} />
-        </div>
-    ));
+        return (
+            <div
+                className={`${discipline_color} hover:bg-sky-100 p-4 m-4 transition-all duration-200 ease-in-out rounded shadow hover:shadow-md cursor-pointer`}
+                key={category.dcat_id}
+                onClick={() =>
+                    router.push(
+                        `/fullResults?id=${event.id}&cid=${category.dcat_id}`
+                    )
+                }
+            >
+                <h1
+                    className="text-xl text-sky-900 font-semibold mb-2"
+                    title={`Category ID: ${category.dcat_id}`}
+                >
+                    {`${category.category_name} ${category.discipline_kind}`}
+                </h1>
+                <CategoryRounds category={category} />
+            </div>
+        );
+    });
 };
 
 const EventPage = ({ event }) => {
