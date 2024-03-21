@@ -44,6 +44,11 @@ const Page = () => {
     if (isLoading) return <div>Loading...</div>;
     if (error) return <div>Error: {error}</div>;
 
+    let discipline_color = " bg-white";
+
+    // Assign colors based on the combinations of disciplines
+
+
     return (
         <div>
             <div className="flex flex-col justify-center items-center">

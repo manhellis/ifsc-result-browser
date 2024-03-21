@@ -33,15 +33,21 @@ app.add_middleware(
 # ssl_context.load_cert_chain('./ssl/cert.pem', keyfile='./ssl/key.pem')
 
 index = []
-base_directory = "./data/"  # Base directory for the data
+# base_directory = "./data/"  # Base directory for the data
+base_directory = os.getenv("DATA_DIR", "./data/")
+# i should make this an env var for docker 
+
 index_path = os.path.join(base_directory, 'athlete_index.json')
 
 # Load index at startup
 # @app.on_event("startup")
 def load_index():
     global index
-    with open(index_path, 'r') as infile:
-        index = json.load(infile)
+    try:
+        with open(index_path, 'r') as infile:
+            index = json.load(infile)
+    except:
+        index = []
         
 load_index()
 
@@ -88,18 +94,21 @@ async def read_athlete(id: int = Query(default=1612, alias="id")):
 
 @app.get("/searchAthlete")
 async def search_athlete(query: str = Query(None, min_length=3)):
-    query_parts = query.lower().split()
-    results = [
-        athlete for athlete in index
-        if all(
-            part in (
-                athlete['firstname'].lower() + " " + 
-                athlete['lastname'].lower() + " " + 
-                (athlete['country'].lower() if athlete['country'] else "") + " " + 
-                (athlete.get('country_name', '').lower() if athlete.get('country_name') else "") + " " + 
-                (athlete['birthday'] if athlete['birthday'] else "")
+    if not index:
+        raise HTTPException(status_code=501, detail="Index not found")
+    else:
+        query_parts = query.lower().split()
+        results = [
+            athlete for athlete in index
+            if all(
+                part in (
+                    athlete['firstname'].lower() + " " + 
+                    athlete['lastname'].lower() + " " + 
+                    (athlete['country'].lower() if athlete['country'] else "") + " " + 
+                    (athlete.get('country_name', '').lower() if athlete.get('country_name') else "") + " " + 
+                    (athlete['birthday'] if athlete['birthday'] else "")
+                )
+                for part in query_parts
             )
-            for part in query_parts
-        )
-    ]
-    return {"results": results}
+        ]
+        return {"results": results}

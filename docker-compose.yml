@@ -18,4 +18,7 @@ services:
     environment:
       - UVICORN_HOST=0.0.0.0
       - UVICORN_PORT=8000
+      - DATA_DIR=/usr/src/app/data 
+    volumes:
+      - /home/manh/data:/usr/src/app/data
      
