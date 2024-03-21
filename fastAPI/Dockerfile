@@ -15,5 +15,5 @@ COPY data /usr/src/app/data
 # 
 
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 # CMD ["uvicorn", "main:app", "--ssl-keyfile", "./ssl/key.pem", "--ssl-certfile", "./ssl/cert.pem", "--host", "0.0.0.0", "--port", "80"]

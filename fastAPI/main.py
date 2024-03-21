@@ -15,6 +15,7 @@ origins = [
     "http://24.144.69.193",
     "http://localhost",
     "http://*.manhellis.com",
+    "http://ifsc.manhellis.com",
     "http://localhost:3000",
     "http://localhost:3001", 
 ]
@@ -34,7 +35,7 @@ app.add_middleware(
 
 index = []
 # base_directory = "./data/"  # Base directory for the data
-base_directory = os.getenv("DATA_DIR", "./data/")
+base_directory = os.getenv("DATA_DIR", "../data/")
 # i should make this an env var for docker 
 
 index_path = os.path.join(base_directory, 'athlete_index.json')
