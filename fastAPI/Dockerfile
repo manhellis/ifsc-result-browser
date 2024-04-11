@@ -11,7 +11,7 @@ EXPOSE 80
 
 COPY . .
 COPY ./main.py /code/
-COPY data /usr/src/app/data
+# COPY data /usr/src/app/data
 # 
 
 

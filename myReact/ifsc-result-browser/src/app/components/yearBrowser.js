@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import EventCard from "./eventCard";
 import LeagueDropdown from "./leagueDropdown";
 // import { data } from "autoprefixer";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import EventTable from "./EventTable";
 
 const API_BASE = `${process.env.NEXT_PUBLIC_API_URL}/current/`;
 
@@ -60,16 +62,26 @@ const YearBrowser = ({ year }) => {
 
     return (
         <>
-            
             <LeagueDropdown
                 leagues={data.leagues}
                 onChange={handleLeagueChange}
             />
 
             <div className="flex flex-wrap items-center justify-center p-8">
-                {filteredEvents.map((event, index) => (
-                    <EventCard key={index} event={event} />
-                ))}
+                <Tabs defaultValue="table" className="">
+                    <TabsList className="">
+                        <TabsTrigger className=""value="table">Table</TabsTrigger>
+                        <TabsTrigger className=""value="cards">Cards</TabsTrigger>
+                    </TabsList>
+                    <TabsContent value="cards">
+                        {filteredEvents.map((event, index) => (
+                            <EventCard key={index} event={event} />
+                        ))}
+                    </TabsContent>
+                    <TabsContent value="table">
+                        <EventTable filteredEvents={filteredEvents} />
+                    </TabsContent>
+                </Tabs>
             </div>
         </>
     );
