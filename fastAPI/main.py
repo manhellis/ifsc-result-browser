@@ -113,3 +113,36 @@ async def search_athlete(query: str = Query(None, min_length=3)):
             )
         ]
         return {"results": results}
+        
+# @app.get("/all_results")
+# async def read_all_results():
+#     file_path = os.path.join(base_directory, "athletes.json")
+#     if os.path.exists(file_path):
+#         return FileResponse(path=file_path, media_type='application/json')
+#     else:
+#         raise HTTPException(status_code=404, detail="File not found")
+    
+@app.get("/all_results")
+async def read_all_results(season: str = Query(None, title="Season Year"), rank: int = Query(None, title="Maximum Rank")):
+    file_path = os.path.join(base_directory, "athletes.json")
+    if not os.path.exists(file_path):
+        raise HTTPException(status_code=404, detail="File not found")
+    
+    with open(file_path, "r") as file:
+        data = json.load(file)
+
+    if season is not None or rank is not None:
+        filtered_data = []
+        for athlete in data:
+            all_results = athlete.get('all_results', [])
+            # Apply filters based on the input parameters
+            filtered_results = [
+                result for result in all_results
+                if (season is None or result.get('season') == season) and (rank is None or result.get('rank') <= rank)
+            ]
+            if filtered_results:
+                athlete['all_results'] = filtered_results
+                filtered_data.append(athlete)
+        return filtered_data
+    
+    return data

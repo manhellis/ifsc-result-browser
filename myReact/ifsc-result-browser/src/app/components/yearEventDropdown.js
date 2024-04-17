@@ -17,9 +17,9 @@ const YearEventDropdown = ({ selectedYear, onYearChange }) => {
     );
 
     return (
-        <DropdownMenu>
+        <DropdownMenu >
             <DropdownMenuTrigger>
-                <DropdownMenuLabel>Select a year</DropdownMenuLabel>
+                <DropdownMenuLabel classname="text-lg">Select a year</DropdownMenuLabel>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
                 {years.map((year) => (
