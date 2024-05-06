@@ -5,31 +5,32 @@ import {
     TableBody,
     TableCell,
     TableHead,
+    TableHeader,
     TableRow,
 } from "@/components/ui/table";
 
 function ResponseTable(responses) {
     return (
         <Table>
-            <TableHead>
+            <TableHeader>
                 <TableRow>
-                    <TableCell>ID</TableCell>
-                    <TableCell>First Name</TableCell>
-                    <TableCell>Last Name</TableCell>
-                    <TableCell>Birthday</TableCell>
-                    <TableCell>Gender</TableCell>
-                    <TableCell>Country</TableCell>
-                    <TableCell>Season</TableCell>
-                    <TableCell>Rank</TableCell>
-                    <TableCell>Discipline</TableCell>
-                    <TableCell>Event Name</TableCell>
-                    <TableCell>Event ID</TableCell>
-                    <TableCell>Event Location</TableCell>
-                    <TableCell>Category</TableCell>
-                    <TableCell>Date</TableCell>
-                    <TableCell>Result URL</TableCell>
+                    <TableHead>ID</TableHead>
+                    <TableHead>First Name</TableHead>
+                    <TableHead>Last Name</TableHead>
+                    <TableHead>Birthday</TableHead>
+                    <TableHead>Gender</TableHead>
+                    <TableHead>Country</TableHead>
+                    <TableHead>Season</TableHead>
+                    <TableHead>Rank</TableHead>
+                    <TableHead>Discipline</TableHead>
+                    <TableHead>Event Name</TableHead>
+                    <TableHead>Event ID</TableHead>
+                    <TableHead>Event Location</TableHead>
+                    <TableHead>Category</TableHead>
+                    <TableHead>Date</TableHead>
+                    <TableHead>Result URL</TableHead>
                 </TableRow>
-            </TableHead>
+            </TableHeader>
             <TableBody>
                 {responses.map((item, index) => (
                     <TableRow key={index} hoverable>
@@ -84,9 +85,9 @@ const Page = () => {
     }, [API_URL]); // Dependency array to avoid re-fetching unnecessarily
 
     return (
-        <main className="flex">
+        <main className="flex flex-col">
             <h2>Rankings!</h2>
-            <Table>
+            {/* <Table>
                 <TableHead>
                     <TableRow>
                         <TableCell>ID</TableCell>
@@ -105,7 +106,8 @@ const Page = () => {
                         </TableRow>
                     ))}
                 </TableBody>
-            </Table>
+            </Table> */}
+            {ResponseTable(data)}
         </main>
     );
 };
