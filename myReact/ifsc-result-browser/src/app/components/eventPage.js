@@ -84,6 +84,17 @@ const EventPageCategory = ({ event }) => {
                     {`${category.category_name} ${category.discipline_kind}`}
                 </h1>
                 <CategoryRounds category={category} />
+                <h1 className="text-xl text-sky-900 font-semibold">Podium</h1>
+                {category.top_3_results.map((result, index) => (
+                    <div key={index} className="my-2">
+                        <h2 className="text-lg font-semibold">
+                            {result.rank}. {result.name}
+                        </h2>
+                        {/* <p className="text-sm text-gray-600">
+                            {result.athlete_name}
+                        </p> */}
+                    </div>
+                ))}
             </div>
         );
     });

@@ -14,7 +14,7 @@ const Page = () => {
     return (
         <div className="flex flex-col items-center justify-center">
             <div className="flex flex-row ">
-                <h1 className="text-4xl">{selectedYear}</h1>
+                {/* <h1 className="text-4xl">{selectedYear}</h1> */}
                 <YearEventDropdown
                     className=""
                     selectedYear={selectedYear}

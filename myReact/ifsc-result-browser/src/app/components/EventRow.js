@@ -2,7 +2,7 @@
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
-import { TableRow } from "@/components/ui/table";
+import { TableRow, TableCell } from "@/components/ui/table";
 
 const EventRow = ({ event, index }) => {
     const router = useRouter();
@@ -74,7 +74,7 @@ const EventRow = ({ event, index }) => {
             onClick={() => router.push(`/event?id=${event.event_id}`)}
             className="hover:bg-gray-100 cursor-pointer"
         >
-            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+            {/* <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                 {event.location}
             </td>
             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{`${day}/${month}/${year}`}</td>
@@ -83,7 +83,11 @@ const EventRow = ({ event, index }) => {
             </td>
             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                 {renderDisciplines()}
-            </td>
+            </td> */}
+            <TableCell>{event.location}</TableCell>
+            <TableCell>{`${day}/${month}/${year}`}</TableCell>
+            <TableCell>{event.event}</TableCell>
+            <TableCell>{renderDisciplines()}</TableCell>
         </TableRow>
     );
 };

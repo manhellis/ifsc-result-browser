@@ -15,13 +15,13 @@ const EventTable = ({ filteredEvents }) => {
     return (
         // JSX code for rendering the component
         <Table className="">
-            <TableCaption>A list of your recent invoices.</TableCaption>
+            <TableCaption>Selected Events</TableCaption>
             <TableHeader>
                 <TableRow>
-                    <TableHead className="w-[100px]">Invoice</TableHead>
-                    <TableHead>Status</TableHead>
-                    <TableHead>Method</TableHead>
-                    <TableHead className="text-right">Amount</TableHead>
+                    <TableHead className="w-[100px]">City</TableHead>
+                    <TableHead>Date</TableHead>
+                    <TableHead>Name</TableHead>
+                    <TableHead className="text-right">Disciplines</TableHead>
                 </TableRow>
             </TableHeader>
             <TableBody>

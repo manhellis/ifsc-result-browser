@@ -67,22 +67,26 @@ const YearBrowser = ({ year }) => {
                 onChange={handleLeagueChange}
             />
 
-            <div className="flex flex-wrap items-center justify-center p-8">
-                <Tabs defaultValue="table" className="">
-                    <TabsList className="">
-                        <TabsTrigger className=""value="table">Table</TabsTrigger>
-                        <TabsTrigger className=""value="cards">Cards</TabsTrigger>
-                    </TabsList>
-                    <TabsContent value="cards">
+            <Tabs defaultValue="table" className="flex flex-col items-center">
+                <TabsList className="">
+                    <TabsTrigger className="" value="table">
+                        Table
+                    </TabsTrigger>
+                    <TabsTrigger className="" value="cards">
+                        Cards
+                    </TabsTrigger>
+                </TabsList>
+                <TabsContent value="cards">
+                    <div className="flex flex-wrap items-center justify-center p-8">
                         {filteredEvents.map((event, index) => (
                             <EventCard key={index} event={event} />
                         ))}
-                    </TabsContent>
-                    <TabsContent value="table">
-                        <EventTable filteredEvents={filteredEvents} />
-                    </TabsContent>
-                </Tabs>
-            </div>
+                    </div>
+                </TabsContent>
+                <TabsContent value="table" className="w-9/12">
+                    <EventTable filteredEvents={filteredEvents} />
+                </TabsContent>
+            </Tabs>
         </>
     );
 };
